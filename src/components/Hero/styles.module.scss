@@ -1,0 +1,36 @@
+.hero {
+  font-size: 14px;
+  margin: auto;
+  // width: 100vh;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smallHeroText {
+  font-size: clamp(10px, 8vw, 15px);
+  margin: 0;
+  padding: 0;
+}
+
+.sameLineText {
+  // padding: auto;
+  gap: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+.bigHeroText {
+  font-size: clamp(40px, 8vw, 80px);
+  margin: 0;
+  padding: 0;
+}
+
+.subText {
+  font-size: clamp(30px, 6vw, 60px);
+  margin: 0;
+  padding: 0;
+}
+

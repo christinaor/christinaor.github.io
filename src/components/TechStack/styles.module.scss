@@ -1,0 +1,15 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 13px;
+  justify-content: center;
+}
+
+li {
+  padding: 13px;
+  white-space: nowrap;
+}
+
+.header {
+  font-size: clamp(16px, 6vw, 22px);
+}
