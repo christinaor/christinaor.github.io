@@ -1,18 +1,26 @@
 import { useState } from 'react';
+
+import technologies from '../../../data/technologies.tsx';
+
 import styles from './styles.module.scss'
 
 function TechStack() {
+  let displayedTech = technologies.map(tech => {
+    return (
+      <li key={tech.name} >
+        <a href={tech.website} target="_blank">
+          <img src={tech.icon} className={`${tech.name}-logo logo`} alt={tech.alt} />
+          <div>{tech.title}</div>
+        </a>
+      </li>
+    )
+  })
+
   return (
     <div id="tech-stack">
-      <h4 className={`${styles.header}`}>Technologies I've Worked With:</h4>
+      <h4 className={`${styles.header}`}>Some technologies I've worked with:</h4>
       <ul>
-        <li>JavaScript (ES6+)</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>PostgreSQL</li>
-        <li>MongoDB + Mongoose</li>
+        {displayedTech}
       </ul>
     </div>
   )
