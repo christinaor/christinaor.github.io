@@ -7,13 +7,22 @@ import postgresqlIcon from '../src/assets/postgresql-svgrepo-com.svg'
 import pythonIcon from '../src/assets/python-svgrepo-com.svg'
 import typescriptIcon from '../src/assets/typescript-svgrepo-com.svg'
 
+interface technologies {
+  alt: string,
+  icon: string,
+  name: string,
+  title: string,
+  types: string[],
+  website: string,
+}[]
+
 const technologies = [
   {
     alt: 'JavaScript logo',
     icon: javascriptIcon,
     name: 'javascript',
     title: 'JavaScript',
-    type: ['frontend', 'backend', 'fullstack'],
+    types: ['frontend', 'backend', 'fullstack'],
     website: 'https://www.javascript.com/',
   },
   {
@@ -21,7 +30,7 @@ const technologies = [
     icon: reactIcon,
     name: 'react',
     title: 'React.js',
-    type: ['frontend'],
+    types: ['frontend'],
     website: 'https://www.reactjs.com/',
   },
   {
@@ -29,7 +38,7 @@ const technologies = [
     icon: expressIcon,
     name: 'express',
     title: 'Express.js',
-    type: ['backend'],
+    types: ['backend'],
     website: 'https://www.expressjs.com/',
   },
   {
@@ -37,7 +46,7 @@ const technologies = [
     icon: mongodbIcon,
     name: 'mongodb',
     title: 'MongoDB',
-    type: ['backend'],
+    types: ['backend'],
     website: 'https://www.mongodb.com/',
   },
   {
@@ -45,7 +54,7 @@ const technologies = [
     icon: nodeIcon,
     name: 'node',
     title: 'Node.js',
-    type: ['backend'],
+    types: ['backend'],
     website: 'https://www.nodejs.org/',
   },
   {
@@ -53,7 +62,7 @@ const technologies = [
     icon: postgresqlIcon,
     name: 'postgresql',
     title: 'PostgreSQL',
-    type: ['backend'],
+    types: ['backend'],
     website: 'https://www.postgresql.org/',
   },
   {
@@ -61,7 +70,7 @@ const technologies = [
     icon: pythonIcon,
     name: 'python',
     title: 'Python',
-    type: ['backend'],
+    types: ['backend'],
     website: 'https://www.python.org/',
   },
   {
@@ -69,7 +78,7 @@ const technologies = [
     icon: typescriptIcon,
     name: 'typescript',
     title: 'TypeScript',
-    type: ['frontend', 'backend'],
+    types: ['frontend', 'backend'],
     website: 'https://www.typescriptlang.org/',
   },
 ]
