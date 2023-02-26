@@ -57,7 +57,8 @@ function TechStack() {
       <button className={filters.includes('all') ? 'active' : 'inactive'} value='all' onClick={handleFilterClick}>All</button>
       <button className={filters.includes('frontend') ? 'active' : 'inactive'} value='frontend' onClick={handleFilterClick}>Frontend</button>
       <button className={filters.includes('backend') ? 'active' : 'inactive'} value='backend' onClick={handleFilterClick}>Backend</button>
-      <ul>
+      <button className={filters.includes('other') ? 'active' : 'inactive'} value='other' onClick={handleFilterClick}>Other</button>
+      <ul className={`${styles.techList}`}>
         {displayedTech}
       </ul>
     </div>
