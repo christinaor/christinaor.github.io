@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import githubIcon from '../../assets/social-media-logos/github-svgrepo-com.svg'
 import instagramIcon from '../../assets/social-media-logos/instagram-1-svgrepo-com.svg'
 import linkedinIcon from '../../assets/social-media-logos/linkedin-svgrepo-com.svg'
 import styles from './styles.module.scss'
 
 function Contact() {
-  // const [count, setCount] = useState(0)
-
   return (
     <section id="contact" className={`${styles.contact}`}>
       <h3 className={`${styles.header}`}>Get in Touch</h3>
