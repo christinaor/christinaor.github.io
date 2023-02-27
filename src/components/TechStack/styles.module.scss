@@ -1,8 +1,5 @@
 li {
-  // margin: 8px;
-  // padding: 13px;
   text-align: center;
-  // white-space: nowrap;
 }
 
 .header {
@@ -11,6 +8,19 @@ li {
 
 p {
   font-size: clamp(12px, 4vh, 15px);
+}
+
+.filterTitle {
+  font-size: 1.3vw;
+  // margin: 0 2vw;
+}
+
+.filterButtons {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  gap: 0.5vw;
+  // box-sizing: content-box;
 }
 
 .techList {

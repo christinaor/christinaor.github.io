@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import githubIcon from '../../assets/github-svgrepo-com.svg'
-import instagramIcon from '../../assets/instagram-1-svgrepo-com.svg'
-import linkedinIcon from '../../assets/linkedin-svgrepo-com.svg'
+import githubIcon from '../../assets/social-media-logos/github-svgrepo-com.svg'
+import instagramIcon from '../../assets/social-media-logos/instagram-1-svgrepo-com.svg'
+import linkedinIcon from '../../assets/social-media-logos/linkedin-svgrepo-com.svg'
 import styles from './styles.module.scss'
 
 function Contact() {

@@ -53,11 +53,14 @@ function TechStack() {
 
   return (
     <div id="tech-stack">
-      <h4 className={`${styles.header}`}>Some technologies I've worked with:</h4>
-      <button className={filters.includes('all') ? 'active' : 'inactive'} value='all' onClick={handleFilterClick}>All</button>
-      <button className={filters.includes('frontend') ? 'active' : 'inactive'} value='frontend' onClick={handleFilterClick}>Frontend</button>
-      <button className={filters.includes('backend') ? 'active' : 'inactive'} value='backend' onClick={handleFilterClick}>Backend</button>
-      <button className={filters.includes('other') ? 'active' : 'inactive'} value='other' onClick={handleFilterClick}>Other</button>
+      <h4 className={`${styles.header}`}>Some technologies I've worked with...</h4>
+      <div className={`${styles.filterButtons}`}>
+        <div className={`${styles.filterTitle}`}>Filter By:</div>
+        <button className={filters.includes('all') ? 'active' : 'inactive'} value='all' onClick={handleFilterClick}>All</button>
+        <button className={filters.includes('frontend') ? 'active' : 'inactive'} value='frontend' onClick={handleFilterClick}>Frontend</button>
+        <button className={filters.includes('backend') ? 'active' : 'inactive'} value='backend' onClick={handleFilterClick}>Backend</button>
+        <button className={filters.includes('other') ? 'active' : 'inactive'} value='other' onClick={handleFilterClick}>Other</button>
+      </div>
       <ul className={`${styles.techList}`}>
         {displayedTech}
       </ul>
