@@ -1,11 +1,16 @@
 ul {
   list-style-type: none;
   display: flex;
-  padding: 13px;
+  padding: 2vh;
 }
 
 li {
-  padding: 13px;
+  // text-decoration: none;
+  padding: 2vh;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navBar {

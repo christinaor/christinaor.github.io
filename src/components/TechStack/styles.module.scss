@@ -1,15 +1,19 @@
-ul {
-  list-style-type: none;
-  display: flex;
-  padding: 13px;
-  justify-content: center;
-}
-
 li {
-  padding: 13px;
-  white-space: nowrap;
+  // margin: 8px;
+  // padding: 13px;
+  text-align: center;
+  // white-space: nowrap;
 }
 
 .header {
   font-size: clamp(16px, 6vw, 22px);
+}
+
+p {
+  font-size: clamp(12px, 4vh, 15px);
+}
+
+.techList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }

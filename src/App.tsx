@@ -15,10 +15,15 @@ function App() {
         <img src={placeholderLogo} className="placeholder-logo" alt="placeholder logo" width="35px" />
         <NavBar />
       </header>
-      <Hero />
-      <About />
-      <Experiences />
-      <Contact />
+      <div className="left-links">
+      </div>
+      <div className="content">
+        <Hero />
+        <About />
+        <Experiences />
+        <Contact />
+      </div>
+
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />

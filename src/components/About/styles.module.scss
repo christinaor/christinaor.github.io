@@ -1,8 +1,8 @@
 .about {
-  margin: auto;
-  min-height: 100vh;
-  height: 100vh;
-  width: 75%;
+  // margin: auto;
+  // min-height: 100vh;
+  // height: 100vh;
+  // width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,4 +11,12 @@
 
 .header {
   font-size: clamp(20px, 6vw, 30px);
+  // margin: 13px;
+  margin: 2vh;
+  padding: 0;
+}
+
+.blurb {
+  font-size: clamp(14px, 4vw, 20px);
+  // margin: 13px;
 }

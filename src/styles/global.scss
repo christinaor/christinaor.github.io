@@ -1,5 +1,8 @@
+// Color palette: #231942, #5e548e, #9f86c0, #be95c4, #e0b1cb
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,11 +19,19 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  // color: #646cff;
+  color: white;
+  // color: #5E548E;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  // color: #535bf2;
+  color: #231942;
+  // text-decoration: underline;
+}
+
+a.email-link {
+  color: #231942;
 }
 
 header {
@@ -31,6 +42,8 @@ header {
 }
 
 body {
+  // background-image: linear-gradient(to right bottom, #C5ADC5 50%, #B2B5E0 50%);
+  background-image: radial-gradient(#E0B1CB, #9F86C0);
   margin: 0;
   padding: 0 40px;
   display: flex;
@@ -51,6 +64,18 @@ p {
   font-size: clamp(15px, 6vw, 20px);
 }
 
+section {
+  position: relative;
+  margin: auto;
+  // max-height: 1000px;
+  min-height: 100vh;
+  width: 80%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -63,22 +88,35 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  // border-color: #646cff;
+  border-color: #5E548E;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+button.active {
+  color: #231942;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    // color: #213547;
+    color: #231942;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    // color: #747bff;
+    color: #5E548E;
   }
   button {
     background-color: #f9f9f9;
+    color: #231942;
+    border-color: #E0B1CB;
   }
+}
+
+.left-links {
+  orientation:portrait;
 }

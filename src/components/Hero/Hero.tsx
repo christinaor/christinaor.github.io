@@ -10,8 +10,6 @@ function Hero() {
         <h1 className={`${styles.smallHeroText}`}>and I'm a</h1>
       </div>
       <h2 className={`${styles.subText}`}>Software Engineer && Web Developer.</h2>
-        {/* <h2 className={`${styles.bigHeroSubText}`}>&&</h2>
-        <h2 className={`${styles.bigHeroSubText}`}>Web Developer</h2> */}
     </section>
   )
 }
