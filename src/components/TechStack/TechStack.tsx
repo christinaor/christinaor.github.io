@@ -1,13 +1,13 @@
 import { useCallback, useState } from 'react';
 
-import technologies from '../../../data/technologies.tsx';
+import technologies from '../../../data/technologies';
 
 import styles from './styles.module.scss'
 
 function TechStack() {
   const [filters, setFilters] = useState(['all']);
 
-  const handleFilterClick = useCallback(clickedButton => {
+  const handleFilterClick = useCallback((clickedButton: object) => {
     const clickedFilter = clickedButton.target.value;
     
     if (clickedFilter === 'all') {
@@ -25,34 +25,43 @@ function TechStack() {
     }
   }, [filters, setFilters])
 
+
+  interface Tech {
+    alt: string,
+    icon: string,
+    name: string,
+    title: string,
+    types: string[],
+    website: string,
+}
+
   // need to include only techs with the same type as those in filters state
   const displayedTech: [] = (filters.includes('all')) 
-    ? technologies.map(tech => {
+    ? technologies.map((tech: Tech) => {
       return (
         <li key={tech.name} >
           <a href={tech.website} target="_blank">
             <img src={tech.icon} className={`${tech.name}-logo logo`} alt={tech.alt} />
-            <div>{tech.title}</div>
+            <div className={`${styles.techTitle}`}>{tech.title}</div>
           </a>
         </li>
       )
     })
     : technologies
-      .filter((tech: string[]) => tech.types
-        .some((type: string) => filters.includes(type)))
-      .map((tech: string[]) => {
+      .filter((tech: Tech) => tech.types.some((type: string) => filters.includes(type)))
+      .map((tech: Tech) => {
         return (
           <li key={tech.name} >
             <a href={tech.website} target="_blank">
               <img src={tech.icon} className={`${tech.name}-logo logo`} alt={tech.alt} />
-              <div>{tech.title}</div>
+              <div className={`${styles.techTitle}`}>{tech.title}</div>
             </a>
           </li>
         )
       })
 
   return (
-    <div id="tech-stack">
+    <div id="tech-stack" className={`${styles.techSection}`}>
       <h4 className={`${styles.header}`}>Some technologies I've worked with...</h4>
       <div className={`${styles.filterButtons}`}>
         <div className={`${styles.filterTitle}`}>Filter By:</div>

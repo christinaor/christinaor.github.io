@@ -10,9 +10,13 @@ p {
   font-size: clamp(12px, 4vh, 15px);
 }
 
+.techSection {
+
+}
+
 .filterTitle {
   font-size: 1.3vw;
-  // margin: 0 2vw;
+  margin-right: 2vw;
 }
 
 .filterButtons {
@@ -25,5 +29,14 @@ p {
 
 .techList {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, fit-content(8vh));
+  justify-content: center;
+}
+
+.techTitle {
+  color: #4f518c;
+}
+
+.techTitle:hover {
+  color: #907ad6;
 }
