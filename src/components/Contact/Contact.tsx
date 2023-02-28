@@ -1,3 +1,4 @@
+import gmailIcon from '../../assets/social-media-logos/gmail-svgrepo-com.svg'
 import githubIcon from '../../assets/social-media-logos/github-svgrepo-com.svg'
 import instagramIcon from '../../assets/social-media-logos/instagram-1-svgrepo-com.svg'
 import linkedinIcon from '../../assets/social-media-logos/linkedin-svgrepo-com.svg'
@@ -5,14 +6,14 @@ import styles from './styles.module.scss'
 
 function Contact() {
   return (
-    <section id="contact" className={`${styles.contact}`}>
+    <section id="contact-me" className={`${styles.contactMe}`}>
       <h3 className={`${styles.header}`}>Get in Touch</h3>
       <div>
         <p>I'm currently exploring new opportunities. Feel free to reach out to collaborate, chat about tech, or if you just want to say hi!</p>
 
         <div className={`${styles.contactInfo}`}>
           <div className={`${styles.socials}`}>
-            <p>Find me on social media:</p>
+            {/* <p>Find me on social media:</p> */}
             <ul>
               <li>
                 <a className="linkedin" href="https://www.linkedin.com/in/christina-or">
@@ -29,12 +30,12 @@ function Contact() {
                   <img src={instagramIcon} className="instagram-logo" alt="Instagram logo" />
                 </a>
               </li>
+              <li>
+                <a id="contact" className="gmail" href={"mailto:".concat(atob("b3IuY2hyaXN0aW5hMjdAZ21haWwuY29t"))} rel="noopener noreferrer">
+                  <img src={gmailIcon} className="gmail-logo" alt="Gmail logo" />
+                </a>
+              </li>
             </ul>
-          </div>
-
-          <div className={`${styles.email}`}>
-            <p>Or send me an email:</p>
-            <button><a className="email-link" href="mailto:or.christina27@gmail.com" rel="noopener noreferrer">Say Hello</a></button>
           </div>
         </div>
 
