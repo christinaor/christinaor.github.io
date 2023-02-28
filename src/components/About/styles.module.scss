@@ -1,8 +1,5 @@
 .about {
-  // margin: auto;
-  // min-height: 100vh;
-  // height: 100vh;
-  // width: 75%;
+  margin-bottom: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,12 +8,17 @@
 
 .header {
   font-size: clamp(20px, 6vw, 30px);
-  // margin: 13px;
   margin: 2vh;
   padding: 0;
 }
 
 .blurb {
   font-size: clamp(14px, 4vw, 20px);
+  color: #4f518c;
   // margin: 13px;
+}
+
+.blurbLink {
+  font-weight: 500;
+  color: #f9f9f9;
 }

@@ -62,7 +62,7 @@ function TechStack() {
 
   return (
     <div id="tech-stack" className={`${styles.techSection}`}>
-      <h4 className={`${styles.header}`}>Some technologies I've worked with...</h4>
+      <h4 className={`${styles.techHeader}`}>Some technologies I've worked with:</h4>
       <div className={`${styles.filterButtons}`}>
         <div className={`${styles.filterTitle}`}>Filter By:</div>
         <button className={filters.includes('all') ? 'active' : 'inactive'} value='all' onClick={handleFilterClick}>All</button>

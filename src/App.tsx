@@ -24,7 +24,7 @@ function App() {
         <Contact />
       </div>
       <footer>
-        <code>Built && Designed by Christina Or</code>
+        <div>Built && Designed by Christina Or</div>
       </footer>
     </div>
   )
