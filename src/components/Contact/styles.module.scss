@@ -1,4 +1,4 @@
-.contact {
+.contactMe {
   // margin: auto;
   // min-height: 100vh;
   // height: 100vh;
@@ -17,9 +17,10 @@
 
 .contactInfo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  // justify-content: center;
+  // grid-template-columns: repeat(2, fit-content(45vw));
+  // grid-template-columns: 50% 50%;
+  // grid-template-rows: 1fr 1fr;
+  justify-content: center;
   // align-items: center;
 }
 
@@ -29,10 +30,7 @@
   align-items: center;
 }
 
-.email {
-  gap: 8vh;
-}
-
-a.email-link {
-  color: red;
+button.contactEmail {
+  min-width: 12vw;
+  min-height: 8vh;
 }
