@@ -15,22 +15,13 @@
   padding: 0;
 }
 
-.contactInfo {
-  display: grid;
-  // grid-template-columns: repeat(2, fit-content(45vw));
-  // grid-template-columns: 50% 50%;
-  // grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  // align-items: center;
+.contactBlurb {
+  max-width: 40vw;
+  text-align: center;
 }
 
-.socials, .email {
+.contactLinks {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-button.contactEmail {
-  min-width: 12vw;
-  min-height: 8vh;
 }
