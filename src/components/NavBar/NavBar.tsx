@@ -16,7 +16,7 @@ function NavBar() {
             </a>
           </li>
           <li className="header-contact">
-            <a href="/#contact">
+            <a href="/#contact-me">
               Contact
             </a>
           </li>
