@@ -7,7 +7,7 @@ import styles from './styles.module.scss'
 function TechStack() {
   const [filters, setFilters] = useState(['all']);
 
-  const handleFilterClick = useCallback((clickedButton: object) => {
+  const handleFilterClick = useCallback((clickedButton) => {
     const clickedFilter = clickedButton.target.value;
     
     if (clickedFilter === 'all') {
@@ -36,7 +36,7 @@ function TechStack() {
 }
 
   // need to include only techs with the same type as those in filters state
-  const displayedTech: [] = (filters.includes('all')) 
+  const displayedTech = (filters.includes('all')) 
     ? technologies.map((tech: Tech) => {
       return (
         <li key={tech.name} >
