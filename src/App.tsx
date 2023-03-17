@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <img src={placeholderLogo} className="placeholder-logo" alt="placeholder logo" width="35px" />
+        {/* <img src={placeholderLogo} className="placeholder-logo" alt="placeholder logo" width="35px" /> */}
         <NavBar />
       </header>
       <div className="left-links">

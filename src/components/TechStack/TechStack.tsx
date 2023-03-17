@@ -23,7 +23,7 @@ function TechStack() {
       const remainingFilters = filters.filter(currentFilter => currentFilter !== 'all')
       setFilters([...remainingFilters, clickedFilter]);
     }
-  }, [filters, setFilters])
+  }, [filters, setFilters]);
 
 
   interface Tech {
@@ -33,16 +33,16 @@ function TechStack() {
     title: string,
     types: string[],
     website: string,
-}
+  };
 
   // need to include only techs with the same type as those in filters state
   const displayedTech = (filters.includes('all')) 
     ? technologies.map((tech: Tech) => {
       return (
-        <li key={tech.name} >
-          <a href={tech.website} target="_blank">
-            <img src={tech.icon} className={`${tech.name}-logo logo`} alt={tech.alt} />
-            <div className={`${styles.techTitle}`}>{tech.title}</div>
+        <li className={styles.techItem} key={tech.name}>
+          <a className={styles.logoAndName} href={tech.website} target="_blank">
+            <img src={tech.icon} className={styles.logo} alt={tech.alt} />
+            <div>{tech.title}</div>
           </a>
         </li>
       )
@@ -51,26 +51,36 @@ function TechStack() {
       .filter((tech: Tech) => tech.types.some((type: string) => filters.includes(type)))
       .map((tech: Tech) => {
         return (
-          <li key={tech.name} >
-            <a href={tech.website} target="_blank">
-              <img src={tech.icon} className={`${tech.name}-logo logo`} alt={tech.alt} />
-              <div className={`${styles.techTitle}`}>{tech.title}</div>
+          <li className={styles.techItem} key={tech.name} >
+            <a className={styles.logoAndName} href={tech.website} target="_blank">
+              <img src={tech.icon} className={styles.logo} alt={tech.alt} />
+              <div>{tech.title}</div>
             </a>
           </li>
         )
-      })
+      });
+
+  const isActiveFilter = (filters, filterStr) => {
+    let filterStyle = '';
+    if (filters.includes(filterStr)) {
+      filterStyle = 'active';
+    } else {
+      filterStyle = 'inactive';
+    }
+    return filterStyle;
+  }
 
   return (
-    <div id="tech-stack" className={`${styles.techSection}`}>
-      <h4 className={`${styles.techHeader}`}>Some technologies I've worked with:</h4>
-      <div className={`${styles.filterButtons}`}>
-        <div className={`${styles.filterTitle}`}>Filter By:</div>
-        <button className={filters.includes('all') ? 'active' : 'inactive'} value='all' onClick={handleFilterClick}>All</button>
-        <button className={filters.includes('frontend') ? 'active' : 'inactive'} value='frontend' onClick={handleFilterClick}>Frontend</button>
-        <button className={filters.includes('backend') ? 'active' : 'inactive'} value='backend' onClick={handleFilterClick}>Backend</button>
-        <button className={filters.includes('other') ? 'active' : 'inactive'} value='other' onClick={handleFilterClick}>Other</button>
+    <div id="tech-stack" className={styles.techSection}>
+      <h3 className={styles.techHeader}>Some technologies I've worked with...</h3>
+      <div className={styles.filterButtonsWrapper}>
+        {/* <div className={`${styles.filterTitle}`}>Filter By:</div> */}
+        <button className={isActiveFilter(filters, 'all')} value='all' onClick={handleFilterClick}>All</button>
+        <button className={isActiveFilter(filters, 'frontend')} value='frontend' onClick={handleFilterClick}>Frontend</button>
+        <button className={isActiveFilter(filters, 'backend')} value='backend' onClick={handleFilterClick}>Backend</button>
+        <button className={isActiveFilter(filters, 'other')} value='other' onClick={handleFilterClick}>Other</button>
       </div>
-      <ul className={`${styles.techList}`}>
+      <ul className={styles.techList}>
         {displayedTech}
       </ul>
     </div>

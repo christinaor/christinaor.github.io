@@ -1,4 +1,10 @@
 .experiences {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 669px) {
+  .experiences {
   // margin: auto;
   // min-height: 100vh;
   // height: 100vh;
@@ -9,8 +15,9 @@
   align-items: center;
 }
 
-.header {
-  font-size: clamp(20px, 6vw, 30px);
-  margin: 13px;
-  padding: 0;
+  .header {
+    font-size: clamp(20px, 6vw, 30px);
+    margin: 13px;
+    padding: 0;
+  }
 }

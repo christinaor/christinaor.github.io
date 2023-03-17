@@ -21,7 +21,7 @@ function NavBar() {
           </li>
         </ul>
         <div className="header-resume">
-          <a className="resume-button" href="https://drive.google.com/file/d/1LHK0Uvh0KxCYm6KHfLAWaW5VPRBwO7B5/view" target="_blank">Resume</a>
+          <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">Resume</a>
         </div>
       </nav>
   )

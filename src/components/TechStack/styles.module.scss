@@ -1,56 +1,84 @@
-li {
-  text-align: center;
-}
+// li {
+//   text-align: center;
+// }
 
-p {
-  font-size: clamp(12px, 4vh, 15px);
-}
+// p {
+//   font-size: clamp(12px, 4vh, 15px);
+// }
 
-.techSection {
-  display: grid;
-  grid-template-columns: min-content 2vh max-content;
-  grid-template-rows: 12vh min-content;
-  justify-content: center;
-}
+// .techSection {
+//   display: grid;
+//   grid-template-columns: min-content 2vh max-content;
+//   grid-template-rows: 12vh min-content;
+//   justify-content: center;
+// }
 
-.techHeader {
-  margin: 0;
-  margin-top: 8vh;
-  padding: 0;
-  color: #4f518c;
-  font-size: clamp(16px, 6vw, 22px);
-  text-align: end;
-  line-height: 1.6;
-  grid-column: 1/2;
-  grid-row: 2/2;
-}
+// .techHeader {
+//   margin: 0;
+//   padding: 0;
 
-.filterTitle {
-  font-size: clamp(10px, 6vw, 14px);
-}
+//   font-size: clamp(16px, 6vw, 22px);
+//   // line-height: 1.6;
+// }
 
-.filterButtons {
-  grid-column: 3/3;
+// .filterTitle {
+//   font-size: clamp(10px, 6vw, 14px);
+// }
+
+.filterButtonsWrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  // justify-content: center;
-  gap: 0.5vw;
-  // box-sizing: content-box;
+  margin: 6vw 0;
+  gap: 3vw;
+  
+  // width: 8vw;
 }
 
 .techList {
-  grid-column: 3/3;
   display: grid;
-  grid-template-columns: repeat(4, fit-content(10vh));
+  // grid-template-columns: repeat(4, fit-content(80vw));
+  grid-template-columns: repeat(3, 23vw);
+  // grid-template-columns: repeat(3, 1fr);
+
   justify-content: center;
-  gap: 2vh;
+  column-gap: 3vw;
+  row-gap: 6vw;
+
+  // justify-content: center;
+  // align-items: center;
 }
 
-.techTitle {
-  color: #4f518c;
+// .techItem {
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+// }
+
+.logoAndName {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 3vw;
+  text-align: center
+
+  // display: grid;
+  // grid-template-rows: 20vw 1fr;
+  // justify-content: center;
+  // align-items: center;
 }
 
-.techTitle:hover {
-  color: #907ad6;
+.logo {
+  display: flex;
+  justify-content: center;
+
+  width: 10vw;
 }
+
+// .techTitle {
+//   color: #4f518c;
+// }
+
+// .techTitle:hover {
+//   color: #907ad6;
+// }
