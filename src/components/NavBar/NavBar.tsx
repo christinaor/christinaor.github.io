@@ -4,6 +4,11 @@ function NavBar() {
   return (
     <nav id="nav-bar" className={`${styles.navBar}`}>
         <ul>
+        <li className="header-home">
+          <a href="/#hero">
+            Home
+          </a>
+        </li>
           <li className="header-about">
             <a href="/#about">
               About
@@ -19,10 +24,10 @@ function NavBar() {
               Contact
             </a>
           </li>
+          <li className="header-resume">
+            <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">Resume</a>
+          </li>
         </ul>
-        <div className="header-resume">
-          <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">Resume</a>
-        </div>
       </nav>
   )
 }

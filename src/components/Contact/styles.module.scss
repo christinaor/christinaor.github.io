@@ -1,9 +1,12 @@
 .contactMe {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
   align-items: center;
-  padding: 15vw;
+
+  min-height: 100vh;
+  padding: 0 15vw;
+  gap: 4vw;
 }
 
 .contactBlurb {

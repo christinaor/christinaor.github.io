@@ -1,21 +1,39 @@
+@import 'src/styles/colors.scss';
+
 .hero {
-  padding: 0 8vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // width: 100vw;
+  min-height: 100vh;
   margin: 6vw 0;
+  padding: 0 8vw;
+
+  word-wrap: break-word;
 }
 
 .smallHeroText {
   margin: 0;
   padding: 0;
+
+  color: $buttonBorderLightBrown;
 }
 
 .bigHeroText {
   margin: 0;
   padding: 0;
+
+  font-size: 13vw;
 }
 
 .subText {
   margin: 0;
   padding: 0;
+
+  color: $buttonBackgroundDarkBrown;
 }
 
 @media only screen and (min-width: 669px) {

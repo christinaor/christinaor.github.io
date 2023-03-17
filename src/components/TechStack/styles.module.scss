@@ -1,35 +1,17 @@
-// li {
-//   text-align: center;
-// }
+@import 'src/styles/colors.scss';
 
-// p {
-//   font-size: clamp(12px, 4vh, 15px);
-// }
+.techSection {
+  min-height: 100vh;
+  margin: 6vw 0;
 
-// .techSection {
-//   display: grid;
-//   grid-template-columns: min-content 2vh max-content;
-//   grid-template-rows: 12vh min-content;
-//   justify-content: center;
-// }
-
-// .techHeader {
-//   margin: 0;
-//   padding: 0;
-
-//   font-size: clamp(16px, 6vw, 22px);
-//   // line-height: 1.6;
-// }
-
-// .filterTitle {
-//   font-size: clamp(10px, 6vw, 14px);
-// }
+  // background-color: $darkGrayBackground
+}
 
 .filterButtonsWrapper {
   display: flex;
   justify-content: center;
   margin: 6vw 0;
-  gap: 3vw;
+  gap: 1vw;
   
   // width: 8vw;
 }
@@ -38,20 +20,19 @@
   display: grid;
   // grid-template-columns: repeat(4, fit-content(80vw));
   grid-template-columns: repeat(3, 23vw);
-  // grid-template-columns: repeat(3, 1fr);
 
   justify-content: center;
-  column-gap: 3vw;
-  row-gap: 6vw;
+  padding: 5vw;
+  column-gap: 1vw;
+  row-gap: 5vw;
 
-  // justify-content: center;
-  // align-items: center;
+  background-color: $mainTextColorWhite;
+  border: 1.5px solid $highlightTextColorPink;
+  border-radius: 13px;
 }
 
 // .techItem {
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
+
 // }
 
 .logoAndName {
@@ -60,19 +41,15 @@
 
   align-items: center;
   gap: 3vw;
-  text-align: center
-
-  // display: grid;
-  // grid-template-rows: 20vw 1fr;
-  // justify-content: center;
-  // align-items: center;
+  text-align: center;
+  font-size: 3vw;
 }
 
 .logo {
   display: flex;
   justify-content: center;
 
-  width: 10vw;
+  width: 8vw;
 }
 
 // .techTitle {

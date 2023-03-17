@@ -74,7 +74,6 @@ function TechStack() {
     <div id="tech-stack" className={styles.techSection}>
       <h3 className={styles.techHeader}>Some technologies I've worked with...</h3>
       <div className={styles.filterButtonsWrapper}>
-        {/* <div className={`${styles.filterTitle}`}>Filter By:</div> */}
         <button className={isActiveFilter(filters, 'all')} value='all' onClick={handleFilterClick}>All</button>
         <button className={isActiveFilter(filters, 'frontend')} value='frontend' onClick={handleFilterClick}>Frontend</button>
         <button className={isActiveFilter(filters, 'backend')} value='backend' onClick={handleFilterClick}>Backend</button>
