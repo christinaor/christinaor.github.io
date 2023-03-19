@@ -26,7 +26,8 @@
   margin: 0;
   padding: 0;
 
-  font-size: 13vw;
+  // font-size: 13vw;
+  font-size: 3rem;
 }
 
 .subText {
@@ -36,7 +37,7 @@
   color: $buttonBackgroundDarkBrown;
 }
 
-@media only screen and (min-width: 669px) {
+@media only screen and (min-width: 481px) {
   .hero {
     font-size: 14px;
     margin: auto;
