@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
 
+  font-size: 1.3rem;
   color: $buttonBorderLightBrown;
 }
 
@@ -26,7 +27,6 @@
   margin: 0;
   padding: 0;
 
-  // font-size: 13vw;
   font-size: 3rem;
 }
 
@@ -34,7 +34,12 @@
   margin: 0;
   padding: 0;
 
+  font-size: 2rem;
   color: $buttonBackgroundDarkBrown;
+}
+
+.heroBlurb {
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 481px) {
