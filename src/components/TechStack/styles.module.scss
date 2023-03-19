@@ -3,17 +3,13 @@
 .techSection {
   min-height: 100vh;
   margin: 6vw 0;
-
-  // background-color: $darkGrayBackground
 }
 
 .filterButtonsWrapper {
   display: flex;
   justify-content: center;
   margin: 6vw 0;
-  gap: 1vw;
-  
-  // width: 8vw;
+  gap: 2vw;
 }
 
 .techList {
@@ -42,7 +38,7 @@
   align-items: center;
   gap: 3vw;
   text-align: center;
-  font-size: 3vw;
+  font-size: 0.8rem;
 }
 
 .logo {
