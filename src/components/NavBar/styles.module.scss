@@ -5,7 +5,16 @@
   justify-content: center;
   align-items: center;
 
-  height: 18vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.75rem;
+  padding: 2.5rem 0;
+  // height: 18vw;
+
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 
   font-weight: 400;
   color: $mainTextColorWhite;
@@ -13,39 +22,46 @@
   box-shadow: 0 0 8px 0 $highlightTextColorPink
 }
 
+.navBar.isScrolled {
+  opacity: 0;
+}
+
 .navBar ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  margin: 0;
+  padding: 0;
   gap: 4vw;
 
   list-style-type: none;
-
-  // padding: 2vw;
-
-
 }
 
-@media only screen and (min-width: 481px) {
-  ul {
-    list-style-type: none;
-    display: flex;
-    padding: 2vh;
-  }
-  
-  li {
-    // text-decoration: none;
-    padding: 2vh;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .navBar {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
+.navBar ul li:hover {
+  text-decoration: underline dotted;
 }
+
+// @media only screen and (min-width: 481px) {
+//   ul {
+//     list-style-type: none;
+//     display: flex;
+//     padding: 2vh;
+//   }
+  
+//   li {
+//     // text-decoration: none;
+//     padding: 2vh;
+//   }
+  
+//   a {
+//     text-decoration: none;
+//   }
+  
+//   .navBar {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     align-items: center;
+//   }
+// }
