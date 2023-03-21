@@ -2,6 +2,7 @@
 
 .techSection {
   margin: 2rem 0;
+  // width: 100%;
 }
 
 .techSection h3 {
@@ -18,18 +19,26 @@
 
   margin: 1.3rem 1rem 1.3rem 0;
   gap: 0.8rem;
+}
 
+.filterButtonsWrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 5rem;
+  height: 3rem;
 }
 
 .techList {
   display: grid;
   // grid-template-columns: repeat(4, fit-content(80vw));
-  grid-template-columns: repeat(3, 5rem);
+  grid-template-columns: repeat(3, 4.5rem);
 
   justify-content: center;
   margin: 1.3rem 0;
   padding: 2rem 1rem;
-  column-gap: 1rem;
+  column-gap: 0.1rem;
   row-gap: 1.5rem;
 
   background-color: $mainTextColorWhite;
