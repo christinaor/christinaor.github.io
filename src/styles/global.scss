@@ -137,8 +137,9 @@ button, button.inactive {
 }
 
 button:hover, button.inactive:hover {
-  background-color: $buttonBorderLightBrown;
-  border: 1vw solid $buttonBorderLightBrown;
+  color: $mainTextColorWhite;
+  background-color: $buttonBackgroundHoverLightPink;
+  border: 1vw solid $buttonBackgroundHoverLightPink;
   border-radius: 8px;
 }
 

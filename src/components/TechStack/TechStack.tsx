@@ -72,16 +72,18 @@ function TechStack() {
 
   return (
     <div id="tech-stack" className={styles.techSection}>
-      <h3 className={styles.techHeader}>Some technologies I've worked with...</h3>
-      <div className={styles.filterButtonsWrapper}>
-        <button className={isActiveFilter(filters, 'all')} value='all' onClick={handleFilterClick}>All</button>
-        <button className={isActiveFilter(filters, 'frontend')} value='frontend' onClick={handleFilterClick}>Frontend</button>
-        <button className={isActiveFilter(filters, 'backend')} value='backend' onClick={handleFilterClick}>Backend</button>
-        <button className={isActiveFilter(filters, 'other')} value='other' onClick={handleFilterClick}>Other</button>
+      <h3 className={styles.techHeader}>Some technologies I've worked with:</h3>
+      <div className={styles.buttonsAndTechList}>
+        <div className={styles.filterButtonsWrapper}>
+          <button className={isActiveFilter(filters, 'all')} value='all' onClick={handleFilterClick}>All</button>
+          <button className={isActiveFilter(filters, 'frontend')} value='frontend' onClick={handleFilterClick}>Frontend</button>
+          <button className={isActiveFilter(filters, 'backend')} value='backend' onClick={handleFilterClick}>Backend</button>
+          <button className={isActiveFilter(filters, 'other')} value='other' onClick={handleFilterClick}>Other</button>
+        </div>
+        <ul className={styles.techList}>
+          {displayedTech}
+        </ul>
       </div>
-      <ul className={styles.techList}>
-        {displayedTech}
-      </ul>
     </div>
   )
 }

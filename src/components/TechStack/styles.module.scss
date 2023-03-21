@@ -1,26 +1,36 @@
 @import 'src/styles/colors.scss';
 
 .techSection {
-  min-height: 100vh;
-  margin: 6vw 0;
+  margin: 2rem 0;
+}
+
+.techSection h3 {
+  text-align: center;
+}
+
+.buttonsAndTechList {
+  display: flex;
 }
 
 .filterButtonsWrapper {
   display: flex;
-  justify-content: center;
-  margin: 6vw 0;
-  gap: 2vw;
+  flex-direction: column;
+
+  margin: 1.3rem 1rem 1.3rem 0;
+  gap: 0.8rem;
+
 }
 
 .techList {
   display: grid;
   // grid-template-columns: repeat(4, fit-content(80vw));
-  grid-template-columns: repeat(3, 23vw);
+  grid-template-columns: repeat(3, 5rem);
 
   justify-content: center;
-  padding: 5vw;
-  column-gap: 1vw;
-  row-gap: 5vw;
+  margin: 1.3rem 0;
+  padding: 2rem 1rem;
+  column-gap: 1rem;
+  row-gap: 1.5rem;
 
   background-color: $mainTextColorWhite;
   border: 1.5px solid $highlightTextColorPink;
@@ -34,9 +44,9 @@
 .logoAndName {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  gap: 3vw;
+
+  gap: 0.5rem;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -45,7 +55,7 @@
   display: flex;
   justify-content: center;
 
-  width: 8vw;
+  width: 2.5rem;
 }
 
 // .techTitle {
