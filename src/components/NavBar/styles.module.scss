@@ -6,6 +6,7 @@
   align-items: center;
 
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,7 +25,9 @@
 
 .navBar.isScrolled {
   opacity: 0;
+  display: hidden;
 }
+
 
 .navBar ul {
   display: flex;
