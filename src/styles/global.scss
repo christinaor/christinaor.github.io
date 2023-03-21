@@ -93,10 +93,9 @@ footer {
 
   padding: 4.5rem 0;
 
-  font-size: 1.2rem;
   color: $mainTextColorWhite;
   background-color: $darkGrayBackground;
-  // box-shadow: 8px 0 0 0 $darkGrayBackground;
+  // box-shadow: 8px 0 0 0 $mainTextColorBlack;
 }
 
 // h1 {
@@ -138,13 +137,22 @@ button, button.inactive {
   border-color: $mainTextColorWhite;
   cursor: pointer;
   transition: background-color border-color 0.25s;
+
+  @media (hover: none) {
+    background: $mainTextColorWhite;
+    // .my-thing {
+    //     color: #BADA55;
+    // }
+  }
 }
 
-button:hover, button.inactive:hover {
-  color: $mainTextColorWhite;
-  background-color: $buttonBackgroundHoverLightPink;
-  border: 1vw solid $buttonBackgroundHoverLightPink;
-  border-radius: 8px;
+@media (hover: hover) {
+  button:hover, button.inactive:hover {
+    color: $mainTextColorWhite;
+    background-color: $buttonBackgroundHoverLightPink;
+    border: 1vw solid $buttonBackgroundHoverLightPink;
+    border-radius: 8px;
+  }
 }
 
 button.active {
@@ -153,9 +161,11 @@ button.active {
   border: 1vw solid $highlightTextColorPink;
 }
 
-button.active:hover {
-  background-color: $buttonBackgroundHoverLightPink;
-  border: 1vw solid $buttonBackgroundHoverLightPink;
+@media (hover: hover) {
+  button.active:hover {
+    background-color: $buttonBackgroundHoverLightPink;
+    border: 1vw solid $buttonBackgroundHoverLightPink;
+  }
 }
 
 // button.inactive {
