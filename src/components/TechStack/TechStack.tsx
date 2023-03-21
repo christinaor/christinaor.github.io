@@ -4,7 +4,7 @@ import technologies from '../../../data/technologies';
 
 import styles from './styles.module.scss'
 
-function TechStack() {
+export default function TechStack() {
   const [filters, setFilters] = useState(['all']);
 
   const handleFilterClick = useCallback((clickedButton) => {
@@ -86,6 +86,4 @@ function TechStack() {
       </div>
     </div>
   )
-}
-
-export default TechStack;
+};

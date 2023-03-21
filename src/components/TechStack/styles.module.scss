@@ -6,19 +6,22 @@
 }
 
 .techSection h3 {
-  text-align: center;
+  // text-align: center;
 }
 
 .buttonsAndTechList {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .filterButtonsWrapper {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  display: grid;
+  grid-template-columns: max-content max-content;
 
-  margin: 1.3rem 1rem 1.3rem 0;
-  gap: 0.8rem;
+  // margin: 1.3rem 1rem 1.3rem 0;
+  gap: 0.5rem;
 }
 
 .filterButtonsWrapper button {
@@ -74,3 +77,17 @@
 // .techTitle:hover {
 //   color: #907ad6;
 // }
+
+@media only screen and (min-width: 481px) {
+  .buttonsAndTechList {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .filterButtonsWrapper {
+    flex-direction: column;
+  
+    margin: 1.3rem 1rem 1.3rem 0;
+    gap: 0.8rem;
+  }
+}
