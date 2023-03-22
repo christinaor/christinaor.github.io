@@ -16,7 +16,6 @@
 }
 
 .filterButtonsWrapper {
-  // display: flex;
   display: grid;
   grid-template-columns: max-content max-content;
 
@@ -40,9 +39,9 @@
 
   justify-content: center;
   margin: 1.3rem 0;
-  padding: 2rem 1rem;
-  column-gap: 0.1rem;
-  row-gap: 1.5rem;
+  padding: 1.8rem 1.2rem;
+  column-gap: 0.8rem;
+  row-gap: 1.8rem;
 
   background-color: $mainTextColorWhite;
   border: 1.5px solid $highlightTextColorPink;
@@ -85,9 +84,15 @@
   }
 
   .filterButtonsWrapper {
+    display: flex;
     flex-direction: column;
   
     margin: 1.3rem 1rem 1.3rem 0;
     gap: 0.8rem;
+  }
+
+  .techList {
+    grid-template-columns: repeat(4, 4.5rem);
+    // column-gap: 
   }
 }
