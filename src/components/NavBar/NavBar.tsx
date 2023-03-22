@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import styles from './styles.module.scss'
 
-function NavBar() {
+export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -44,6 +44,4 @@ function NavBar() {
         </ul>
       </nav>
   )
-}
-
-export default NavBar;
+};

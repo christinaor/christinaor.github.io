@@ -1,4 +1,3 @@
-import placeholderLogo from './assets/leaf-svgrepo-com.svg';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Experiences from './components/Experiences/Experiences';
@@ -6,9 +5,7 @@ import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
 
 
-function App() {
-  // const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <div className="App">
       <header>
@@ -27,6 +24,4 @@ function App() {
       </footer>
     </div>
   )
-}
-
-export default App
+};

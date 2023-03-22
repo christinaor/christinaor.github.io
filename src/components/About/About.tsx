@@ -1,7 +1,7 @@
 import TechStack from '../TechStack/TechStack';
 import styles from './styles.module.scss';
 
-function About() {
+export default function About() {
   return (
     <section id="about" className={styles.about}>
         <h2 className={`${styles.header}`}>About Me</h2>
@@ -16,6 +16,4 @@ function About() {
       <TechStack />
     </section>
   )
-}
-
-export default About;
+};

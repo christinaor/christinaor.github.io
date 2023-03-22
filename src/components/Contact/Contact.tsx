@@ -4,7 +4,7 @@ import instagramIcon from '../../assets/social-media-logos/instagram-1-svgrepo-c
 import linkedinIcon from '../../assets/social-media-logos/linkedin-svgrepo-com.svg'
 import styles from './styles.module.scss'
 
-function Contact() {
+export default function Contact() {
   return (
     <section id="contact-me" className={`${styles.contactMe}`}>
       <h2 className={`${styles.header}`}>Get in Touch</h2>
@@ -36,6 +36,4 @@ function Contact() {
       </div>
     </section>
   )
-}
-
-export default Contact;
+};

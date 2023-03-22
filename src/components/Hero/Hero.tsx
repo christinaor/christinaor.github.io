@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-function Hero() {
+export default function Hero() {
   return (
     <section id="hero" className={styles.hero}>
       <h1>
@@ -9,9 +9,7 @@ function Hero() {
         <div className={`${styles.subText}`}>Software Engineer && Web Developer.</div>
       </h1>
 
-      <p className={styles.heroBlurb}>I love building out ideas that save precious time and contributing to efforts promoting general goodwill.</p>
+      <p className={styles.heroBlurb}>I build time-saving ideas and love to contribute to efforts promoting general goodwill.</p>
     </section>
   )
-}
-
-export default Hero
+};
