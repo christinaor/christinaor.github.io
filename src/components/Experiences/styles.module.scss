@@ -1,26 +1,86 @@
-.experiences {
+@import 'src/styles/colors.scss';
+
+.experienceSection {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
   align-items: center;
 
-  min-height: 100vh;
+  padding: 3rem 0;
+  min-height: 30rem;
+
+  color: $mainTextColorBlack;
+  background-color: $buttonBorderLightBrown;
+}
+
+.experienceSection h2 {
+  color: $mainTextColorWhite;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 15rem;
+  min-height: 20rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  gap: 1rem;
+
+  background-color: $mainTextColorWhite;
+  border-radius: 8px;
+  box-shadow: 4px 8px 8px 0 $buttonBackgroundDarkBrown;
+  transition: 0.2s;
+}
+
+// .experience:hover {
+//   box-shadow: 0 3px 8px 0 $buttonBackgroundDarkBrown;
+// }
+
+.experience a h3:hover {
+  color: $highlightTextColorPink;
+}
+
+.experience img {
+  max-width: 100%;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a img {
+  width: 2rem;
+}
+
+
+.links a img:hover {
+  filter: invert(58%) sepia(19%) saturate(7491%) hue-rotate(326deg) brightness(114%) contrast(102%);
 }
 
 @media only screen and (min-width: 481px) {
   .experiences {
-  // margin: auto;
-  // min-height: 100vh;
-  // height: 100vh;
-  // width: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-  .header {
-    font-size: clamp(20px, 6vw, 30px);
-    margin: 13px;
-    padding: 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
   }
 }
+// @media only screen and (min-width: 481px) {
+//   .experiences {
+//   // margin: auto;
+//   // min-height: 100vh;
+//   // height: 100vh;
+//   // width: 75%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+//   .header {
+//     font-size: clamp(20px, 6vw, 30px);
+//     margin: 13px;
+//     padding: 0;
+//   }
+// }
