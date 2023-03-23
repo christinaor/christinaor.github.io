@@ -18,7 +18,7 @@
   transition: opacity 0.2s ease-in-out;
 
   font-weight: 400;
-  color: $mainTextColorWhite;
+  color: $mainTextColor;
   // background-color: $lightBodyBackground;
   // background-color: $highlightTextColorPink;
   // box-shadow: 0 0 4px 0 $mainTextColorBlack;
@@ -47,11 +47,11 @@
   text-decoration: underline dotted;
 }
 
-@media only screen and (min-width: 481px) {
-  .navBar {
-    background-color: $lightBodyBackground;
-  }
-}
+// @media only screen and (min-width: 481px) {
+//   .navBar {
+//     background-color: $lightBodyBackground;
+//   }
+// }
 
 // @media only screen and (min-width: 481px) {
 //   ul {
