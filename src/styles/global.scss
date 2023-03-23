@@ -7,7 +7,7 @@
   font-weight: 400;
 
   // color-scheme: light dark;
-  color: $mainTextColorBlack;
+  color: $mainTextColor;
   background-color: $bodyBackground;
 
   font-synthesis: none;
@@ -27,17 +27,8 @@ html, body {
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 100%;
 }
-
-// h1, h2, h3, h4 {
-//   color: $m
-// }
-
-// p {
-//   font-size: 4.5vw;
-// }
 
 ul {
   margin: 0;
@@ -94,15 +85,14 @@ footer {
 
   padding: 4.5rem 0;
 
-  color: $mainTextColorWhite;
-  background-color: $darkGrayBackground;
+  color: $mainTextColor;
+  background-color: $footerBackground;
   // box-shadow: 8px 0 0 0 $mainTextColorBlack;
 }
 
-// h1 {
-//   font-size: 3.2em;
-//   line-height: 1.1;
-// }
+h1, h2 {
+  color: $mainHeaderColor;
+}
 
 // p {
 //   font-size: clamp(15px, 6vw, 20px);
@@ -125,31 +115,23 @@ button, button.inactive {
   font-weight: 500;
   font-family: inherit;
   color: $mainTextColorBlack;
-  background-color: $mainTextColorWhite;
-  // border-color: $buttonBackgroundDarkBrown;
-
-  border: 1vw solid transparent;
+  background-color: $mainHeaderColor;
+  border: 1vw solid $mainHeaderColor;
   border-radius: 8px;
   padding: 0.6em 1.2em;
   // font-size: clamp(10px, 8vw, 15px);
-
-  // background-color: #f9f9f9;
-  // color: #2c2a4a;
-  border-color: $mainTextColorWhite;
   cursor: pointer;
   transition: background-color border-color 0.25s;
+  // box-shadow: 4px 4px 8px 0 $mainTextColorBlack;
 
   @media (hover: none) {
-    background: $mainTextColorWhite;
-    // .my-thing {
-    //     color: #BADA55;
-    // }
+    background: $mainHeaderColor;
   }
 }
 
 @media (hover: hover) {
   button:hover, button.inactive:hover {
-    color: $mainTextColorWhite;
+    color: $mainTextColor;
     background-color: $buttonBackgroundHoverLightPink;
     border: 1vw solid $buttonBackgroundHoverLightPink;
     border-radius: 8px;
@@ -158,8 +140,8 @@ button, button.inactive {
 
 button.active {
   color: $mainTextColorWhite;
-  background-color: $highlightTextColorPink;
-  border: 1vw solid $highlightTextColorPink;
+  background-color: $buttonActiveColor;
+  border: 1vw solid $buttonActiveColor;
 }
 
 @media (hover: hover) {
@@ -186,6 +168,7 @@ button:focus-visible {
   // outline: 4px auto -webkit-focus-ring-color;
   outline: none;
 }
+
 
 // @media (prefers-color-scheme: light) {
 //   :root {

@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+import homeIcon from '../../assets/navbar/home-svgrepo-com.svg';
+import resumeDownloadIcon from '../../assets/navbar/download-svgrepo-com.svg'; 
+
 import styles from './styles.module.scss'
 
 export default function NavBar() {
@@ -20,7 +23,7 @@ export default function NavBar() {
       <ul>
         <li className="header-home">
           <a href="/#hero">
-            Home
+            <img src={homeIcon} alt="home icon linked to top of page" />
           </a>
         </li>
           <li className="header-about">
@@ -39,7 +42,9 @@ export default function NavBar() {
             </a>
           </li>
           <li className="header-resume">
-            <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">Resume</a>
+            <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">
+              <img src={resumeDownloadIcon} alt="download resume icon" />
+            </a>
           </li>
         </ul>
       </nav>

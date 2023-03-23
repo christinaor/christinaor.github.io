@@ -6,13 +6,15 @@
 }
 
 .techSection h3 {
-  // text-align: center;
+  color: $mainHeaderColor;
+  text-align: center;
 }
 
 .buttonsAndTechList {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .filterButtonsWrapper {
@@ -20,7 +22,7 @@
   grid-template-columns: max-content max-content;
 
   // margin: 1.3rem 1rem 1.3rem 0;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .filterButtonsWrapper button {
@@ -35,31 +37,42 @@
 .techList {
   display: grid;
   // grid-template-columns: repeat(4, fit-content(80vw));
-  grid-template-columns: repeat(3, 4.5rem);
+  grid-template-columns: repeat(3, 6.5rem);
 
   justify-content: center;
+  align-items: center;
   margin: 1.3rem 0;
-  padding: 1.8rem 1.2rem;
-  column-gap: 0.8rem;
-  row-gap: 1.8rem;
+  // padding: 1.8rem 1.2rem;
+  // column-gap: 0.8rem;
+  row-gap: 0.8rem;
 
-  background-color: $mainTextColorWhite;
-  border: 1.5px solid $highlightTextColorPink;
-  border-radius: 13px;
+  // color: $mainTextColorBlack;
+  // background-color: $mainHeaderColor;
+  // border: 1.5px solid $highlightTextColorPink;
+  border-radius: 5px;
+  // box-shadow: 4px 8px 8px 0 $mainTextColorBlack;
 }
 
-// .techItem {
-
-// }
+.techItem {
+  display: flex;
+  justify-content: center;
+}
 
 .logoAndName {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
+  padding: 0.1rem;
   gap: 0.5rem;
   text-align: center;
+
+  width: 5.5rem;
+  height: 5.5rem;
   font-size: 0.8rem;
+  background-color: $cardBackground;
+  border-radius: 4px;
 }
 
 .logo {
@@ -69,8 +82,8 @@
   width: 2.5rem;
 }
 
-// .techTitle {
-//   color: #4f518c;
+// .logoAndName div {
+//   font-weight: 700px;
 // }
 
 // .techTitle:hover {
@@ -92,7 +105,8 @@
   }
 
   .techList {
-    grid-template-columns: repeat(4, 4.5rem);
+    grid-template-columns: repeat(4, 6.5rem);
     // column-gap: 
+
   }
 }

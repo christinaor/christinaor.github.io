@@ -9,7 +9,8 @@
 
   width: 100%;
   // min-height: 100vh;
-  height: 50rem;
+  min-height: 50rem;
+  // padding: 2.5rem;
   // margin: 6vw 0;
   // margin: auto;
   // padding: 0 8vw;
@@ -17,7 +18,7 @@
   word-wrap: break-word;
 }
 
-.hero h1, .hero p {
+.hero h1, .hero p, .hero a {
   margin: 0 2.5rem;
 }
 
@@ -25,22 +26,47 @@
   margin-bottom: 2rem;
 }
 
+.hero p {
+  margin-bottom: 2.8rem;
+}
+
 .smallHeroText {
-  font-size: 1.3rem;
-  color: $buttonBorderLightBrown;
+  font-size: 1.1rem;
+  color: $subTextColor;
 }
 
 .bigHeroText {
   font-size: 3rem;
+  // color: $mainHeaderColor;
 }
 
 .subText {
   font-size: 2rem;
-  color: $buttonBackgroundDarkBrown;
+  color: $mainTextColor;
 }
 
 .heroBlurb {
   font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.emphasize {
+  text-decoration: underline dotted $subTextColor;
+  text-underline-offset: 0.4rem;
+}
+
+.hero a {
+  width: max-content;
+  padding: 1.2rem;
+  
+  
+  border: 1px solid $subTextColor;
+  border-radius: 5px;
+
+}
+
+.hero a span {
+  color: $subTextColor;
 }
 
 // @media only screen and (min-width: 481px) {

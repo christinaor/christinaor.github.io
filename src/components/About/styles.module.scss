@@ -12,8 +12,6 @@
   padding: 3rem 2rem;
 
   font-size: 1.2rem;
-  // color: $mainTextColorWhite;
-  // background-color: $buttonBackgroundDarkBrown;
 }
 
 // .description {
@@ -28,10 +26,15 @@
 
 li a.blurbLink {
   font-weight: 500;
-  text-decoration: underline dotted;
-  text-decoration-color: $highlightTextColorPink;
+  // text-decoration: underline dotted;
+  // text-decoration-color: $subTextColor;
 
-  color: $highlightTextColorPink;
+  color: $subTextColor;
+  font-weight: 600;
+}
+
+li a.blurbLink:hover {
+  text-decoration: line-through;
 }
 
 // @media only screen and (min-width: 481px) {

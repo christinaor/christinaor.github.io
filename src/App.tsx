@@ -8,9 +8,9 @@ import NavBar from './components/NavBar/NavBar';
 export default function App() {
   return (
     <div className="App">
-      <header>
+      {/* <header>
         <NavBar />
-      </header>
+      </header> */}
       <div className="left-links">
       </div>
       <div className="content">
