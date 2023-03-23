@@ -28,6 +28,8 @@ html, body {
 
 html {
   font-size: 100%;
+
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -80,14 +82,10 @@ a:link, a:visited, a:hover, a:active {
 // }
 
 footer {
-  display: flex;
-  justify-content: center;
-
-  padding: 4.5rem 0;
+  padding: 2rem 0;
 
   color: $mainTextColor;
   background-color: $footerBackground;
-  // box-shadow: 8px 0 0 0 $mainTextColorBlack;
 }
 
 h1, h2 {

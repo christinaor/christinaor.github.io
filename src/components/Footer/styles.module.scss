@@ -1,0 +1,59 @@
+@import 'src/styles/colors.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.footerTitle {
+  color: $mainHeaderColor;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contactLinks ul {
+  display: flex;
+  flex-direction: row;
+
+  gap: 1.5rem;
+}
+
+.contactLinks ul li img {
+  width: 3rem;
+  // padding: 0 0.8rem;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+// @media only screen and (min-width: 481px) {
+// .about {
+//     margin-bottom: 8vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .header {
+//     font-size: clamp(20px, 6vw, 30px);
+//     margin: 2vh;
+//     padding: 0;
+//   }
+
+//   .blurb {
+//     font-size: clamp(14px, 4vw, 20px);
+//     color: #4f518c;
+//     // margin: 13px;
+//   }
+// }
