@@ -1,3 +1,5 @@
+import EmailForm from '../EmailForm/EmailForm';
+
 import gmailIcon from '../../assets/social-media-logos/gmail-svgrepo-com.svg'
 import githubIcon from '../../assets/social-media-logos/github-svgrepo-com.svg'
 import instagramIcon from '../../assets/social-media-logos/instagram-1-svgrepo-com.svg'
@@ -10,7 +12,8 @@ export default function Contact() {
       <h2 className={`${styles.header}`}>Get in Touch</h2>
       <p className={`${styles.contactBlurb}`}>I'm currently exploring new opportunities. Feel free to reach out to collaborate, chat about tech, or just to say hi!</p>
 
-      <div className={`${styles.contactLinks}`}>
+      <EmailForm />
+      {/* <div className={`${styles.contactLinks}`}>
         <ul>
           <li>
             <a className="linkedin" href="https://www.linkedin.com/in/christina-or">
@@ -33,7 +36,7 @@ export default function Contact() {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </section>
   )
 };

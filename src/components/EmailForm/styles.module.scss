@@ -1,0 +1,53 @@
+@import 'src/styles/colors.scss';
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  font-size: 0.8rem;
+}
+
+.emailForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailForm input, .emailForm textarea {
+  min-width: 15rem;
+
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.emailForm input {
+  height: 2rem;
+}
+
+.emailForm textarea {
+  min-height: 5rem;
+}
+
+// @media only screen and (min-width: 481px) {
+// .about {
+//     margin-bottom: 8vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .header {
+//     font-size: clamp(20px, 6vw, 30px);
+//     margin: 2vh;
+//     padding: 0;
+//   }
+
+//   .blurb {
+//     font-size: clamp(14px, 4vw, 20px);
+//     color: #4f518c;
+//     // margin: 13px;
+//   }
+// }
