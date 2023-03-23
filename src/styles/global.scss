@@ -130,8 +130,8 @@ button, button.inactive {
 @media (hover: hover) {
   button:hover, button.inactive:hover {
     color: $mainTextColor;
-    background-color: $buttonBackgroundHoverLightPink;
-    border: 0.1rem solid $buttonBackgroundHoverLightPink;
+    background-color: $buttonBorderColor;
+    border: 0.1rem solid $buttonBorderColor;
     border-radius: 8px;
   }
 }
@@ -144,8 +144,8 @@ button.active {
 
 @media (hover: hover) {
   button.active:hover {
-    background-color: $buttonBackgroundHoverLightPink;
-    border: 0.1rem solid $buttonBackgroundHoverLightPink;
+    background-color: $buttonBorderColor;
+    border: 0.1rem solid $buttonBorderColor;
   }
 }
 
