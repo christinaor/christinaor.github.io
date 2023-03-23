@@ -139,7 +139,7 @@ button, button.inactive {
 }
 
 button.active {
-  color: $mainTextColorWhite;
+  color: $mainTextColor;
   background-color: $buttonActiveColor;
   border: 1vw solid $buttonActiveColor;
 }
