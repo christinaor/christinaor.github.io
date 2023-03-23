@@ -114,7 +114,7 @@ button, button.inactive {
   font-family: inherit;
   color: $mainTextColorBlack;
   background-color: $mainHeaderColor;
-  border: 1vw solid $mainHeaderColor;
+  border: 0.1rem solid $mainHeaderColor;
   border-radius: 8px;
   padding: 0.6em 1.2em;
   // font-size: clamp(10px, 8vw, 15px);
@@ -131,7 +131,7 @@ button, button.inactive {
   button:hover, button.inactive:hover {
     color: $mainTextColor;
     background-color: $buttonBackgroundHoverLightPink;
-    border: 1vw solid $buttonBackgroundHoverLightPink;
+    border: 0.1rem solid $buttonBackgroundHoverLightPink;
     border-radius: 8px;
   }
 }
@@ -139,13 +139,13 @@ button, button.inactive {
 button.active {
   color: $mainTextColor;
   background-color: $buttonActiveColor;
-  border: 1vw solid $buttonActiveColor;
+  border: 0.1rem solid $buttonActiveColor;
 }
 
 @media (hover: hover) {
   button.active:hover {
     background-color: $buttonBackgroundHoverLightPink;
-    border: 1vw solid $buttonBackgroundHoverLightPink;
+    border: 0.1rem solid $buttonBackgroundHoverLightPink;
   }
 }
 

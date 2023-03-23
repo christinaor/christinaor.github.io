@@ -5,6 +5,7 @@ export default function EmailForm() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [submitClicked, setSubmitClicked] = useState(false);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
@@ -12,6 +13,7 @@ export default function EmailForm() {
     setEmail('');
     setSubject('');
     setMessage('');
+    setSubmitClicked(true);
   }, [email, subject, message]);
 
   return (
@@ -31,7 +33,8 @@ export default function EmailForm() {
         <textarea id="email" value={message} onChange={(e) => setMessage(e.target.value)} required />
       </div>
       
-      <button type="submit">Submit</button>
+      {!submitClicked && <button type="submit">Submit</button>}
+      {submitClicked && <div className={styles.emailSent}>Email sent - you'll hear back soon!</div>}
     </form>
   )
 };
