@@ -29,6 +29,12 @@
   }
 }
 
+@media only screen and (min-width: $desktop-large) {
+  .contactBlurb {
+    font-size: 1.5rem;
+  }
+}
+
 // .contactLinks ul {
 //   display: flex;
 //   flex-direction: row;

@@ -17,7 +17,7 @@
 }
 
 .description ul li {
-  margin: 1.5rem 1.5rem;
+  margin: 1.5rem;
 
   list-style-type: circle;
 }
@@ -43,7 +43,35 @@ li a.blurbLink:hover {
 
     font-size: 1.5rem;
   }
+
+  .description ul li {
+    margin: 2rem 3rem;
+  
+    line-height: 2.5rem;
+    list-style-type: circle;
+  }
 }
+
+@media only screen and (min-width: $desktop-min) {
+  .about {
+    min-height: 30rem;
+    padding: 3rem 10rem 5rem;
+
+    font-size: 1.5rem;
+  }
+
+  // .description ul {
+  //   margin: 0 3rem;
+  // }
+
+  .description ul li {
+    margin: 2rem 5rem;
+  
+    line-height: 2.5rem;
+    list-style-type: circle;
+  }
+}
+
 // @media only screen and (min-width: 481px) {
 // .about {
 //     margin-bottom: 8vh;

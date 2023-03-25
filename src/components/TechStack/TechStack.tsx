@@ -42,7 +42,7 @@ export default function TechStack() {
         <li className={styles.techItem} key={tech.name}>
           <a className={styles.logoAndName} href={tech.website} target="_blank">
             <img src={tech.icon} className={styles.logo} alt={tech.alt} />
-            <div>{tech.title}</div>
+            <div className={styles.techName}>{tech.title}</div>
           </a>
         </li>
       )
@@ -54,7 +54,7 @@ export default function TechStack() {
           <li className={styles.techItem} key={tech.name} >
             <a className={styles.logoAndName} href={tech.website} target="_blank">
               <img src={tech.icon} className={styles.logo} alt={tech.alt} />
-              <div>{tech.title}</div>
+              <div className={styles.techName}>{tech.title}</div>
             </a>
           </li>
         )

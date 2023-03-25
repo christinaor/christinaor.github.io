@@ -98,6 +98,26 @@
   }
 }
 
+@media only screen and (min-width: $desktop-min) {
+  .hero h1, .hero p, .hero a {
+    margin: 1rem clamp(4rem, 12vw, 8rem)
+  }
+  
+  .bigHeroText {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+  
+  .subText {
+    font-size: clamp(2rem, 5.3vw, 3.3rem);
+    color: $mainTextColor;
+  }
+  
+  .hero p {
+    font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+    line-height: 2.5rem;
+  }
+}
+
 // @media only screen and (min-width: 481px) {
 //   .hero {
 //     font-size: 14px;

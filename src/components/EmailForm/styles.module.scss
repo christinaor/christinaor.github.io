@@ -49,3 +49,23 @@
     // max-width: 20rem;
   }
 }
+
+@media only screen and (min-width: $desktop-min) and (max-width: $desktop-large) {
+  .emailForm label {
+    font-size: 14px;
+  }
+
+  .emailForm input, .emailForm textarea {
+    width: clamp(20rem, 60vw, 40rem);
+  }
+}
+
+@media only screen and (min-width: $desktop-large) {
+  .emailForm label {
+    font-size: 20px;
+  }
+
+  .emailForm input, .emailForm textarea {
+    width: clamp(40rem, 60vw, 70rem);
+  }
+}

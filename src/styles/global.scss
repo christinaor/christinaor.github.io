@@ -168,11 +168,19 @@ button:focus-visible {
   // outline: 4px auto -webkit-focus-ring-color;
   outline: none;
 }
+
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
   h1, h2 {
     font-size: 2rem;
   }
 }
+
+@media only screen and (min-width: $desktop-min) {
+  h1, h2 {
+    font-size: 3rem;
+  }
+}
+
 // @media (prefers-color-scheme: light) {
 //   :root {
 //     // color: #213547;
