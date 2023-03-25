@@ -1,7 +1,7 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/layout.scss';
 
 .about {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,14 +9,12 @@
 
   min-height: 50rem;
   // margin: 3rem 0;
-  padding: 3rem 2rem;
+  padding: 1.5rem 2rem 2.5rem;
 
   font-size: 1.2rem;
+  background-color: $mainBodyBackgroundBlack;
+  box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
-
-// .description {
-//   margin: 2rem;
-// }
 
 .description ul li {
   margin: 1.5rem 1.5rem;
@@ -26,8 +24,9 @@
 
 li a.blurbLink {
   font-weight: 500;
+  text-underline-offset: 4px;
   // text-decoration: underline dotted;
-  // text-decoration-color: $subTextColor;
+  text-decoration-color: $subTextColor;
 
   color: $subTextColor;
   font-weight: 600;
@@ -37,6 +36,14 @@ li a.blurbLink:hover {
   text-decoration: line-through;
 }
 
+@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
+  .about {
+    min-height: 30rem;
+    padding: 3rem 4rem 5rem;
+
+    font-size: 1.5rem;
+  }
+}
 // @media only screen and (min-width: 481px) {
 // .about {
 //     margin-bottom: 8vh;

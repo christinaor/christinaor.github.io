@@ -1,4 +1,5 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/layout.scss';
 
 .hero {
   // position: relative;
@@ -7,7 +8,7 @@
   justify-content: center;
   // align-items: center;
 
-  width: 100%;
+  width: 100vw;
   // min-height: 100vh;
   min-height: 50rem;
   // padding: 2.5rem;
@@ -19,7 +20,7 @@
 }
 
 .hero h1, .hero p, .hero a {
-  margin: 0 2.5rem;
+  margin: 0 2rem;
 }
 
 .hero h1 {
@@ -28,6 +29,9 @@
 
 .hero p {
   margin-bottom: 2.8rem;
+
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .smallHeroText {
@@ -45,28 +49,53 @@
   color: $mainTextColor;
 }
 
-.heroBlurb {
-  font-size: 1.2rem;
-  line-height: 2rem;
+.emphasize {
+  position: relative;
 }
 
-.emphasize {
-  text-decoration: underline dotted $subTextColor;
-  text-underline-offset: 0.4rem;
+.emphasize::before {
+  background-color: $buttonActiveColor;
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
 }
 
 .hero a {
   width: max-content;
   padding: 1.2rem;
   
-  
   border: 1px solid $subTextColor;
   border-radius: 5px;
-
 }
 
 .hero a span {
   color: $subTextColor;
+}
+
+@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
+  .hero h1, .hero p, .hero a {
+    margin: 1rem clamp(4rem, 12vw, 8rem)
+  }
+  
+  .bigHeroText {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+  
+  .subText {
+    font-size: clamp(2rem, 5.3vw, 3.3rem);
+    color: $mainTextColor;
+  }
+  
+  .hero p {
+    font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+    line-height: 2.5rem;
+  }
 }
 
 // @media only screen and (min-width: 481px) {

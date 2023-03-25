@@ -1,4 +1,5 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/layout.scss';
 
 .emailForm {
   display: flex;
@@ -15,8 +16,12 @@
   flex-direction: column;
 }
 
+.emailForm label {
+  padding: 2px;
+}
+
 .emailForm input, .emailForm textarea {
-  min-width: 15rem;
+  width: 15rem;
 
   border-radius: 5px;
   font-family: inherit;
@@ -36,24 +41,11 @@
   font-size: 0.9rem;
 }
 
-// @media only screen and (min-width: 481px) {
-// .about {
-//     margin-bottom: 8vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .header {
-//     font-size: clamp(20px, 6vw, 30px);
-//     margin: 2vh;
-//     padding: 0;
-//   }
-
-//   .blurb {
-//     font-size: clamp(14px, 4vw, 20px);
-//     color: #4f518c;
-//     // margin: 13px;
-//   }
-// }
+@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
+  .emailForm input, .emailForm textarea {
+    width: clamp(20rem, 60vw, 40rem);
+    // width: 40rem;
+    // width: 70vw;
+    // max-width: 20rem;
+  }
+}

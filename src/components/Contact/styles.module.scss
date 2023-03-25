@@ -1,3 +1,5 @@
+@import 'src/styles/layout.scss';
+
 .contactMe {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,17 @@
   margin-bottom: 2.5rem;
 
   text-align: center;
+}
+
+@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
+  .contactMe {
+    margin: 2rem 2rem 4rem;
+    min-height: 20rem;
+  }
+
+  .contactBlurb {
+    margin: inherit clamp(2rem, 3vw, 4rem);
+  }
 }
 
 // .contactLinks ul {
