@@ -14,7 +14,6 @@ export default function About() {
             <li>Some of my interests involve dragon boat racing, board game nights, traveling to learn about different cultures and food, and being a dog mom!</li>
           </ul>  
         </div>
-      <TechStack />
     </section>
   )
 };
