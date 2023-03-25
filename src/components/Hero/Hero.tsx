@@ -9,7 +9,7 @@ export default function Hero() {
         <div className={`${styles.subText}`}>Full Stack Software Engineer.</div>
       </h1>
 
-      <p className={styles.heroBlurb}>I build ideas for <span className={styles.emphasize}>productivity</span> and love to contribute to efforts promoting <span className={styles.emphasize}>general goodwill</span>.</p>
+      <p className={styles.heroBlurb}>I build ideas for <span className={styles.emphasize}>productivity</span> and love to contribute to efforts promoting general <span className={styles.emphasize}>goodwill</span>.</p>
 
       <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">
         <span>Find My Resume Here!</span>
