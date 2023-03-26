@@ -1,6 +1,6 @@
-import gmailIcon from '../../assets/social-media-logos/gmail-svgrepo-com.svg'
-import githubIcon from '../../assets/social-media-logos/github-logo-svgrepo-com.svg'
-import instagramIcon from '../../assets/social-media-logos/instagram-1-svgrepo-com.svg'
+import emailIcon from '../../assets/social-media-logos/email-svgrepo-com.svg'
+import githubIcon from '../../assets/social-media-logos/github-svgrepo-com.svg'
+import instagramIcon from '../../assets/social-media-logos/instagram-svgrepo-com.svg'
 import linkedinIcon from '../../assets/social-media-logos/linkedin-svgrepo-com.svg'
 
 import styles from './styles.module.scss';
@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 export default function Footer() {
   return (
     <footer id="about" className={styles.footer}>
-      <h2 className={styles.footerTitle}>Find me on social media!</h2>
+      <h3 className={styles.footerTitle}>Reach out to me</h3>
 
       <div className={`${styles.contactLinks}`}>
         <ul>
@@ -28,8 +28,8 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a id="contact" className="gmail" href={"mailto:".concat(atob("b3IuY2hyaXN0aW5hMjdAZ21haWwuY29t"))} rel="noopener noreferrer">
-              <img src={gmailIcon} className="gmail-logo" alt="Gmail logo" />
+            <a id="contact" className="email" href={"mailto:".concat(atob("b3IuY2hyaXN0aW5hMjdAZ21haWwuY29t"))} rel="noopener noreferrer">
+              <img src={emailIcon} className="email" alt="email logo" />
             </a>
           </li>
         </ul>
