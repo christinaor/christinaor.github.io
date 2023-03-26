@@ -20,7 +20,7 @@ export default function NavBar() {
 
   return (
     <nav id="nav-bar" className={`${styles.navBar} ${isScrolled ? styles.isScrolled : ''}`}>
-      <a className={styles.home} href="/#hero">
+      <a className={styles.home} href="#home">
         <img src={homeIcon} alt="home icon linked to top of page" />
       </a>
 
