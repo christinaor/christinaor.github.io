@@ -1,4 +1,5 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/layout.scss';
 
 .footer {
   display: flex;
@@ -9,8 +10,6 @@
   gap: 2rem;
 }
 
-
-
 .footer h3 {
   text-align: center;
 
@@ -19,7 +18,7 @@
   font-weight: 700;
 }
 
-.jumpToLinks ul li img{
+.jumpToLinks li img{
   display: none;
 }
 
@@ -27,25 +26,30 @@
   font-size: 0.8rem;
 }
 
-.jumpToLinks ul {
+.jumpToLinks {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   gap: 0.8rem;
 
   font-size: 0.8rem;
 }
 
-.contactLinks ul {
+.contactLinks {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   gap: 1.5rem;
 }
 
-.contactLinks ul li img {
+.contactLinks li a div {
+  display: none;
+}
+
+.contactLinks li img {
   width: 3rem;
-  // padding: 0 0.8rem;
 }
 
 .footerText {
@@ -55,6 +59,57 @@
 
   text-align: center;
   font-size: 0.8rem;
+}
+
+@media only screen and (min-width: $mobile-max) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3rem;
+  }
+
+  .footer .links {
+    display: flex;
+    flex-direction: row;
+
+    gap: 5rem;
+  }
+
+  .footer h3 {
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .contactLinks, .jumpToLinks {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    font-size: 0.8rem;
+  }
+
+  .contactLinks li a, .jumpToLinks li a {
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+  }
+
+  .contactLinks li a img, .jumpToLinks li a img{
+    display: block;
+
+    width: 1.2rem;
+  }
+
+  .contactLinks li a div {
+    display: block;
+  }
 }
 
 // @media only screen and (min-width: 481px) {
