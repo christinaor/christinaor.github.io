@@ -9,10 +9,31 @@
   gap: 2rem;
 }
 
-.footerTitle {
+
+
+.footer h3 {
+  text-align: center;
+
   color: $mainHeaderColor;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
+}
+
+.jumpToLinks ul li img{
+  display: none;
+}
+
+.jumpToLinks h3 {
+  font-size: 0.8rem;
+}
+
+.jumpToLinks ul {
+  display: flex;
+  flex-direction: row;
+
+  gap: 0.8rem;
+
+  font-size: 0.8rem;
 }
 
 .contactLinks ul {
