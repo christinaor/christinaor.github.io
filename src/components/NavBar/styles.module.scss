@@ -82,11 +82,11 @@
   }
 
   .navBar a.home {
-    margin-left: 2.5rem;
+    margin-left: clamp(1rem, 4vw, 2.5rem);
   }
 
   .navBar ul.rightNav {
-    margin-right: 2.5rem;
+    margin-right: clamp(1rem, 4vw, 2.5rem);
   }
 
   .number {
