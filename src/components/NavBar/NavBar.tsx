@@ -25,19 +25,24 @@ export default function NavBar() {
       </a>
 
       <ul className={styles.rightNav}>
+        <li className={styles.homeText}>
+          <a href="#home">
+            <span>Home</span>
+          </a>
+        </li>
         <li className="header-about">
-          <a href="/#about">
-          <span className={styles.number}>01.</span><span> About</span>
+          <a href="#about">
+            <span className={styles.number}>01.</span><span> About</span>
           </a>
         </li>
         <li className="header-tech-stack">
           <a href="/#tech-stack">
-          <span className={styles.number}>03.</span><span> Tech</span>
+            <span className={styles.number}>03.</span><span> Tech</span>
           </a>
         </li>
         <li className="header-experience">
           <a href="/#experiences">
-          <span className={styles.number}>03.</span><span> Experience</span>
+            <span className={styles.number}>03.</span><span> Experience</span>
           </a>
         </li>
         <li className="header-contact">
