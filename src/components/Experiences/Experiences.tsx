@@ -3,7 +3,7 @@
 import reactimeGif from '../../assets/experience-images/reactime.gif'
 
 import githubLinkLogo from '../../assets/experience-images/github-svgrepo-com.svg'
-import websiteIcon from '../../assets/experience-images/website-dashboard-svgrepo-com.svg'
+import websiteIcon from '../../assets/experience-images/external-link-svgrepo-com.svg'
 
 import styles from './styles.module.scss'
 
