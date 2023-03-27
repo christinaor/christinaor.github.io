@@ -24,7 +24,7 @@ export default function NavBar() {
         <img src={homeIcon} alt="home icon linked to top of page" />
       </a>
 
-      <ul className={styles.rightNav}>
+      <ol className={styles.rightNav}>
         <li className={styles.homeText}>
           <a href="#home">
             <span>Home</span>
@@ -32,22 +32,22 @@ export default function NavBar() {
         </li>
         <li className="header-about">
           <a href="#about">
-            <span className={styles.number}>01.</span><span> About</span>
+            <span> About</span>
           </a>
         </li>
         <li className="header-tech-stack">
           <a href="/#tech-stack">
-            <span className={styles.number}>03.</span><span> Tech</span>
+            <span> Tech</span>
           </a>
         </li>
         <li className="header-experience">
           <a href="/#experiences">
-            <span className={styles.number}>03.</span><span> Experience</span>
+            <span> Experience</span>
           </a>
         </li>
         <li className="header-contact">
           <a href="/#contact-me">
-            <span className={styles.number}>04.</span><span> Contact</span>
+            <span> Contact</span>
           </a>
         </li>
         {/* <li className="header-resume">
@@ -55,7 +55,7 @@ export default function NavBar() {
             <img src={resumeDownloadIcon} alt="download resume icon" />
           </a>
         </li> */}
-      </ul>
+      </ol>
     </nav>
   )
 };
