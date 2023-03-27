@@ -19,6 +19,13 @@
   color: $mainHeaderColor;
 }
 
+.experiences {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
 .experience {
   display: flex;
   flex-direction: column;
@@ -44,17 +51,48 @@
   color: $subTextColor;
 }
 
-.experience img {
+.experience .experienceImage {
+  aspect-ratio: 5/3;
+  object-fit: cover;
   max-width: 100%;
 }
 
-.links {
+// .experience .technologies {
+//   display: flex;
+
+//   justify-content: flex-start;
+// }
+
+// .experience .technologiesAndLinks {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+
+//   gap: 1.5rem;
+// }
+
+.experience .technologies {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1rem;
+
+  font-size: 0.8rem;
+}
+
+.experience .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+
+  margin-top: 1.5rem;
+  gap: 1.2rem;
 }
 
 .links a img {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 
@@ -64,8 +102,21 @@
 
 @media only screen and (min-width: $mobile-max) {
   .experiences {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: $desktop-min) {
+  .experiences {
     display: grid;
     grid-template-columns: max-content max-content;
+
+    column-gap: 4.5rem;
+  }
+
+  .experience {
+    min-width: 20rem;
   }
 }
 
