@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3>Jump To</h3>
+          <h4>Jump To</h4>
           <ul className={styles.jumpToLinks}>
             <li>
               <a href="#home">

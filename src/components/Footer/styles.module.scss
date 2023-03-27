@@ -18,6 +18,20 @@
   font-weight: 700;
 }
 
+.footer h4 {
+  margin: 0.5rem;
+  padding: 0;
+
+  text-align: center
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
 .jumpToLinks li img{
   display: none;
 }
