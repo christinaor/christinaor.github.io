@@ -91,13 +91,23 @@
     gap: 5rem;
   }
 
-  .footer h3 {
+  .footer h3, .footer h4 {
     display: flex;
     justify-content: flex-start;
 
+    margin: 1rem 0;
+    padding: 0;
+
     font-size: 1rem;
     font-weight: 500;
+    color: $mainHeaderColor;
   }
+
+  // .footer h4 {
+  //   color: $mainHeaderColor;
+  //   // font-size: 1.4rem;
+  //   font-weight: 700;
+  // }
 
   .contactLinks, .jumpToLinks {
     display: flex;
