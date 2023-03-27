@@ -7,27 +7,40 @@
   justify-content: center;
   align-items: center;
 
-  min-height: 50rem;
-  // margin: 3rem 0;
-  padding: 2rem 2rem 3rem;
+  min-height: 100vh;
+  padding: 2rem 4rem 3rem;
 
-  // font-size: 1.2rem;
   background-color: $mainBodyBackgroundBlack;
   box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
-.description ul li {
-  margin: 1.5rem;
+.description ul {
+  display: flex;
+  flex-direction: column;
 
-  list-style-type: circle;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
+  gap: 1.5rem;
+}
+
+.description ul li {
+  padding: 2rem;
+
+  border: 1px solid $mainTextColor;
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+.description ul li:hover {
+  background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
 }
 
 li a.blurbLink {
   font-weight: 500;
   text-underline-offset: 4px;
-  // text-decoration: underline dotted;
-  text-decoration-color: $subTextColor;
+  // text-decoration-color: $subTextColor;
 
+  // color: $subTextColor;
   color: $subTextColor;
   font-weight: 600;
 }
@@ -36,60 +49,22 @@ li a.blurbLink:hover {
   text-decoration: line-through;
 }
 
-@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
-  .about {
-    min-height: 30rem;
-    padding: 3rem 4rem 5rem;
+@media only screen and (min-width: $tablet-mid) {
+  .description ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    font-size: 1.5rem;
-  }
-
-  .description ul li {
-    margin: 2rem 3rem;
-  
-    line-height: 2.5rem;
-    list-style-type: circle;
+    padding: 0 4rem;
   }
 }
 
-@media only screen and (min-width: $desktop-min) {
+@media only screen and (min-width: $desktop-small) {
   .about {
-    min-height: 30rem;
-    padding: 3rem 10rem 5rem;
-
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-
-  // .description ul {
-  //   margin: 0 3rem;
-  // }
-
-  .description ul li {
-    margin: 2rem 5rem;
   
-    line-height: 2.5rem;
-    list-style-type: circle;
+  .description ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
-// @media only screen and (min-width: 481px) {
-// .about {
-//     margin-bottom: 8vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .header {
-//     font-size: clamp(20px, 6vw, 30px);
-//     margin: 2vh;
-//     padding: 0;
-//   }
-
-//   .blurb {
-//     font-size: clamp(14px, 4vw, 20px);
-//     color: #4f518c;
-//     // margin: 13px;
-//   }
-// }
