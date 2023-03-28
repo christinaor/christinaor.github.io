@@ -68,6 +68,10 @@
   justify-content: center;
 }
 
+.logoAndName:hover {
+  box-shadow: $subTextColor 0px 50px 100px -20px, $subTextColor 0px 30px 60px -30px, $subTextColor 0px -2px 6px 0px inset;
+}
+
 .logoAndName {
   display: flex;
   flex-direction: column;

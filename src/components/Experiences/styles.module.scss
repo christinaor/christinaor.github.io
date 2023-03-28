@@ -11,8 +11,9 @@
   min-height: 30rem;
 
   color: $mainHeaderColor;
-  background-color: $mainBodyBackgroundBlack;
-  box-shadow: 0 0 1rem 0 $mainTextColorBlack;
+  // background-color: $mainBodyBackgroundBlack;
+  // background-color: $gradient-purple-end;
+  // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .experienceSection h2 {
@@ -38,13 +39,17 @@
   gap: 1rem;
 
   background-color: $cardBackground;
+  background-color: $mainBodyBackgroundBlack;
   border-radius: 8px;
-  box-shadow: 1.5rem 1.5rem 0 0 $buttonBorderColor;
+  // box-shadow: 1.5rem 1.5rem 0 0 $buttonBorderColor;
   transition: 0.3s;
 }
 
 .experience:hover {
-  box-shadow: 0.2rem 0.3rem 0 0 $buttonBorderColor;
+  // box-shadow: 0.2rem 0.3rem 0 0 $buttonBorderColor;
+  // box-shadow: $buttonActiveColor 0px 20px 30px -10px;
+  box-shadow: $subTextColor 0px 50px 100px -20px, $subTextColor 0px 30px 60px -30px, $subTextColor 0px -2px 6px 0px inset;
+
 }
 
 .experience a h3 {
