@@ -10,13 +10,13 @@
   margin: 3rem 0;
   padding: 2rem 0 3rem;
 
+  color: $mainHeaderColor;
   background: $mainBodyBackgroundBlack;
   box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .techSection h2 {
   margin: 2rem 0;
-  color: $mainHeaderColor;
   text-align: center;
 }
 
@@ -52,15 +52,9 @@
   justify-content: center;
   align-items: center;
   margin: 1.3rem 0;
-  // padding: 1.8rem 1.2rem;
-  // column-gap: 0.8rem;
   row-gap: 0.8rem;
 
-  // color: $mainTextColorBlack;
-  // background-color: $mainHeaderColor;
-  // border: 1.5px solid $highlightTextColorPink;
   border-radius: 5px;
-  // box-shadow: 4px 8px 8px 0 $mainTextColorBlack;
 }
 
 .techItem {
@@ -95,14 +89,6 @@
 
   width: 2.5rem;
 }
-
-// .logoAndName div {
-//   font-weight: 700px;
-// }
-
-// .techTitle:hover {
-//   color: #907ad6;
-// }
 
 @media only screen and (min-width: $mobile-max) {
   .buttonsAndTechList {
