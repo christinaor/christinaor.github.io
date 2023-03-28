@@ -91,7 +91,7 @@ footer {
 }
 
 h1, h2 {
-  font-family: 'Olware';
+  font-family: 'Lora';
   color: $mainHeaderColor;
 }
 
@@ -173,7 +173,7 @@ button:focus-visible {
 @media only screen and (min-width: $mobile-max) {
   h1, h2 {
     font-size: 2rem;
-    font-family: 'Olware';
+    font-family: 'Lora';
   }
 }
 
