@@ -47,6 +47,10 @@
   box-shadow: 0.2rem 0.3rem 0 0 $buttonBorderColor;
 }
 
+.experience a h3 {
+  font-weight: 500;
+}
+
 .experience a h3:hover {
   color: $subTextColor;
 }
@@ -104,6 +108,10 @@
   .experiences {
     display: flex;
     flex-direction: column;
+  }
+
+  .experience {
+    width: 5rem;
   }
 }
 

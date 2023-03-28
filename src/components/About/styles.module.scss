@@ -50,21 +50,25 @@ li a.blurbLink:hover {
 }
 
 @media only screen and (min-width: $tablet-mid) {
+  .about {
+    padding: 10rem;
+  }
+
   .description ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    padding: 0 4rem;
+    // padding: 0 4rem;
   }
 }
 
-@media only screen and (min-width: $desktop-small) {
-  .about {
-    font-size: 1.2rem;
-  }
+// @media only screen and (min-width: $desktop-small) {
+//   .about {
+//     font-size: 1.2rem;
+//   }
   
-  .description ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
+//   .description ul {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//   }
+// }

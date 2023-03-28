@@ -6,10 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  // min-height: 5rem;
   padding: 2rem 3rem 3rem;
-
-  // font-size: 1.2rem;
 }
 
 .contactBlurb {
@@ -26,48 +23,12 @@
 
   .contactBlurb {
     margin: inherit clamp(2rem, 3vw, 4rem);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: $desktop-large) {
-  .contactBlurb {
-    font-size: 1.5rem;
-  }
-}
-
-// .contactLinks ul {
-//   display: flex;
-//   flex-direction: row;
-// }
-
-// .contactLinks ul li img {
-//   width: 3rem;
-//   padding: 0 0.8rem;
-// }
-
-// @media only screen and (min-width: 481px) {
-//   .contactMe {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .header {
-//     font-size: clamp(20px, 6vw, 30px);
-//     margin: 13px;
-//     padding: 0;
-//   }
-
+// @media only screen and (min-width: $desktop-large) {
 //   .contactBlurb {
-//     max-width: 40vw;
-//     text-align: center;
-//   }
 
-//   .contactLinks {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
 //   }
 // }

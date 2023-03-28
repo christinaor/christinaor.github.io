@@ -46,16 +46,16 @@
 
 .subText {
   font-size: 2rem;
-  color: $mainTextColor;
+  color: $subGrayWhiteTextColor;
 }
 
 .emphasize {
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(0, 255, 20, 0.2),
-    rgba(0, 255, 21, 0.487) 95%,
-    rgba(0, 255, 21, 0.056)
+    $gradient-green-mid,
+    $gradient-green-start,
+    $gradient-green-end
   );
 }
 
@@ -110,16 +110,16 @@
   }
   
   .bigHeroText {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(3rem, 6vw, 5rem);
   }
   
   .subText {
-    font-size: clamp(2rem, 5.3vw, 3.3rem);
+    font-size: clamp(2rem, 5vw, 3.3rem);
     color: $mainTextColor;
   }
   
   .hero p {
-    font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+    font-size: clamp(1.2rem, 2.8vw, 2rem);
     line-height: 2.5rem;
   }
 }

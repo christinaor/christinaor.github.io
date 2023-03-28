@@ -100,7 +100,7 @@
 //   color: #907ad6;
 // }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: $mobile-max) {
   .buttonsAndTechList {
     flex-direction: row;
     align-items: flex-start;
