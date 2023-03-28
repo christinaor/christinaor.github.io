@@ -33,7 +33,7 @@ export default function EmailForm() {
         <textarea id="email" value={message} onChange={(e) => setMessage(e.target.value)} required />
       </div>
       
-      {!submitClicked && <button type="submit">Submit</button>}
+      {!submitClicked && <button type="submit">Send Email</button>}
       {submitClicked && <div className={styles.emailSent}>Thanks for the email - you'll hear back soon!</div>}
     </form>
   )
