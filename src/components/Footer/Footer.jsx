@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className={styles.footerText}>Built && Designed: Christina Or</div>
+      <div className={styles.footerText}>Built && Crafted: Christina Or</div>
     </footer>
   )
 };

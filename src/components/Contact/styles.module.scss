@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
+@media only screen and (min-width: $mobile-max) {
   .contactMe {
     min-height: 20rem;
   }
