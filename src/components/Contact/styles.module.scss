@@ -1,3 +1,4 @@
+@import 'src/styles/colors.scss';
 @import 'src/styles/layout.scss';
 
 .contactMe {
@@ -7,6 +8,10 @@
   align-items: center;
 
   padding: 2rem 3rem 3rem;
+
+  min-height: 100vh;
+  color: $mainHeaderColor;
+  background-color: $mainBodyBackgroundBlack;
 }
 
 .contactBlurb {
@@ -17,7 +22,6 @@
 
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
   .contactMe {
-    margin: 2rem 2rem 4rem;
     min-height: 20rem;
   }
 
@@ -26,9 +30,3 @@
     font-size: 1.2rem;
   }
 }
-
-// @media only screen and (min-width: $desktop-large) {
-//   .contactBlurb {
-
-//   }
-// }
