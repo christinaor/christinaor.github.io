@@ -15,19 +15,8 @@ export default function Experiences() {
         {experiencesData?.map(experience => {
           return (
             <div className={styles.experience}>
-            
-              <a href={experience?.articleLink ? experience.articleLink : ''}><h3>{experience.title}</h3></a>
-
-              <img className={styles.experienceImage} src={experience.image} alt={experience.imageAlt} />
-
-              <p>{experience.description}</p>
-
-              {/* <div className={styles.technologiesAndLinks}> */}
-                <ul className={styles.technologies}>
-                  {experience?.technologies && experience.technologies.map(technology => (
-                    <li>{technology}</li>
-                  ))}
-                </ul>
+              <div className={styles.titleAndLinks}>
+                <a href={experience?.articleLink ? experience.articleLink : ''}><h3>{experience.title}</h3></a>
 
                 <div className={styles.links} >
                   <a href={experience?.githubLink}>
@@ -37,8 +26,19 @@ export default function Experiences() {
                     <img src={websiteIcon} alt={experience.websiteLinkImageAlt} />
                   </a>
                 </div>
-              {/* </div> */}
+              </div>
 
+              <img className={styles.experienceImage} src={experience.image} alt={experience.imageAlt} />
+
+              <p>{experience.description}</p>
+
+              <ul className={styles.technologies}>
+                {experience?.technologies?.map(technology => (
+                  <li className={styles.technology}>{technology}</li>
+                ))}
+              </ul>
+
+              
             </div>
           )
         })}
