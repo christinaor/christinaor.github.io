@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 export default function About() {
   return (
     <section id="about" className={styles.about}>
-        <h2 className={`${styles.header}`}>About Me</h2>
+        <h2 className={`${styles.header}`}><span className='section-number'>1. </span>About Me</h2>
         <div className={styles.description}>
           <p> In more recent years, I've found a love for automation and building full-scale web applications.</p>
           <ul>

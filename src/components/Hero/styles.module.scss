@@ -35,17 +35,16 @@
 }
 
 .smallHeroText {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.1rem;
   color: $subTextColor;
 }
 
 .bigHeroText {
-  font-family: 'Olarwe';
   font-size: 3rem;
 }
 
 .subText {
-  font-family: 'Olarwe';
   font-size: 2rem;
   color: $mainTextColor;
 }

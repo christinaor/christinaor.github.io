@@ -10,7 +10,7 @@ import styles from './styles.module.scss'
 export default function Experiences() {
   return (
     <section id="experiences" className={`${styles.experienceSection}`}>
-      <h2 className={`${styles.header}`}>Experiences</h2>
+      <h2 className={`${styles.header}`}><span className='section-number'>3. </span>Experiences</h2>
       <div className={styles.experiences}>
         {experiencesData?.map(experience => {
           return (

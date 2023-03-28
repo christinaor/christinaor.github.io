@@ -34,7 +34,7 @@ export default function EmailForm() {
       </div>
       
       {!submitClicked && <button type="submit">Submit</button>}
-      {submitClicked && <div className={styles.emailSent}>Email sent - you'll hear back soon!</div>}
+      {submitClicked && <div className={styles.emailSent}>Thanks for the email - you'll hear back soon!</div>}
     </form>
   )
 };

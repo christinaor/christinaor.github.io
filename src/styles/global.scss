@@ -169,10 +169,15 @@ button:focus-visible {
   outline: none;
 }
 
-@media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
+@media only screen and (min-width: $mobile-max) {
   h1, h2 {
     font-size: 2rem;
+    font-family: 'Olware';
   }
+}
+
+.section-number {
+  color: $subTextColor;
 }
 
 // @media only screen and (min-width: $desktop-min) {

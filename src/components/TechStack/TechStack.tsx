@@ -72,7 +72,7 @@ export default function TechStack() {
 
   return (
     <div id="tech-stack" className={styles.techSection}>
-      <h2 className={styles.techHeader}>Some Tech I've Worked With</h2>
+      <h2 className={styles.techHeader}><span className='section-number'>2. </span>Some Tech I've Worked With</h2>
       <div className={styles.buttonsAndTechList}>
         <div className={styles.filterButtonsWrapper}>
           <button className={isActiveFilter(filters, 'all')} value='all' onClick={handleFilterClick}>All</button>
