@@ -37,7 +37,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a id="contact" className="email" href={"mailto:".concat(atob("b3IuY2hyaXN0aW5hMjdAZ21haWwuY29t"))} rel="noopener noreferrer">
+              <a id="contact" className="email" href={"mailto:".concat(atob("bWVAY2hyaXN0aW5hb3IuY29t"))} rel="noopener noreferrer">
                 <img src={emailIcon} className="email" alt="email logo" />
                 <div>Email</div>
               </a>
