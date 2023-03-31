@@ -4,16 +4,12 @@
 .experienceSection {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
 
   padding: 0 0 3rem;
-  min-height: 30rem;
 
   color: $mainHeaderColor;
-  // background-color: $mainBodyBackgroundBlack;
-  // background-color: $gradient-purple-end;
-  // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .experienceSection h2 {
@@ -22,22 +18,28 @@
 
 .experiences {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  gap: 0.5rem;
+.leftArrow, .rightArrow {
+  width: 0;
+  height: 0;
+  display: hidden;
 }
 
 .experience {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   width: clamp(17rem, 75vw, 23rem);
+  // height: clamp(30rem, 70vh, 32rem);
   margin: 2rem 0;
   padding: 0.3rem 1.5rem 2rem;
-  gap: 1rem;
+  gap: 1.5rem;
 
-  background-color: $cardBackground;
   background-color: $mainBodyBackgroundBlack;
   border-radius: 8px;
   transition: 0.3s;
@@ -92,6 +94,10 @@
 
 .experience p {
   font-weight: 300;
+  // height: 7rem;
+  // height: clamp(5rem, 7rem)
+  // height: 10vh;
+  // height: 5vh;
 }
 
 .experience .technologies {
@@ -117,16 +123,34 @@
 @media only screen and (min-width: $mobile-max) {
   .experiences {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
   }
 }
 
 @media only screen and (min-width: $desktop-min) {
   .experiences {
-    display: grid;
-    grid-template-columns: max-content max-content;
+    // display: grid;
+    // grid-template-columns: max-content max-content;
 
-    column-gap: 4.5rem;
+    // column-gap: 4.5rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .leftArrow, .rightArrow {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+  }
+
+  .leftArrow:hover, .rightArrow:hover {
+    filter: invert(53%) sepia(60%) saturate(2375%) hue-rotate(231deg) brightness(100%) contrast(94%);
+    transition: 0.3s;
+  }
+
+  .rightArrow {
+    transform: rotate(180deg);
   }
 
   .experience {
