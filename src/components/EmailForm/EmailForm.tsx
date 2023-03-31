@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 
 export default function EmailForm() {
@@ -16,6 +16,12 @@ export default function EmailForm() {
     setSubmitClicked(true);
   }, [email, subject, message]);
 
+  useEffect(() => {
+    if (submitClicked) {
+      setTimeout(() => setSubmitClicked(false), 5000)
+    }
+  }, [submitClicked])
+  
   return (
     <form className={styles.emailForm} onSubmit={handleSubmit}>
       <div>
