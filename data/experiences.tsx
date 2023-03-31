@@ -16,7 +16,7 @@ const experiences = [
   },
   {
     title: "Personal Portfolio",
-    description: "My personal portfolio website where I share my background, passion in software engineering, and showcase some of the projects I've lent a hand in building.",
+    description: "My personal portfolio website where I share my background, passion in software engineering, and showcase some my projects.",
     image: portfolioImg,
     imageAlt: "picture of portfolio home view",
     githubLink: "https://github.com/christinaor/christinaor.github.io",
