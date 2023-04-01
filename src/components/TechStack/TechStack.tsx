@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 
 import technologies from '../../../data/technologies';
+import technologyFilters from '../../../data/technology-filters';
 
 import styles from './styles.module.scss'
 
@@ -63,9 +64,9 @@ export default function TechStack() {
   const isActiveFilter = (filters, filterStr) => {
     let filterStyle = '';
     if (filters.includes(filterStr)) {
-      filterStyle = 'active';
+      filterStyle = `${styles.active} active`;
     } else {
-      filterStyle = 'inactive';
+      filterStyle = `${styles.inactive} inactive`;
     }
     return filterStyle;
   }
@@ -75,11 +76,13 @@ export default function TechStack() {
       <h2 className={styles.techHeader}><span className='section-number'>2. </span>Some Tech I've Worked With</h2>
       <div className={styles.buttonsAndTechList}>
         <div className={styles.filterButtonsWrapper}>
-          <button className={isActiveFilter(filters, 'all')} value='all' onClick={handleFilterClick}>All</button>
-          <button className={isActiveFilter(filters, 'frontend')} value='frontend' onClick={handleFilterClick}>Frontend</button>
-          <button className={isActiveFilter(filters, 'backend')} value='backend' onClick={handleFilterClick}>Backend</button>
-          <button className={isActiveFilter(filters, 'other')} value='other' onClick={handleFilterClick}>Other</button>
+          {technologyFilters?.map(filter => {
+            return (
+              <button key={`tech-filter-${filter.name}`} className={isActiveFilter(filters, filter.name)} value={filter.name} onClick={handleFilterClick}>{filter.title}</button>
+            )
+          })}
         </div>
+
         <ul className={styles.techList}>
           {displayedTech}
         </ul>
