@@ -39,7 +39,13 @@ export default function Experiences() {
         </ul>
       </div>
     )
-  })
+  });
+
+  const carouselDots = experiencesData.map((experience, index) => {
+    return (
+      <button className={`${styles.dot} ${index === cardIndex ? styles.activeDot : ""}`} onClick={() => setCardIndex(index)}></button>
+    )
+  });
 
   const handleLeftArrowClick = () => {
     console.log('left clicked')
@@ -61,15 +67,13 @@ export default function Experiences() {
 
   return (
     <section id="experiences" className={`${styles.experienceSection}`}>
-      <h2 className={`${styles.header}`}><span className='section-number'>3. </span>Experiences</h2>
+      <h2 className={`${styles.header}`}><span className='section-number'>3. </span>Experience</h2>
       <div className={styles.experiences}>
         <img className={styles.leftArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleLeftArrowClick}/>
         {cardsArray && cardsArray[cardIndex]}
         <img className={styles.rightArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleRightArrowClick} />
 
         {/* {experiencesData?.map(experience => {
-
-
           return (
             <div className={styles.experience}>
               <div className={styles.titleAndLinks}>
@@ -99,8 +103,11 @@ export default function Experiences() {
         })} */}
 
       </div>
-      
 
+      <div className={styles.dots}>
+        {carouselDots}
+      </div>
+      
     </section>
   )
 };
