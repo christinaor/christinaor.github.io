@@ -109,64 +109,64 @@ h1, h2 {
 //   // align-items: center;
 // }
 
-button, button.inactive {
-  font-size: 0.9rem;
-  font-weight: 500;
-  font-family: inherit;
-  color: $mainTextColorBlack;
-  background-color: $mainHeaderColor;
-  border: 0.1rem solid $mainHeaderColor;
-  border-radius: 8px;
-  padding: 0.6em 1.2em;
-  // font-size: clamp(10px, 8vw, 15px);
-  cursor: pointer;
-  transition: background-color border-color 0.25s;
-  // box-shadow: 4px 4px 8px 0 $mainTextColorBlack;
+// button, button.inactive {
+//   font-size: 0.9rem;
+//   font-weight: 500;
+//   font-family: inherit;
+//   color: $mainTextColorBlack;
+//   background-color: $mainHeaderColor;
+//   border: 0.1rem solid $mainHeaderColor;
+//   border-radius: 8px;
+//   padding: 0.6em 1.2em;
+//   // font-size: clamp(10px, 8vw, 15px);
+//   cursor: pointer;
+//   transition: background-color border-color 0.25s;
+//   // box-shadow: 4px 4px 8px 0 $mainTextColorBlack;
 
-  @media (hover: none) {
-    background: $mainHeaderColor;
-  }
-}
-
-@media (hover: hover) {
-  button:hover, button.inactive:hover {
-    color: $mainTextColor;
-    background-color: $buttonBorderColor;
-    border: 0.1rem solid $buttonBorderColor;
-    border-radius: 8px;
-  }
-}
-
-button.active {
-  color: $mainTextColor;
-  background-color: $buttonActiveColor;
-  border: 0.1rem solid $buttonActiveColor;
-}
-
-@media (hover: hover) {
-  button.active:hover {
-    background-color: $buttonBorderColor;
-    border: 0.1rem solid $buttonBorderColor;
-  }
-}
-
-// button.inactive {
-//   color: #2c2a4a;
-//   background-color: #f9f9f9;
-//   border-color: #f9f9f9;
-//   border-width: 3px;
+//   @media (hover: none) {
+//     background: $mainHeaderColor;
+//   }
 // }
 
-// button.inactive:hover {
-//   border-color: #DABFFF;
-//   border-width: 3px;
+// @media (hover: hover) {
+//   button:hover, button.inactive:hover {
+//     color: $mainTextColor;
+//     background-color: $buttonBorderColor;
+//     border: 0.1rem solid $buttonBorderColor;
+//     border-radius: 8px;
+//   }
 // }
 
-button:focus,
-button:focus-visible {
-  // outline: 4px auto -webkit-focus-ring-color;
-  outline: none;
-}
+// button.active {
+//   color: $mainTextColor;
+//   background-color: $buttonActiveColor;
+//   border: 0.1rem solid $buttonActiveColor;
+// }
+
+// @media (hover: hover) {
+//   button.active:hover {
+//     background-color: $buttonBorderColor;
+//     border: 0.1rem solid $buttonBorderColor;
+//   }
+// }
+
+// // button.inactive {
+// //   color: #2c2a4a;
+// //   background-color: #f9f9f9;
+// //   border-color: #f9f9f9;
+// //   border-width: 3px;
+// // }
+
+// // button.inactive:hover {
+// //   border-color: #DABFFF;
+// //   border-width: 3px;
+// // }
+
+// button:focus,
+// button:focus-visible {
+//   // outline: 4px auto -webkit-focus-ring-color;
+//   outline: none;
+// }
 
 @media only screen and (min-width: $mobile-max) {
   h1, h2 {
