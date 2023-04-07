@@ -6,8 +6,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: $mainTextColor;
-  background-color: $mainBodyBackground;
+  color: $mainTextColorBlack;
+  // background-color: $mainBodyBackground;
+  background-color: $backgroundColorPureWhite;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -86,11 +87,6 @@ footer {
   color: $mainTextColor;
   background-color: $footerBackground;
   // box-shadow: 0 0 0.5rem 0 $footerBackground
-}
-
-h1, h2 {
-  font-family: 'Roboto', serif;
-  color: $mainHeaderColor;
 }
 
 // p {

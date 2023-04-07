@@ -19,8 +19,10 @@
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   font-weight: 400;
-  color: $mainTextColor;
-  background-color: $mainBodyBackground;
+  // color: $mainTextColor;
+  // background-color: $mainBodyBackground;
+  color: $mainTextColorWhite;
+  background-color: $heroBackgroundColorDarkPurple;
   box-shadow: 0 0 4px 0 $mainTextColorBlack;
 
   font-size: 0.8rem;

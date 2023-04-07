@@ -11,9 +11,11 @@
   padding: 2rem 0 3rem;
 
   min-height: 100vh;
-  color: $mainHeaderColor;
-  background: $mainBodyBackgroundBlack;
-  box-shadow: 0 0 1rem 0 $mainTextColorBlack;
+
+  background-color: $backgroundColorSmokeWhite;
+  // color: $mainHeaderColor;
+  // background: $mainBodyBackgroundBlack;
+  // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .techSection h2 {
@@ -34,6 +36,11 @@
 
   // margin: 1.3rem 1rem 1.3rem 0;
   gap: 0.8rem;
+  padding: 8px;
+
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, $heroBackgroundColorDarkPurple, $mainTextColorWhite);
+  border-image-slice: 1;
 }
 
 .filterButtonsWrapper button {
@@ -41,8 +48,19 @@
   justify-content: center;
   align-items: center;
 
-  width: 5rem;
-  height: 3rem;
+  padding: 1rem;
+  // width: 5rem;
+  // height: 3rem;
+
+  color: $mainTextColorWhite;
+  background-color: $heroBackgroundColorLightPurple;
+
+  border: 1px solid $heroBackgroundColorLightPurple;
+  border-radius: 40px;
+  box-shadow: 5px 5px 0 0 $cardBackgroundColorBlack;
+
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .techList {
@@ -54,6 +72,11 @@
   align-items: center;
   margin: 1.3rem 0;
   row-gap: 0.8rem;
+
+  padding: 1rem;
+  height: 25rem;
+
+  overflow-y: auto;
 
   border-radius: 5px;
 }
@@ -81,8 +104,14 @@
   height: 5.5rem;
   
   font-size: 0.8rem;
-  background-color: $cardBackground;
+  // background-color: $cardBackground;
+  // color: $mainTextColorWhite;
+  background-color: $heroBackgroundColorLightPurple;
   border-radius: 4px;
+}
+
+.techName {
+  color: $mainTextColorWhite;
 }
 
 .logo {

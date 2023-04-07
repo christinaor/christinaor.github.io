@@ -22,7 +22,7 @@
 .emailForm label {
   padding: 2px;
 
-  font-family: 'Roboto', serif;
+  // font-family: 'Roboto', serif;
 }
 
 .emailForm input, .emailForm textarea {
@@ -52,6 +52,28 @@
   
   font-size: 0.9rem;
   color: $green-light;
+}
+
+.emailForm button {
+  cursor: pointer;
+
+  padding: 0.8rem;
+  // width: 10rem;
+
+  border: 1px solid $mainButtonColorPurple;
+  border-radius: 40px;
+
+  color: $mainTextColorWhite;
+  background-color: $mainButtonColorPurple;
+
+  box-shadow: 3px 3px 0 0 $mainTextColorWhite;
+  transition: 0.3s;
+
+  // font-size: 1rem;
+}
+
+.emailForm button:hover {
+  box-shadow: 1px 1px 0 0 $mainTextColorWhite;
 }
 
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
