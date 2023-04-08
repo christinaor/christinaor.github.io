@@ -7,20 +7,23 @@
   justify-content: center;
   align-items: center;
 
-  margin: 3rem 0;
-  padding: 2rem 0 3rem;
+  // margin: 3rem 0;
+  padding: 2rem 0 4rem;
 
   // min-height: 100vh;
 
-  background-color: $cloudPurple;
+  background-color: $basePurple;
   // color: $mainHeaderColor;
   // background: $mainBodyBackgroundBlack;
   // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .techSection h2 {
-  margin: 2rem 0;
-  text-align: center;
+  padding-bottom: 14px;
+
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, $basePurple, $darkSkyPurple, $mainGold, $basePurple);
+  border-image-slice: 1;
 }
 
 .buttonsAndTechList {
@@ -59,7 +62,8 @@
 
   border: 1px solid $mainTextColorWhite;
   border-radius: 40px;
-  box-shadow: 4px 4px 0 0 $baseBlue;
+  box-shadow: 4px 4px 0 0 $cloudPurple;
+  opacity: 0.6;
 
   font-weight: 700;
 
@@ -72,6 +76,8 @@
 
   color: $mainTextColorWhite;
   background-color: $darkSkyBlue;
+
+  opacity: 1;
 }
 
 @media (hover: hover) {
@@ -128,7 +134,7 @@
   height: 5.5rem;
   
   font-size: 0.8rem;
-  background-color: $mainTextColorWhite;
+  background-color: $cloudPurple;
   // background-color: $cardBackground;
   // color: $mainTextColorBlack;
   // background-color: $heroBackgroundColorLightPurple;
@@ -136,7 +142,7 @@
 }
 
 .techName {
-  color: $mainTextColorBlack;
+  color: $mainTextColorWhite;
 }
 
 .logo {

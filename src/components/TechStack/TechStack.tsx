@@ -74,7 +74,7 @@ export default function TechStack() {
   return (
     <div id="tech-stack" className={styles.techSection}>
       <h2 className={styles.techHeader}>
-        {/* <span className='section-number'>2. </span> */}
+        <span className='section-number'>2. </span>
         Some of My Tech Stack</h2>
       <div className={styles.buttonsAndTechList}>
         <div className={styles.filterButtonsWrapper}>
