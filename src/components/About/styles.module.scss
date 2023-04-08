@@ -8,9 +8,9 @@
   // align-items: center;
 
   min-height: 100vh;
-  padding: 2rem 2.5rem 3rem;
+  padding: 2rem 2.5rem 0;
 
-  // background-color: $backgroundColorGhostWhite;
+  // background-color: $darkSkyPurple;
 
   // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
@@ -23,67 +23,46 @@
   border-image-slice: 1;
 }
 
+.description .summary {
+  margin-bottom: 6rem;
+}
+
 .description ul {
   display: flex;
   flex-direction: column;
 
   margin-top: 2rem;
-  padding: 0 0.3rem;
+  // padding: 0 0.3rem;
   gap: 1.5rem;
 }
 
 .description ul li {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  // border: 1px solid $mainTextColor;
-  border-radius: 8px;
+  padding: 1.5rem 1.5rem 1.5rem;
+  // padding: -3rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 5rem;
+
+  border: 2px solid $mainTextColor;
+  // border-radius: 8px;
   list-style-type: none;
-
-  position: relative;
-
-  background-size: 100% 112.5%;
-
-  background-position: 0 -0.063em;
-  
-  border: 0.063em solid rgba(0, 0, 0, 0.2);
 }
-
-// .description ul li {
-//   position: relative;
-// }
-
-.description ul li:before, .description ul li:after {
-  content: "";
-  position: absolute;
-}
-
-.description ul li:before {
-  top: -3px;
-  left: -3px;
-  bottom: 0;
-  right: -3px;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(transparent));
-  background-image: -webkit-linear-gradient(#fff, transparent);
-  background-image: -moz-linear-gradient(#fff, transparent);
-  background-image: -o-linear-gradient(#fff, transparent);
-  z-index: -2;
-}
-
-.description ul li:after {
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: $darkSkyPurple;
-}
-
-
-
-
 .description ul li:hover {
-  // background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
-  background-image: linear-gradient(to right, $gradient-green-start, $gradient-green-mid, $gradient-green-end);
+  background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
+  // background-image: linear-gradient(to right, $gradient-green-start, $gradient-green-mid, $gradient-green-end);
+}
+
+.description ul li img {
+  margin-top: -5rem;
+  // margin-bottom: 0.5rem;
+  padding: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 8px;
+  background-color: $pink;
 }
 
 li a.blurbLink {

@@ -13,8 +13,8 @@
   word-wrap: break-word;
 
   color: $mainTextColorWhite;
-  background-color: $darkSkyPurple;
-  // background-image: linear-gradient(to bottom right, $darkSkyPurple, $baseGold);
+  background-color: $darkSkyBlue;
+  background-image: linear-gradient(to bottom, $darkSkyBlue, $darkSkyPurple, $baseGold);
 
   font-size: clamp(16px,2vw,20px);
 }
