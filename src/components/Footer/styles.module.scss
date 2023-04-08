@@ -8,6 +8,15 @@
   align-items: center;
 
   gap: 2rem;
+
+  background-color: $darkSkyBlue;
+  // background-image: linear-gradient(to bottom, $darkSkyBlue, $darkSkyPurple, $baseGold);
+  // background-image: linear-gradient(217deg, $darkSkyBlue, $darkSkyPurple, $pink, $green);
+  // background-image: linear-gradient(to bottom, $darkSkyBlue, $darkSkyPurple),
+  // linear-gradient(217deg, $pink),
+  // linear-gradient(127deg, $green),
+  // linear-gradient(336deg, $purple);
+  background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
 }
 
 .footer h3 {

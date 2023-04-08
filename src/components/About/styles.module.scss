@@ -46,12 +46,14 @@
   margin-bottom: 5rem;
 
   border: 2px solid $mainTextColor;
-  // border-radius: 8px;
+  border-radius: 8px;
   list-style-type: none;
 }
 .description ul li:hover {
-  background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
+  // background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
   // background-image: linear-gradient(to right, $gradient-green-start, $gradient-green-mid, $gradient-green-end);
+
+  background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
 }
 
 .description ul li img {

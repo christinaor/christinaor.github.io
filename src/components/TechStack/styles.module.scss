@@ -12,7 +12,7 @@
 
   // min-height: 100vh;
 
-  background-color: $basePurple;
+  background-color: $skyPurple;
   // color: $mainHeaderColor;
   // background: $mainBodyBackgroundBlack;
   // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
@@ -22,7 +22,8 @@
   padding-bottom: 14px;
 
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $basePurple, $darkSkyPurple, $mainGold, $basePurple);
+  // border-image: linear-gradient(0.25turn, $basePurple, $darkSkyPurple, $mainGold, $basePurple);
+  border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $mainGold, $skyPurple);
   border-image-slice: 1;
 }
 
