@@ -35,7 +35,7 @@
 }
 
 .emailForm input:hover, .emailForm textarea:hover {
-  border: 2px solid $subTextColor;
+  border: 2px solid $mainGold;
 }
 
 .emailForm textarea {
@@ -47,33 +47,36 @@
   height: 2rem;
 }
 
-.emailSent {
-  padding: 0.6rem;
-  
-  font-size: 0.9rem;
-  color: $green-light;
-}
-
 .emailForm button {
   cursor: pointer;
 
-  padding: 0.8rem;
+  // margin: 1rem;
+  padding: 1rem;
   // width: 10rem;
 
-  border: 1px solid $mainButtonColorPurple;
+  border: 1px solid $mainTextColorWhite;
   border-radius: 40px;
 
-  color: $mainTextColorWhite;
-  background-color: $mainButtonColorPurple;
+  font-weight: 600;
 
-  box-shadow: 3px 3px 0 0 $mainTextColorWhite;
+  color: $mainTextColorBlack;
+  background-color: $mainTextColorWhite;
+
+  box-shadow: 5px 5px 0 0 $cloudPurple;
   transition: 0.3s;
-
-  // font-size: 1rem;
+}
+.emailForm button:hover {
+  background-color: $mainTextColorWhite;
+  border: 1px solid $mainTextColorWhite;
+  box-shadow: 1px 1px 0 0 $cloudPurple;
 }
 
-.emailForm button:hover {
-  box-shadow: 1px 1px 0 0 $mainTextColorWhite;
+.emailSent {
+  padding: 0.6rem;
+  
+  font-size: 1rem;
+  font-weight: 600;
+  color: $mainGold;
 }
 
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {

@@ -17,7 +17,7 @@
   padding-bottom: 14px;
 
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $mainTextColorWhite, $cloudPurple, $darkSkyPurple);
+  border-image: linear-gradient(0.25turn, $darkSkyPurple, $neutralGray, $cloudPurple, $darkSkyPurple);
   border-image-slice: 1;
 }
 
@@ -48,11 +48,12 @@
   color: $mainTextColorWhite;
   background-color: $cardBackgroundColorDarkBlack;
   border-radius: 8px;
+  box-shadow: $mainGold 0px 2px 2px -3px, $mainGold 0px 8px 20px -8px, $mainGold 0px 0px;
   transition: 0.3s;
 }
 
 .experience:hover {
-  box-shadow: $subTextColor 0px 50px 100px -20px, $subTextColor 0px 30px 60px -30px, $subTextColor 0px -2px 6px 0px inset;
+  box-shadow: $mainGold 0px 50px 100px -20px, $mainGold 0px 30px 60px -30px, $mainGold 0px -2px 6px 0px inset;
 }
 
 .experience .titleAndLinks {
@@ -119,9 +120,9 @@
 .experience .technology {
   padding: 0.3rem;
 
-  background-color: $backgroundColorGhostWhite;
+  background-color: $mainTextColorWhite;
   color: $mainTextColorBlack;
-  font-family: 'Roboto', serif;
+  // font-family: 'Roboto', serif;
   border-radius: 5px;
   text-align: center;
 }
