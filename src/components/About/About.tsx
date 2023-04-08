@@ -3,7 +3,9 @@ import styles from './styles.module.scss';
 export default function About() {
   return (
     <section id="about" className={styles.about}>
-        <h2 className={`${styles.header}`}>About Me</h2>
+        <h2 className={`${styles.header}`}>
+          <span className='section-number'>1. </span>
+          About Me</h2>
         <div className={styles.description}>
           <p>My earliest memories of coding started with a Neopets page and recreating Meerca Chase with .NET. My next foray stemmed from the desire to heighten productivity in Excel. This snowballed into a journey of self-taught Python and finding my love of solving challenging puzzles and constant learning.</p>
           <p>Eventually, I leapt from my past life as a data analyst into the world of software engineering. Through the culmination of my experiences, I discovered an affinity towards automation and building full-scale web applications. Here are pieces of my journey:</p>

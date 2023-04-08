@@ -6,7 +6,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: $mainTextColorBlack;
+  color: $mainTextColorWhite;
   // background-color: $mainBodyBackground;
   background-color: $backgroundColorPureWhite;
 
@@ -24,6 +24,8 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+
+  background-color: $darkSkyPurple;
 }
 
 html {
@@ -171,7 +173,8 @@ footer {
 }
 
 .section-number {
-  color: $subTextColor;
+  font-size: 1.2rem;
+  color: $mainGold;
 }
 
 // @media (prefers-color-scheme: light) {

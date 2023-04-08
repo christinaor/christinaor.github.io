@@ -10,16 +10,16 @@
   min-height: 100vh;
   padding: 2rem 2.5rem 3rem;
 
-  // background-color: $mainBodyBackgroundBlack;
+  // background-color: $backgroundColorGhostWhite;
 
   // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .about h2 {
-  padding-bottom: 8px;
+  padding-bottom: 14px;
 
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $heroBackgroundColorDarkPurple, $mainTextColorWhite);
+  border-image: linear-gradient(0.25turn, $mainTextColorWhite, $cloudPurple, $darkSkyPurple);
   border-image-slice: 1;
 }
 
@@ -35,13 +35,55 @@
 .description ul li {
   padding: 2rem;
 
-  border: 1px solid $mainTextColor;
+  // border: 1px solid $mainTextColor;
   border-radius: 8px;
   list-style-type: none;
+
+  position: relative;
+
+  background-size: 100% 112.5%;
+
+  background-position: 0 -0.063em;
+  
+  border: 0.063em solid rgba(0, 0, 0, 0.2);
 }
 
+// .description ul li {
+//   position: relative;
+// }
+
+.description ul li:before, .description ul li:after {
+  content: "";
+  position: absolute;
+}
+
+.description ul li:before {
+  top: -3px;
+  left: -3px;
+  bottom: 0;
+  right: -3px;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(transparent));
+  background-image: -webkit-linear-gradient(#fff, transparent);
+  background-image: -moz-linear-gradient(#fff, transparent);
+  background-image: -o-linear-gradient(#fff, transparent);
+  z-index: -2;
+}
+
+.description ul li:after {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $darkSkyPurple;
+}
+
+
+
+
 .description ul li:hover {
-  background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
+  // background-image: linear-gradient(to right, $gradient-purple-start, $gradient-purple-mid, $gradient-purple-end);
+  background-image: linear-gradient(to right, $gradient-green-start, $gradient-green-mid, $gradient-green-end);
 }
 
 li a.blurbLink {

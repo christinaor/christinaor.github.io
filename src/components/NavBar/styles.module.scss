@@ -25,6 +25,9 @@
   background-color: $heroBackgroundColorDarkPurple;
   box-shadow: 0 0 4px 0 $mainTextColorBlack;
 
+  background-color: transparent;
+  // background-image: linear-gradient(to bottom right, $mainBodyBackgroundBlack, $heroBackgroundColorLightPurple);
+
   font-size: 0.8rem;
 }
 

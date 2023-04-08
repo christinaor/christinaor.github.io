@@ -41,7 +41,7 @@
   gap: 1.5rem;
 
   color: $mainTextColorWhite;
-  background-color: $mainBodyBackgroundBlack;
+  background-color: $cardBackgroundColorDarkBlack;
   border-radius: 8px;
   transition: 0.3s;
 }
@@ -114,7 +114,7 @@
 .experience .technology {
   padding: 0.3rem;
 
-  background-color: $mainTextColor;
+  background-color: $backgroundColorGhostWhite;
   color: $mainTextColorBlack;
   font-family: 'Roboto', serif;
   border-radius: 5px;
