@@ -1,3 +1,5 @@
+import downloadResumeIcon from '../../assets/download-resume.svg';
+
 import styles from './styles.module.scss'
 
 export default function Hero() {
@@ -14,6 +16,7 @@ export default function Hero() {
       {/* <p className={styles.heroBlurb}>I build for <span className={styles.emphasize}>productivity</span> and to promote general <span className={styles.emphasize}>goodwill</span>.</p> */}
 
       <button>
+        <img src={downloadResumeIcon} alt="download resume icon" />
         <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">Peek my resume!</a>
       </button>
 

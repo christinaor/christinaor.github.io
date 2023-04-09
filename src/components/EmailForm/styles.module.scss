@@ -82,9 +82,6 @@
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
   .emailForm input, .emailForm textarea {
     width: clamp(20rem, 50vw, 40rem);
-    // width: 40rem;
-    // width: 70vw;
-    // max-width: 20rem;
   }
 }
 

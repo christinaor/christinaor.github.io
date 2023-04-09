@@ -23,7 +23,7 @@ export default function About() {
             </li>
             <li>
               <img src={gearsIcon} alt="gears icon" />
-              <p>My previous role as Software Engineer at an early stage startup called <a className={styles.blurbLink} href="https://www.skematic.com" target="_blank" rel="noopener noreferrer">Skematic</a> involved writing business logic to solve complex issues and building out features across the application in the niche world of compliance tech.</p>
+              <p>I was a Software Engineer at an early stage startup called <a className={styles.blurbLink} href="https://www.skematic.com" target="_blank" rel="noopener noreferrer">Skematic</a>, where I wrote business logic to solve complex issues and built out features across the compliance management platform.</p>
             </li>
             <li>
               <img src={volunteerIcon} alt="volunteering icon" />

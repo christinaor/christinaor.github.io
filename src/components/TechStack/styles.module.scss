@@ -106,7 +106,7 @@
 
   overflow-y: auto;
 
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: 4px 4px 10px 0 $mainTextColorBlack;
 
   background-color: $darkSkyBlue;
@@ -139,7 +139,7 @@
   // background-color: $cardBackground;
   // color: $mainTextColorBlack;
   // background-color: $heroBackgroundColorLightPurple;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .techName {
@@ -153,7 +153,7 @@
   width: 2.5rem;
 }
 
-@media only screen and (min-width: $mobile-max) {
+@media only screen and (min-width: $tablet-small) {
   .buttonsAndTechList {
     flex-direction: row;
     align-items: flex-start;
@@ -170,7 +170,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $tablet-mid) {
   .techList {
     grid-template-columns: repeat(4, 6.5rem);
   }
@@ -182,28 +182,28 @@
   }
 }
 
-@media only screen and (min-width: $desktop-large) {
-  .techList {
-    grid-template-columns: repeat(6, 10rem);
+// @media only screen and (min-width: $desktop-large) {
+//   .techList {
+//     grid-template-columns: repeat(6, 10rem);
 
-  }
+//   }
 
-  .logoAndName {
-    gap: 0.5rem;
-    text-align: center;
+  // .logoAndName {
+  //   gap: 0.5rem;
+  //   text-align: center;
   
-    width: 9rem;
-    height: 9rem;
-    font-size: 0.8rem;
-    background-color: $cardBackground;
-    border-radius: 4px;
-  }
+  //   width: 9rem;
+  //   height: 9rem;
+  //   font-size: 0.8rem;
+  //   background-color: $cardBackground;
+  //   border-radius: 4px;
+  // }
 
-  .logo {
-    width: 4rem;
-  }
+  // .logo {
+  //   width: 4rem;
+  // }
 
-  .techName {
-    font-size: 1.2rem;
-  }
-}
+  // .techName {
+  //   font-size: 1.2rem;
+  // }
+// }
