@@ -6,8 +6,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: $mainTextColor;
-  background-color: $mainBodyBackground;
+  color: $mainTextColorWhite;
+  // background-color: $mainBodyBackground;
+  background-color: $backgroundColorPureWhite;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +24,8 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+
+  background-color: $darkSkyBlue;
 }
 
 html {
@@ -86,11 +89,6 @@ footer {
   color: $mainTextColor;
   background-color: $footerBackground;
   // box-shadow: 0 0 0.5rem 0 $footerBackground
-}
-
-h1, h2 {
-  font-family: 'Roboto', serif;
-  color: $mainHeaderColor;
 }
 
 // p {
@@ -175,7 +173,8 @@ h1, h2 {
 }
 
 .section-number {
-  color: $subTextColor;
+  font-size: 1.2rem;
+  color: $mainGold;
 }
 
 // @media (prefers-color-scheme: light) {

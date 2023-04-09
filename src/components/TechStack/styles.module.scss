@@ -7,55 +7,109 @@
   justify-content: center;
   align-items: center;
 
-  margin: 3rem 0;
-  padding: 2rem 0 3rem;
+  // margin: 3rem 0;
+  padding: 2rem 0 4rem;
 
-  min-height: 100vh;
-  color: $mainHeaderColor;
-  background: $mainBodyBackgroundBlack;
-  box-shadow: 0 0 1rem 0 $mainTextColorBlack;
+  // min-height: 100vh;
+
+  background-color: $skyPurple;
+  // color: $mainHeaderColor;
+  // background: $mainBodyBackgroundBlack;
+  // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
 }
 
 .techSection h2 {
-  margin: 2rem 0;
-  text-align: center;
+  padding-bottom: 14px;
+
+  border-bottom: 2px solid transparent;
+  // border-image: linear-gradient(0.25turn, $basePurple, $darkSkyPurple, $mainGold, $basePurple);
+  border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $mainGold, $skyPurple);
+  border-image-slice: 1;
 }
 
 .buttonsAndTechList {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  // gap: 1rem;
 }
 
 .filterButtonsWrapper {
-  display: grid;
-  grid-template-columns: max-content max-content;
+  // display: grid;
+  // grid-template-columns: max-content max-content;
+
+  display: flex;
 
   // margin: 1.3rem 1rem 1.3rem 0;
   gap: 0.8rem;
+  padding: 8px;
+
+  // border-bottom: 2px solid transparent;
+  // border-image: linear-gradient(0.25turn, $heroBackgroundColorDarkPurple, $mainTextColorWhite);
+  // border-image-slice: 1;
 }
 
-.filterButtonsWrapper button {
+.filterButtonsWrapper button, .filterButtonsWrapper button.inactive {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 5rem;
-  height: 3rem;
+  padding: 1rem;
+  // width: 5rem;
+  // height: 3rem;
+
+  color: $mainTextColorBlack;
+  background-color: $mainTextColorWhite;
+
+  border: 1px solid $mainTextColorWhite;
+  border-radius: 40px;
+  box-shadow: 4px 4px 0 0 $cloudPurple;
+  opacity: 0.6;
+
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filterButtonsWrapper button.active {
+  border: 1px solid $darkSkyBlue;
+
+  color: $mainTextColorWhite;
+  background-color: $darkSkyBlue;
+
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .filterButtonsWrapper button:hover, button:hover, button.active:hover {
+    color: $mainTextColorBlack;
+    background-color: $mainGold;
+    border: 1px solid $mainGold;
+    box-shadow: 2px 2px 10px 0 $cloudPurple;
+  }
 }
 
 .techList {
   display: grid;
   // grid-template-columns: repeat(4, fit-content(80vw));
   grid-template-columns: repeat(3, 6.5rem);
+  grid-template-rows: repeat(10, min-content);
 
-  justify-content: center;
-  align-items: center;
-  margin: 1.3rem 0;
+  // justify-content: center;
+  // align-items: center;
+  margin: 1.3rem 0 0 0;
   row-gap: 0.8rem;
 
-  border-radius: 5px;
+  padding: 1rem;
+  height: 25rem;
+
+  overflow-y: auto;
+
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px 0 $mainTextColorBlack;
+
+  background-color: $darkSkyBlue;
 }
 
 .techItem {
@@ -64,7 +118,7 @@
 }
 
 .logoAndName:hover {
-  box-shadow: $subTextColor 0px 50px 100px -20px, $subTextColor 0px 30px 60px -30px, $subTextColor 0px -2px 6px 0px inset;
+  box-shadow: $mainGold 0px 50px 100px -20px, $mainGold 0px 30px 60px -30px, $mainGold 0px -2px 6px 0px inset;
 }
 
 .logoAndName {
@@ -81,8 +135,15 @@
   height: 5.5rem;
   
   font-size: 0.8rem;
-  background-color: $cardBackground;
-  border-radius: 4px;
+  background-color: $cloudPurple;
+  // background-color: $cardBackground;
+  // color: $mainTextColorBlack;
+  // background-color: $heroBackgroundColorLightPurple;
+  border-radius: 6px;
+}
+
+.techName {
+  color: $mainTextColorWhite;
 }
 
 .logo {
@@ -92,7 +153,7 @@
   width: 2.5rem;
 }
 
-@media only screen and (min-width: $mobile-max) {
+@media only screen and (min-width: $tablet-small) {
   .buttonsAndTechList {
     flex-direction: row;
     align-items: flex-start;
@@ -109,7 +170,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $tablet-mid) {
   .techList {
     grid-template-columns: repeat(4, 6.5rem);
   }
@@ -121,28 +182,28 @@
   }
 }
 
-@media only screen and (min-width: $desktop-large) {
-  .techList {
-    grid-template-columns: repeat(6, 10rem);
+// @media only screen and (min-width: $desktop-large) {
+//   .techList {
+//     grid-template-columns: repeat(6, 10rem);
 
-  }
+//   }
 
-  .logoAndName {
-    gap: 0.5rem;
-    text-align: center;
+  // .logoAndName {
+  //   gap: 0.5rem;
+  //   text-align: center;
   
-    width: 9rem;
-    height: 9rem;
-    font-size: 0.8rem;
-    background-color: $cardBackground;
-    border-radius: 4px;
-  }
+  //   width: 9rem;
+  //   height: 9rem;
+  //   font-size: 0.8rem;
+  //   background-color: $cardBackground;
+  //   border-radius: 4px;
+  // }
 
-  .logo {
-    width: 4rem;
-  }
+  // .logo {
+  //   width: 4rem;
+  // }
 
-  .techName {
-    font-size: 1.2rem;
-  }
-}
+  // .techName {
+  //   font-size: 1.2rem;
+  // }
+// }

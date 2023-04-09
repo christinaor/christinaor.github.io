@@ -7,13 +7,18 @@
   justify-content: center;
   align-items: center;
 
-  padding: 0 0 3rem;
+  padding: 2rem 0 4rem;
 
-  color: $mainHeaderColor;
+  background-color: $darkSkyPurple;
+  // color: $mainHeaderColor;
 }
 
 .experienceSection h2 {
-  color: $mainHeaderColor;
+  padding-bottom: 14px;
+
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, $darkSkyPurple, $neutralGray, $cloudPurple, $darkSkyPurple);
+  border-image-slice: 1;
 }
 
 .experiences {
@@ -36,17 +41,20 @@
 
   width: clamp(17rem, 75vw, 23rem);
   // height: clamp(30rem, 70vh, 32rem);
+  height: 32rem;
   margin: 2rem 0;
   padding: 0.3rem 1.5rem 2rem;
   gap: 1.5rem;
 
-  background-color: $mainBodyBackgroundBlack;
+  color: $mainTextColorWhite;
+  background-color: $darkSkyBlue;
   border-radius: 8px;
+  box-shadow: $neutralGray 0px 2px 2px -3px, $neutralGray 0px 8px 20px -8px, $neutralGray 0px 0px;
   transition: 0.3s;
 }
 
 .experience:hover {
-  box-shadow: $subTextColor 0px 50px 100px -20px, $subTextColor 0px 30px 60px -30px, $subTextColor 0px -2px 6px 0px inset;
+  box-shadow: $mainGold 0px 50px 100px -20px, $mainGold 0px 30px 60px -30px, $mainGold 0px -2px 6px 0px inset;
 }
 
 .experience .titleAndLinks {
@@ -62,7 +70,7 @@
 }
 
 .experience a h3:hover {
-  color: $subTextColor;
+  filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(1967%) hue-rotate(328deg) brightness(99%) contrast(111%);
 }
 
 .experience .links {
@@ -75,11 +83,11 @@
 }
 
 .links a img {
-  width: 1.2rem;
+  width: 1.5rem;
 }
 
 .links a img:hover {
-  filter: invert(53%) sepia(60%) saturate(2375%) hue-rotate(231deg) brightness(100%) contrast(94%);
+  filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(1967%) hue-rotate(328deg) brightness(99%) contrast(111%);
 }
 
 .experience .experienceImage {
@@ -111,13 +119,19 @@
 }
 
 .experience .technology {
-  padding: 0.3rem;
+  padding: 0.3rem 0.5rem;
 
-  background-color: $mainTextColor;
+  background-color: $mainTextColorWhite;
   color: $mainTextColorBlack;
-  font-family: 'Roboto', serif;
-  border-radius: 5px;
+  // font-family: 'Roboto', serif;
+  border-radius: 20px;
   text-align: center;
+}
+
+.experience .technology:hover {
+  // background-color: $mainGold;
+  color: $mainTextColorWhite;
+  background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
 }
 
 .dots {
@@ -133,19 +147,22 @@
 
   width: 1rem;
   height: 1rem;
-  background-color: $mainBodyBackground;
-  border: 1px solid $mainHeaderColor;
+  // background-color: $mainBodyBackground;
+  // border: 1px solid $mainHeaderColor;
+  border: 2px solid $mainTextColorBlack;
   border-radius: 50%;
   transition: 0.3s;
+
+  opacity: 0.8;
 }
 
 .dot.activeDot {
-  background-color: $mainHeaderColor;
-  opacity: 0.7;
+  background-color: $mainTextColorBlack;
+  opacity: 1;
 }
 
 .dot:hover {
-  background-color: $subTextColor;
+  background-color: $mainTextColorBlack;
   width: 1.3rem;
   height: 1.3rem;
 }
@@ -181,8 +198,7 @@
   }
 
   .leftArrow:hover, .rightArrow:hover {
-    filter: invert(53%) sepia(60%) saturate(2375%) hue-rotate(231deg) brightness(100%) contrast(94%);
-    transition: 0.3s;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(1967%) hue-rotate(328deg) brightness(99%) contrast(111%);
   }
 
   .rightArrow {

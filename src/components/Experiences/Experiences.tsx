@@ -67,7 +67,9 @@ export default function Experiences() {
 
   return (
     <section id="experiences" className={`${styles.experienceSection}`}>
-      <h2 className={`${styles.header}`}><span className='section-number'>3. </span>Experience</h2>
+      <h2 className={`${styles.header}`}>
+        <span className='section-number'>3. </span>
+        Experience</h2>
       <div className={styles.experiences}>
         <img className={styles.leftArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleLeftArrowClick}/>
         {cardsArray && cardsArray[cardIndex]}

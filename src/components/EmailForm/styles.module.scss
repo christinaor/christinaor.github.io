@@ -22,7 +22,7 @@
 .emailForm label {
   padding: 2px;
 
-  font-family: 'Roboto', serif;
+  // font-family: 'Roboto', serif;
 }
 
 .emailForm input, .emailForm textarea {
@@ -35,7 +35,7 @@
 }
 
 .emailForm input:hover, .emailForm textarea:hover {
-  border: 2px solid $subTextColor;
+  border: 2px solid $mainGold;
 }
 
 .emailForm textarea {
@@ -47,19 +47,41 @@
   height: 2rem;
 }
 
+.emailForm button {
+  cursor: pointer;
+
+  // margin: 1rem;
+  padding: 1rem;
+  // width: 10rem;
+
+  border: 1px solid $mainTextColorWhite;
+  border-radius: 40px;
+
+  font-weight: 600;
+
+  color: $mainTextColorBlack;
+  background-color: $mainTextColorWhite;
+
+  box-shadow: 5px 5px 0 0 $cloudPurple;
+  transition: 0.3s;
+}
+.emailForm button:hover {
+  background-color: $mainTextColorWhite;
+  border: 1px solid $mainTextColorWhite;
+  box-shadow: 1px 1px 0 0 $cloudPurple;
+}
+
 .emailSent {
   padding: 0.6rem;
   
-  font-size: 0.9rem;
-  color: $green-light;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $mainGold;
 }
 
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
   .emailForm input, .emailForm textarea {
     width: clamp(20rem, 50vw, 40rem);
-    // width: 40rem;
-    // width: 70vw;
-    // max-width: 20rem;
   }
 }
 
