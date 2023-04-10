@@ -20,7 +20,7 @@
 }
 
 .emailForm label {
-  padding: 2px;
+  padding: 0 0 5px 5px;
 
   // font-family: 'Roboto', serif;
 }
@@ -29,11 +29,10 @@
   width: 15rem;
 
   border: 3px solid $mainTextColorBlack;
-  border-radius: 0;
+  border-radius: 8px;
   font-family: inherit;
   background-color: $mainHeaderColor;
 }
-
 .emailForm input:hover, .emailForm textarea:hover {
   border: 3px solid $baseGold;
 }

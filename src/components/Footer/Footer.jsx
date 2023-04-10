@@ -73,7 +73,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="contact-me">
+              <a href="#contact-me">
                 <img src={contactIcon} className="contact-icon" alt="contact icon linking to contact section" />
                 <div>Contact</div>
               </a>

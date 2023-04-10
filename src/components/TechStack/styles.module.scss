@@ -13,9 +13,25 @@
   // min-height: 100vh;
 
   background-color: $skyPurple;
-  // color: $mainHeaderColor;
-  // background: $mainBodyBackgroundBlack;
-  // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
+
+  /* Scrollbar for Firefox
+  scrollbar-width: thin;
+  scrollbar-color: $skyPurple $neutralGray;
+
+  /* Scrollbar for Chrome, Edge, and Safari */
+  .techList::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .techList::-webkit-scrollbar-track {
+    background: $darkSkyBlue;
+  }
+
+  .techList::-webkit-scrollbar-thumb {
+    background-color: $neutralGray;
+    border-radius: 12px;
+    border: 3px solid $neutralGray;
+  }
 }
 
 .techSection h2 {
@@ -100,7 +116,6 @@
   // align-items: center;
   margin: 1.3rem 0 0 0;
   row-gap: 0.8rem;
-
   padding: 1rem;
   height: 25rem;
 
@@ -108,7 +123,6 @@
 
   border-radius: 4px;
   box-shadow: 4px 4px 10px 0 $mainTextColorBlack;
-
   background-color: $darkSkyBlue;
 }
 
