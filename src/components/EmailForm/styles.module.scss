@@ -28,14 +28,14 @@
 .emailForm input, .emailForm textarea {
   width: 15rem;
 
-  border: 2px solid $mainTextColorBlack;
+  border: 3px solid $mainTextColorBlack;
   border-radius: 0;
   font-family: inherit;
   background-color: $mainHeaderColor;
 }
 
 .emailForm input:hover, .emailForm textarea:hover {
-  border: 2px solid $mainGold;
+  border: 3px solid $baseGold;
 }
 
 .emailForm textarea {
