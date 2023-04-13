@@ -56,6 +56,7 @@
 .experiencesInner {
   white-space: nowrap;
   transition: transform 0.3s;
+  scroll-snap-type: x mandatory;
 }
 
 /* Experience item */
@@ -85,6 +86,8 @@
   // border-radius: 8px;
   // box-shadow: $neutralGray 0px 2px 2px -3px, $neutralGray 0px 8px 20px -8px, $neutralGray 0px 0px;
   // transition: 0.3s;
+
+  scroll-snap-align: center;
 }
 
 .experience {
