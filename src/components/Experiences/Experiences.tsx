@@ -1,4 +1,5 @@
 import { useCallback, useRef, useEffect, useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 import experiencesData from '../../../data/experiences';
 
@@ -10,6 +11,7 @@ import styles from './styles.module.scss';
 
 export default function Experiences() {
   const [cardIndex, setCardIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
   // const [carouselScroll, setCarouselScroll] = useState(0);
   const experiencesMaxScrollWidth = useRef(null);
 
@@ -56,17 +58,6 @@ export default function Experiences() {
     )
   });
 
-  // Array of carousel dots
-  const carouselDots = experiencesData.map((experience, index) => {
-    return (
-      <button 
-        key={`${experience.title}-${index}-dot`} 
-        className={`${styles.dot} ${index === cardIndex ? styles.activeDot : ""}`} 
-        onClick={() => setCardIndex(index)}
-      />
-    )
-  });
-
   const handleScroll = useCallback((e) => {
     e.preventDefault();
     // console.log(scrollX.current, e.target.scrollLeft)
@@ -110,7 +101,7 @@ export default function Experiences() {
 
   const handleLeftArrowClick = () => {
     console.log('left clicked')
-    console.log(experiencesMaxScrollWidth.current)
+    // console.log(experiencesMaxScrollWidth.current)
     if (cardIndex - 1 >= 0) {
       setCardIndex(cardIndex - 1)
     } else {
@@ -126,10 +117,33 @@ export default function Experiences() {
       // Need to set scroll to the start of scroll length for card at index
       // scrollX.current = (experiencesMaxScrollWidth.current.scrollWidth / carouselCards.length) * (cardIndex + 1) + 1;
     } else {
-      setCardIndex(0)
-      scrollX.current = 0;
+      setCardIndex(0);
+      // scrollX.current = 0;
     }
   }, [cardIndex, carouselCards])
+
+  const touchHandlers = useSwipeable({
+    onSwipedRight: () => handleLeftArrowClick(),
+    onSwipedLeft: () => handleRightArrowClick
+  })
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!paused) {
+        if (cardIndex + 1 < carouselCards.length) {
+          setCardIndex(cardIndex + 1);
+        } else {
+          setCardIndex(0);
+        }
+      }
+    }, 5000);
+
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  });
 
   return (
     <section id="experiences" className={`${styles.experienceSection}`}>
@@ -138,11 +152,17 @@ export default function Experiences() {
         Experience
       </h2>
 
-      <div className={styles.experiencesOuter}>
+      <div 
+        {...touchHandlers}
+        className={styles.experiencesOuter}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
         <div 
           ref={experiencesMaxScrollWidth} 
           className={styles.experiencesInner} 
-          // style={{ transform: `translateX(-${cardIndex * 200})`}} 
+          style={{ transform: `translateX(-${cardIndex * 100}%)`}}
+          // style={{ transform: `translateX(-100%)`}} 
           // style={{ transform: `${carouselScroll}` }} 
           onScroll={handleScroll}
         >
@@ -154,7 +174,15 @@ export default function Experiences() {
         <img className={styles.leftArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleLeftArrowClick}/>
 
         <div className={styles.dots}>
-          {carouselDots}
+          {experiencesData?.map((experience, index) => {
+            return (
+              <button 
+                key={`${experience.title}-${index}-dot`} 
+                className={`${styles.dot} ${index === cardIndex ? styles.activeDot : ""}`} 
+                onClick={() => setCardIndex(index)}
+              />
+            )
+          })}
         </div>
         
         <img className={styles.rightArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleRightArrowClick} />
