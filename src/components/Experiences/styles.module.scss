@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: center;
 
-  // padding: 2rem 0 4rem;
   padding: 4rem 0 6rem;
+  gap: 1rem;
 
   background-color: $darkSkyPurple;
   // color: $mainHeaderColor;
@@ -32,10 +32,14 @@
 }
 
 .experienceSection h2 {
+  // align-self: flex-start;
+  margin-bottom: 0;
+  // margin-left: 4rem;
+  // padding-right: 4rem;
   padding-bottom: 14px;
 
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $darkSkyPurple, $neutralGray, $cloudPurple, $darkSkyPurple);
+  border-image: linear-gradient(0.25turn, $cloudPurple, $neutralGray, $cloudPurple);
   border-image-slice: 1;
 }
 
@@ -46,16 +50,26 @@
 }
 
 .experiencesOuter {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
-
   overflow: hidden;
 }
 
 .experiencesInner {
   white-space: nowrap;
   transition: transform 0.3s;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  /* Hides scrollbar */
+  &::-webkit-scrollbar:horizontal {
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  
+  // &::-webkit-scrollbar-thumb:horizontal {
+  //   display: none;
+  // }
 }
 
 /* Experience item */
@@ -68,23 +82,7 @@
   
   color: $mainTextColorWhite;
 
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-
-  // width: clamp(17rem, 75vw, 23rem);
-  // // height: clamp(30rem, 70vh, 32rem);
-  // height: 32rem;
-  // margin: 2rem 0;
-  // padding: 0.3rem 1.5rem 2rem;
-  // gap: 1.5rem;
-
-  // color: $mainTextColorWhite;
-  // background-color: $darkSkyBlue;
-  // border-radius: 8px;
-  // box-shadow: $neutralGray 0px 2px 2px -3px, $neutralGray 0px 8px 20px -8px, $neutralGray 0px 0px;
-  // transition: 0.3s;
+  scroll-snap-align: center;
 }
 
 .experience {
@@ -99,7 +97,7 @@
   height: 32rem;
   margin: 2rem 0;
   padding: 0.3rem 1.5rem 2rem;
-  gap: 1.5rem;
+  gap: 1.2rem;
 
   color: $mainTextColorWhite;
   background-color: $darkSkyBlue;
@@ -195,6 +193,20 @@
   gap: 4rem;
 }
 
+.leftArrow, .rightArrow {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+.leftArrow:hover, .rightArrow:hover {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(1967%) hue-rotate(328deg) brightness(99%) contrast(111%);
+}
+
+.rightArrow {
+  transform: rotate(180deg);
+}
+
 .dots {
   display: flex;
   min-height: 1.3rem;
@@ -265,19 +277,13 @@
   //   display: none;
   // }
 
-  .leftArrow, .rightArrow {
-    width: 2rem;
-    height: 2rem;
-    display: block;
-  }
+  // .leftArrow, .rightArrow {
+  //   width: 2rem;
+  //   height: 2rem;
+  //   display: block;
+  // }
 
-  .leftArrow:hover, .rightArrow:hover {
-    filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(1967%) hue-rotate(328deg) brightness(99%) contrast(111%);
-  }
 
-  .rightArrow {
-    transform: rotate(180deg);
-  }
 
   .experience {
     min-width: 20rem;

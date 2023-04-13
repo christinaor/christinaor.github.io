@@ -76,13 +76,12 @@ export default function Experiences() {
         <span className='section-number'>3. </span>
         Experience
       </h2>
-      {/* <div className={styles.carouselContent}> */}
-        <div className={styles.experiencesOuter}>
-          <div className={styles.experiencesInner} style={{ transform: `translateX(-${cardIndex * 100}%)`}}>
-            {carouselCards}
-          </div>
+      
+      <div className={styles.experiencesOuter}>
+        <div className={styles.experiencesInner} style={{ transform: `translateX(-${cardIndex * 100}%)`}}>
+          {carouselCards}
         </div>
-      {/* </div> */}
+      </div>
 
       <div className={styles.cardNavigation}>
         <img className={styles.leftArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleLeftArrowClick}/>
