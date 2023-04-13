@@ -8,18 +8,40 @@
   // align-items: center;
 
   min-height: 100vh;
-  padding: 2rem 2.5rem 0;
+  padding: 4rem 2.5rem 2rem;
 
-  // background-color: $darkSkyPurple;
+  // transition-timing-function: ease-in;
+  // transition: 0.2s;
+  // transform: translateY(130%);
 
-  // box-shadow: 0 0 1rem 0 $mainTextColorBlack;
+  // transition-timing-function: ease-out;
+  // transition: 0.25s;
+  // transform: translateY(0);
+
+  background-image: linear-gradient(to bottom, $cloudPurple, 10%, $darkSkyBlue);
+
+  // padding: 2rem 2.5rem;
+
+  clip-path: polygon(
+    0 0, 
+    100% calc(0% + 2rem), 
+    100% calc(100% - 2rem),
+    0 100%
+  );
+  -webkit-clip-path: polygon(
+    0 0, 
+    100% calc(0% + 2rem), 
+    100% calc(100% - 2rem),
+    0 100%
+  );
+  margin-bottom: -2rem;
 }
 
 .about h2 {
   padding-bottom: 14px;
 
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $mainTextColorWhite, $skyPurple, $mainGold, $cloudPurple, $darkSkyPurple);
+  border-image: linear-gradient(0.25turn, $mainTextColorWhite, $skyPurple, $cloudPurple);
   border-image-slice: 1;
 }
 

@@ -75,7 +75,8 @@ export default function TechStack() {
     <div id="tech-stack" className={styles.techSection}>
       <h2 className={styles.techHeader}>
         <span className='section-number'>2. </span>
-        Tech I've Worked With</h2>
+        Tech I've Worked With
+      </h2>
       <div className={styles.buttonsAndTechList}>
         <div className={styles.filterButtonsWrapper}>
           {technologyFilters?.map(filter => {

@@ -7,10 +7,28 @@
   justify-content: center;
   align-items: center;
 
-  padding: 2rem 0 4rem;
+  // padding: 2rem 0 4rem;
+  padding: 4rem 0 6rem;
 
   background-color: $darkSkyPurple;
   // color: $mainHeaderColor;
+
+  clip-path: polygon(
+    0 calc(0% + 2rem), 
+    100% 0, 
+    100% calc(100% + 2rem),
+    0 100%
+  );
+  -webkit-clip-path: polygon(
+    0 calc(0% + 2rem), 
+    100% 0, 
+    100% 100%,
+    0 calc(100% - 2rem)
+  );
+
+  background-image: linear-gradient(to bottom, $cloudPurple, 10%, $darkSkyPurple);
+
+  margin-bottom: -2rem;
 }
 
 .experienceSection h2 {

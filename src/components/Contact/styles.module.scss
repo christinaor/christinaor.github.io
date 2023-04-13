@@ -7,11 +7,18 @@
   justify-content: center;
   align-items: center;
 
-  padding: 2rem 3rem 4rem;
+  padding: 4rem 3rem 4rem;
 
   // min-height: 100vh;
   color: $mainHeaderColor;
   background-color: $darkSkyBlue;
+
+  // border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $mainGold, $skyPurple);
+  // border-image-slice: 1;
+
+  // background-image: radial-gradient( $skyPurple, 10%, $darkSkyBlue);
+
+  // margin: 2rem;
 }
 
 .contactBlurb {
