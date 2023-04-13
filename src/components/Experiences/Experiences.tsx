@@ -124,7 +124,7 @@ export default function Experiences() {
 
   const touchHandlers = useSwipeable({
     onSwipedRight: () => handleLeftArrowClick(),
-    onSwipedLeft: () => handleRightArrowClick
+    onSwipedLeft: () => handleRightArrowClick(),
   })
 
   useEffect(() => {
