@@ -11,7 +11,8 @@
 
   // min-height: 100vh;
   color: $mainHeaderColor;
-  background-color: $darkSkyBlue;
+  // background-color: $darkSkyBlue;
+  background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
 
   // border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $mainGold, $skyPurple);
   // border-image-slice: 1;

@@ -6,11 +6,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
   // gap: 1rem;
+  padding: 3rem 0 5rem;
 
   // background-color: $darkSkyBlue;
-  background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
+  // background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
 }
 
 .footer h3 {
