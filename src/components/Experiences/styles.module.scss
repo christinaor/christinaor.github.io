@@ -50,15 +50,17 @@
 }
 
 .experiencesOuter {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .experiencesInner {
   white-space: nowrap;
-  transition: transform 0.3s;
+  transition: transform 0.9s;
+
 
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
   /* Hides scrollbar */
   &::-webkit-scrollbar:horizontal {
@@ -66,10 +68,11 @@
     width: 0;
     display: none;
   }
-  
   // &::-webkit-scrollbar-thumb:horizontal {
   //   display: none;
   // }
+  // scrollbar-width: 400px;
+  // width: 100%;
 }
 
 /* Experience item */
