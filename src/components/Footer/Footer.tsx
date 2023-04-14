@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react';
-
 import aboutIcon from '../../assets/jump-to-icons/about.svg'
 import contactIcon from '../../assets/jump-to-icons/contact.svg'
 import experienceIcon from '../../assets/jump-to-icons/experience.svg'
@@ -83,9 +81,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
-      {/* <div>{quoteOfTheDay}</div> */}
-
       <div className={styles.footerText}>Built && Crafted: Christina Or.</div>
     </footer>
   )
