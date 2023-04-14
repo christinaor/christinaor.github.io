@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react';
+
 import aboutIcon from '../../assets/jump-to-icons/about.svg'
 import contactIcon from '../../assets/jump-to-icons/contact.svg'
 import experienceIcon from '../../assets/jump-to-icons/experience.svg'
@@ -12,6 +14,41 @@ import linkedinIcon from '../../assets/social-media-logos/linkedin-svgrepo-com.s
 import styles from './styles.module.scss';
 
 export default function Footer() {
+  // const axios = require("axios");
+
+  // const options = {
+  //   method: 'GET',
+  //   url: 'https://numbersapi.p.rapidapi.com/6/21/date',
+  //   params: {fragment: 'true', json: 'true'},
+  //   headers: {
+  //     'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+  //     'X-RapidAPI-Host': 'numbersapi.p.rapidapi.com'
+  //   }
+  // };
+  
+  // axios.request(options).then(function (response) {
+  //   console.log(response.data);
+  // }).catch(function (error) {
+  //   console.error(error);
+  // });
+
+  const [quoteList, setQuoteList] = useState()
+
+  useEffect(() => {
+    fetch("https://zenquotes.io/api/quotes", {
+      method: "GET",
+      // mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
+    }).then(response => {
+      console.log(response)
+      return response.json()
+    }).then((data) => setQuoteList(data))
+  }, [])
+  console.log(quoteList)
+
   return (
     <footer id="footer" className={styles.footer}>
       <div className={styles.links}>
@@ -81,6 +118,8 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
+      {/* <div>{quoteOfTheDay}</div> */}
 
       <div className={styles.footerText}>Built && Crafted: Christina Or.</div>
     </footer>
