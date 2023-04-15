@@ -4,6 +4,7 @@ import { useSwipeable } from 'react-swipeable';
 import experiencesData from '../../../data/experiences';
 
 import arrowIcon from '../../assets/arrow.svg';
+import rewindeArrowIcon from '../../assets/rewind-arrow.svg';
 import githubLinkLogo from '../../assets/experience-images/github-svgrepo-com.svg';
 import websiteIcon from '../../assets/experience-images/external-link-svgrepo-com.svg';
 
@@ -120,7 +121,17 @@ export default function Experiences() {
       setCardIndex(0);
       // scrollX.current = 0;
     }
-  }, [cardIndex, carouselCards])
+  }, [cardIndex, carouselCards]);
+
+  const handleRewindClick = () => {
+    console.log('left rewind clicked')
+    setCardIndex(0);
+  };
+
+  const handleFastForwardClick = () => {
+    console.log('right forward clicked')
+    setCardIndex(experiencesData.length - 1);
+  };
 
   const touchHandlers = useSwipeable({
     onSwipedRight: () => handleLeftArrowClick(),
@@ -171,6 +182,7 @@ export default function Experiences() {
       </div>
 
       <div className={styles.cardNavigation}>
+        <img className={styles.rewindArrow} src={rewindeArrowIcon} alt="left rewind arrow icon for moving to the first experience card" onClick={handleRewindClick}/>
         <img className={styles.leftArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleLeftArrowClick}/>
 
         <div className={styles.dots}>
@@ -186,6 +198,7 @@ export default function Experiences() {
         </div>
         
         <img className={styles.rightArrow} src={arrowIcon} alt="left arrow icon for moving left in experience cards" onClick={handleRightArrowClick} />
+        <img className={styles.fastForwardArrow} src={rewindeArrowIcon} alt="right rewind arrow icon for moving to the last experience card" onClick={handleFastForwardClick}/>
       </div>
     </section>
   )

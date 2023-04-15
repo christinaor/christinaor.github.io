@@ -89,7 +89,7 @@
   
   color: $mainTextColorWhite;
 
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 }
 
 .experience {
@@ -110,7 +110,7 @@
   background-color: $darkSkyBlue;
   border-radius: 8px;
   box-shadow: $neutralGray 0px 2px 2px -3px, $neutralGray 0px 8px 20px -8px, $neutralGray 0px 0px;
-  transition: 0.3s;
+  transition: ease all 0.3s;
 }
 .experience:hover {
   box-shadow: $baseGold 0px 50px 100px -20px, $baseGold 0px 30px 60px -30px, $baseGold 0px -2px 6px 0px inset;
@@ -198,10 +198,10 @@
   align-items: center;
   // margin-top: 1rem;
 
-  gap: 4rem;
+  // gap: 4rem;
 }
 
-.cardNavigation .leftArrow, .rightArrow {
+.cardNavigation .leftArrow, .cardNavigation .rightArrow, .cardNavigation .rewindArrow, .cardNavigation .fastForwardArrow {
   width: 2rem;
   height: 2rem;
   display: block;
@@ -209,12 +209,16 @@
   cursor: pointer;
 }
 
-.cardNavigation .leftArrow:hover, .rightArrow:hover {
+.cardNavigation .leftArrow:hover, .cardNavigation .rightArrow:hover, .cardNavigation .rewindArrow:hover, .cardNavigation .fastForwardArrow:hover {
   filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(1967%) hue-rotate(328deg) brightness(99%) contrast(111%);
 }
 
-.cardNavigation .rightArrow {
+.cardNavigation .rightArrow, .cardNavigation .fastForwardArrow {
   transform: rotate(180deg);
+}
+
+.cardNavigation .leftArrow, .cardNavigation .rightArrow {
+  margin: 0 1rem;
 }
 
 .cardNavigation .dots {
@@ -222,6 +226,7 @@
   min-height: 1.5rem;
   
   gap: 1.5rem;
+  margin: 0 2.5rem;
 }
 
 .cardNavigation .dots .dot:hover {
