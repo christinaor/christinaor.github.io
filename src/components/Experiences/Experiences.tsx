@@ -13,16 +13,7 @@ import styles from './styles.module.scss';
 export default function Experiences() {
   const [cardIndex, setCardIndex] = useState(0);
   const [paused, setPaused] = useState(false);
-  // const [carouselScroll, setCarouselScroll] = useState(0);
   const experiencesMaxScrollWidth = useRef(null);
-
-  // useEffect(() => {
-  //   // ref.scrollLeft gives start point of current scroll view
-  //   // ref.scrollWidth gives total width of element
-  //   console.log('width: ', (experiencesMaxScrollWidth.current ? `${experiencesMaxScrollWidth.current.scrollWidth}, ${experiencesMaxScrollWidth.current.scrollLeft}` : ""))
-  // }, [experiencesMaxScrollWidth.current]);
-
-  // const isScrolling = useRef(false);
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollX = useRef(0);
 
@@ -61,48 +52,26 @@ export default function Experiences() {
 
   const handleScroll = useCallback((e) => {
     e.preventDefault();
-    // console.log(scrollX.current, e.target.scrollLeft)
-
-    // console.log(isScrolling.current)
-    // if (!isScrolling.current) {
-      console.log('in handleScroll', isScrolling)
       if (!isScrolling) {
-      
-      // Set isScrolling to true to stop repeat scrolling
-      // isScrolling.current = true;
       setIsScrolling(true);
-
       if (e.target.scrollLeft > scrollX.current) {
         setCardIndex(cardIndex + 1)
-        console.log('greater than current')
       } else {
         setCardIndex(cardIndex - 1)
-        console.log('less than current')
       }
     }
     scrollX.current = e.target.scrollLeft;
   }, [isScrolling, cardIndex]);
-  console.log('cardIndex:', cardIndex)
-  console.log('scrollX: ', scrollX.current)
 
   useEffect(() => {
-    // Throttle scrolling - reset after 0.3s
-    console.log('in useEffect', isScrolling)
-    // if (isScrolling.current) {
     if (isScrolling) {
       setTimeout(() => {
-        // isScrolling.current = false;
-        // console.log(isScrolling.current)
         setIsScrolling(false);
       }, 1500);
     }
-  }, [isScrolling])
-  console.log('outside', isScrolling)
-
+  }, [isScrolling]);
 
   const handleLeftArrowClick = () => {
-    console.log('left clicked')
-    // console.log(experiencesMaxScrollWidth.current)
     if (cardIndex - 1 >= 0) {
       setCardIndex(cardIndex - 1)
     } else {
@@ -111,25 +80,18 @@ export default function Experiences() {
   };
 
   const handleRightArrowClick = useCallback(() => {
-    console.log('right clicked')
-    // console.log((experiencesMaxScrollWidth.current.scrollWidth / carouselCards.length) * (cardIndex + 1) + 1)
     if (cardIndex + 1 < carouselCards.length) {
       setCardIndex(cardIndex + 1);
-      // Need to set scroll to the start of scroll length for card at index
-      // scrollX.current = (experiencesMaxScrollWidth.current.scrollWidth / carouselCards.length) * (cardIndex + 1) + 1;
     } else {
       setCardIndex(0);
-      // scrollX.current = 0;
     }
   }, [cardIndex, carouselCards]);
 
   const handleRewindClick = () => {
-    console.log('left rewind clicked')
     setCardIndex(0);
   };
 
   const handleFastForwardClick = () => {
-    console.log('right forward clicked')
     setCardIndex(experiencesData.length - 1);
   };
 
@@ -173,8 +135,6 @@ export default function Experiences() {
           ref={experiencesMaxScrollWidth} 
           className={styles.experiencesInner} 
           style={{ transform: `translateX(-${cardIndex * 100}%)`}}
-          // style={{ transform: `translateX(-100%)`}} 
-          // style={{ transform: `${carouselScroll}` }} 
           onScroll={handleScroll}
         >
           {carouselCards}
