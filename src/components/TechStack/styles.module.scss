@@ -33,6 +33,11 @@
     border: 3px solid $neutralGray;
   }
 
+  .techList::-webkit-scrollbar-button {
+    width: 20px; //for horizontal scrollbar
+    height: 20px; //for vertical scrollbar
+  }
+
   clip-path: polygon(
     0 calc(0% + 2rem), 
     100% 0, 
@@ -138,7 +143,7 @@
 
   overflow-y: auto;
 
-  border-radius: 4px;
+  border-radius: 40px;
   box-shadow: 4px 4px 10px 0 $mainTextColorBlack;
   background-color: $darkSkyBlue;
 }
@@ -167,10 +172,7 @@
   
   font-size: 0.8rem;
   background-color: $cloudPurple;
-  // background-color: $cardBackground;
-  // color: $mainTextColorBlack;
-  // background-color: $heroBackgroundColorLightPurple;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 .techName {
