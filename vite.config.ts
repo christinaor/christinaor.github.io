@@ -4,6 +4,11 @@ import EnvironmentPlugin from 'vite-plugin-environment';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    proxy: {
+      '/sent': "http://localhost:3333"
+    }
+  },
   plugins: [react(), EnvironmentPlugin('all', {prefix: ''})],
 })
 

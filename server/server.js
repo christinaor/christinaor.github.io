@@ -1,8 +1,12 @@
 import express from 'express';
 const app = express();
+import cors from 'cors';
 import connectToDB from './models/connectToDB.js';
 import emailController from './controllers/email.js';
 const PORT = 3333;
+
+// handles 'Access-Control-Allow-Origin' header for cross-site request forgery issue
+app.use(cors());
 
 // Handle parsing request body
 app.use(express.json());

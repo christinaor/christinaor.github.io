@@ -7,13 +7,32 @@ export default function EmailForm() {
   const [message, setMessage] = useState('');
   const [submitClicked, setSubmitClicked] = useState(false);
 
-  const handleSubmit = useCallback((e) => {
+  const handleSubmit = useCallback( async e => {
     e.preventDefault();
-    console.log(`Name: ${email}\nSubject: ${subject}\nEmail: ${message}`);
-    setEmail('');
-    setSubject('');
-    setMessage('');
-    setSubmitClicked(true);
+    try {
+      const emailContent = {
+        email: email,
+        subject: subject,
+        message: message,
+      }
+      const isEmailSent = await fetch('/sent', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(emailContent)
+      });
+
+      if (isEmailSent) {
+        console.log(`Email was sent!`)
+        setEmail('');
+        setSubject('');
+        setMessage('');
+        setSubmitClicked(true);
+      }
+    } catch (error) {
+      console.error(`Could not send email.`)
+    }
   }, [email, subject, message]);
 
   useEffect(() => {
