@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 DEVREADME.md
 obsolete
+
+# environment variables file
+.env
+env.d.ts
