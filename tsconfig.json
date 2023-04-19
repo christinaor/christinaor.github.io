@@ -16,7 +16,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["node", "dotenv/types", "vite/client"]
+    "types": ["node", "vite/client"]
   },
   "include": ["data","src", "src/**/*", "**/*.ts", "**/*.tsx", "server/models/connectToDB.js", "server/server.js"],
   "exclude": ["node_modules"],
