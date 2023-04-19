@@ -22,17 +22,22 @@ export default function Experiences() {
       <div key={`${experience.title}-carousel-card`} className={styles.experienceContainer}>
         <div className={styles.experience}>
           <div className={styles.titleAndLinks}>
-            <a href={experience?.articleLink ? experience.articleLink : ''}>
-              <h3>{experience.title}</h3>
+            {experience?.articleLink 
+
+            ? <a href={experience?.articleLink ? experience.articleLink : ''}>
+                <h3>{experience.title}</h3>
             </a>
+
+            : <h3>{experience.title}</h3>
+            }
 
             <div className={styles.links} >
               <a href={experience?.githubLink}>
                 <img src={githubLinkLogo} alt={experience.githubLinkImageAlt} />
               </a>
-              <a href={experience?.websiteLink}>
+              {experience?.websiteLink && <a href={experience.websiteLink}>
                 <img src={websiteIcon} alt={experience.websiteLinkImageAlt} />
-              </a>
+              </a>}
             </div>
           </div>
 

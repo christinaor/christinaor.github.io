@@ -1,5 +1,6 @@
-import reactimeGif from '../src/assets/experience-images/reactime.gif'
-import portfolioImg from '../src/assets/experience-images/portfolio-site.png'
+import reactimeGif from '../src/assets/experience-images/reactime.gif';
+import rebalanceImg from '../src/assets/experience-images/rebalance.png';
+import portfolioImg from '../src/assets/experience-images/portfolio-site.png';
 
 const experiences = [
   {
@@ -10,9 +11,9 @@ const experiences = [
     imageAlt: "picture of Reactime",
     githubLink: "https://github.com/open-source-labs/reactime",
     githubLinkImageAlt: "GitHub logo linking to Reactime repository",
-    websiteLink: "https://reactime.dev",
+    websiteLink: "https://www.reacti.me",
     websiteLinkImageAlt: "website icon linking to Reactime website",
-    technologies: ["TypeScript", "React", "D3.js", "Redux DevTools"]
+    technologies: ["TypeScript", "React", "D3.js", "Redux DevTools"],
   },
   {
     title: "Personal Portfolio",
@@ -23,7 +24,16 @@ const experiences = [
     githubLinkImageAlt: "GitHub logo linking to portfolio site repository",
     websiteLink: "christinaor.github.io/",
     websiteLinkImageAlt: "website icon linking to portfolio website",
-    technologies: ["TypeScript", "React", "Vite"]
+    technologies: ["TypeScript", "React", "MongoDB", "Vite"],
+  },
+  {
+    title: "RE:Balance",
+    description: "A financial budgeting and reconciliation application which users can use to keep track of their balances with other users.",
+    image: rebalanceImg,
+    imageAlt: "picture of RE:Balance",
+    githubLink: "https://github.com/christinaor/rebalance",
+    githubLinkImageAlt: "GitHub logo linking to Reactime repository",
+    technologies: ["JavaScript", "React", "PostgreSQL", "SCSS"],
   }
 ]
 
