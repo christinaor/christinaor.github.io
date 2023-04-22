@@ -10,19 +10,22 @@ export default function EmailForm() {
   const handleSubmit = useCallback( async e => {
     e.preventDefault();
     try {
-      const emailContent = {
-        email: email,
-        subject: subject,
-        message: message,
-      }
+      // const emailContent = {
+      //   email: email,
+      //   subject: subject,
+      //   message: message,
+      // }
       const isEmailSent = await fetch('/sent', {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(emailContent)
+        body: JSON.stringify({
+          email: email,
+          subject: subject,
+          message: message
+        })
       })
-
       const response = await isEmailSent.json();
       if (response) {
         console.log('response: ', response)
@@ -33,7 +36,7 @@ export default function EmailForm() {
         setSubmitClicked(true);
       }
     } catch (error) {
-      console.log(`Could not send email: ${error}`)
+      console.log(`Could not send email:\n ${error}`)
     }
   }, [email, subject, message]);
 
