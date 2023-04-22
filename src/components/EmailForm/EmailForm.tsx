@@ -33,7 +33,7 @@ export default function EmailForm() {
         setSubmitClicked(true);
       }
     } catch (error) {
-      console.error(`Could not send email.`)
+      console.log(`Could not send email: ${error}`)
     }
   }, [email, subject, message]);
 
