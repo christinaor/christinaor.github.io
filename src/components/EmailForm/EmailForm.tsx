@@ -21,9 +21,11 @@ export default function EmailForm() {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(emailContent)
-      });
+      })
 
-      if (isEmailSent) {
+      const response = await isEmailSent.json();
+      if (response) {
+        console.log('response: ', response)
         console.log(`Email was sent!`)
         setEmail('');
         setSubject('');

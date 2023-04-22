@@ -15,7 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 // Route to Controllers
 app.post('/sent', emailController.newEmail, (req, res) => {
   console.log(`Email was sent with credentials: ${res.locals.newEmail}`)
-  return res.status(200).json(res.locals.newEmail);
+  // return res.status(200).json(res.locals.newEmail);
+  return res.status(200).json(res.locals.isEmailSent);
 });
 
 // Catchall

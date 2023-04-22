@@ -14,6 +14,7 @@ emailController.newEmail = async (req, res, next) => {
       message,
     }]);
     res.locals.newEmail = newEmail;
+    res.locals.isEmailSent = true;
     return next();
 
     // const addEmail = await db.query(query);
