@@ -10,12 +10,8 @@ export default function EmailForm() {
   const handleSubmit = useCallback( async e => {
     e.preventDefault();
     try {
-      // const emailContent = {
-      //   email: email,
-      //   subject: subject,
-      //   message: message,
-      // }
-      const isEmailSent = await fetch('/sent', {
+      // Change BACKEND_HOST env when developing
+      const isEmailSent = await fetch((`${process.env.BACKEND_HOST}/sent`), {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
