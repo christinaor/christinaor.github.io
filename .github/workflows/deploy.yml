@@ -27,6 +27,8 @@ jobs:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
+        env:
+            BACKEND_HOST: http://ec2-44-202-109-139.compute-1.amazonaws.com
         steps:
             - name: Checkout
               uses: actions/checkout@v3
@@ -49,18 +51,3 @@ jobs:
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v1
-
-    # Set the BACKEND_HOST environment variable
-    add-backend-host-env-secret-to-prod:
-        runs-on: ubuntu-latest
-        env:
-            ENV_VARIABLE: prod
-        steps:
-            - name: Download Onboardbase
-              run: wget https://onboardbase-cli.fra1.digitaloceanspaces.com/apt/onboardbase.deb
-            - name: Install Onboardbase
-              run: sudo dpkg -i ./onboardbase.deb
-            - name: Setup Onboardbase
-              run: onboardbase config:set --token "${{ secrets.BACKEND_HOST }}"
-            - name: Inject env variable
-              run: onboardbase build -c "printenv SECRET_ENV_VARIABLE" -e "prod"
