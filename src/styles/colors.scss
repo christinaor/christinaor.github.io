@@ -56,14 +56,40 @@ $pastelPurple: #C5ADC5;
 $lightSteelBlue: #B2B5E0;
 
 
-// v2 palette
-$mainTextColorWhite: rgb(245, 253, 255);
+// // v2 palette
+// $mainTextColorWhite: rgb(245, 253, 255);
+// $mainTextColorBlack: rgb(45, 43, 59);
+
+// $neutralGray: rgb(192, 186, 179);
+
+// $darkSkyPurple: rgb(41, 27, 55);
+// $darkSkyPurple: rgb(32, 26, 46);
+// $darkSkyBlue: rgb(29, 25, 55);
+// $skyPurple: rgb(138, 122, 141);
+// $cloudPurple: rgb(82, 86, 125);
+// $basePurple: rgb(175, 182, 226);
+// $baseBlue: rgb(151, 178, 225);
+
+// $mainGold: rgb(255, 224, 140);
+// $subGold: rgb(202, 170, 118);
+// $baseGold: rgb(255, 184, 131);
+
+// $pink: rgb(221, 150, 154);
+// $green: rgb(147, 171, 127);
+// $purple: rgb(143, 99, 142);
+
+// $gradient-green-start: rgba(147, 171, 127, 0.487) 95%;
+// $gradient-green-mid: rgba(147, 171, 127, 0.2);
+// $gradient-green-end: rgba(147, 171, 127, 0.056);
+
+// v3 palette
+$mainTextColorWhite: rgb(255, 255, 255);
 $mainTextColorBlack: rgb(45, 43, 59);
 
-$neutralGray: rgb(192, 186, 179);
+$neutralGray: rgb(184, 195, 209);
 
-$darkSkyPurple: rgb(41, 27, 55);
-$darkSkyBlue: rgb(29, 25, 55);
+$darkSkyPurple: rgb(6, 21, 38);
+$darkSkyBlue: rgb(28, 42, 58);
 $skyPurple: rgb(138, 122, 141);
 $cloudPurple: rgb(82, 86, 125);
 $basePurple: rgb(175, 182, 226);
@@ -77,6 +103,8 @@ $pink: rgb(221, 150, 154);
 $green: rgb(147, 171, 127);
 $purple: rgb(143, 99, 142);
 
-$gradient-green-start: rgba(147, 171, 127, 0.487) 95%;
-$gradient-green-mid: rgba(147, 171, 127, 0.2);
-$gradient-green-end: rgba(147, 171, 127, 0.056);
+
+$textVibrantPink: rgb(254, 6, 125);
+$textVibrantPurple: rgb(175, 6, 254);
+$darkCardBackground: rgb(28, 42, 58);
+$lightCardBackground: rgb(69, 84, 101);

@@ -54,21 +54,22 @@
   padding: 1rem;
   // width: 10rem;
 
-  border: 1px solid $mainTextColorWhite;
+  border: 1px solid $textVibrantPurple;
   border-radius: 40px;
 
   font-weight: 600;
 
-  color: $mainTextColorBlack;
-  background-color: $mainTextColorWhite;
+  color: $mainTextColorWhite;
+  // background-color: $mainTextColorWhite;
+  background-color: $textVibrantPurple;
 
-  box-shadow: 5px 5px 0 0 $cloudPurple;
+  // box-shadow: 5px 5px 0 0 $cloudPurple;
   transition: 0.3s;
 }
 .emailForm button:hover {
   background-color: $mainTextColorWhite;
   border: 1px solid $mainTextColorWhite;
-  box-shadow: 1px 1px 0 0 $cloudPurple;
+  // box-shadow: 1px 1px 0 0 $cloudPurple;
 }
 
 .emailSent {

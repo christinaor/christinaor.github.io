@@ -10,7 +10,7 @@
   padding: 4rem 0 6rem;
   gap: 1rem;
 
-  background-color: $darkSkyPurple;
+  // background-color: $darkSkyPurple;
   // color: $mainHeaderColor;
 
   clip-path: polygon(
@@ -26,31 +26,34 @@
     0 100%
   );
 
-  background-image: linear-gradient(to bottom, $cloudPurple, 10%, $darkSkyPurple);
+  // background-image: linear-gradient(to bottom, $cloudPurple, 10%, $darkSkyPurple);
 
   margin-bottom: -2rem;
 }
 
 .experienceSection h2 {
   // align-self: flex-start;
-  margin-bottom: 0;
+  // margin-bottom: 0;
   // margin-left: 4rem;
   // padding-right: 4rem;
-  padding-bottom: 14px;
+  // padding-bottom: 14px;
 
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $cloudPurple, $neutralGray, $cloudPurple);
-  border-image-slice: 1;
+  // border-bottom: 2px solid transparent;
+  // border-image: linear-gradient(0.25turn, $cloudPurple, $neutralGray, $cloudPurple);
+  // border-image-slice: 1;
+  
 }
 
-.leftArrow, .rightArrow {
-  width: 0;
-  height: 0;
-  display: hidden;
-}
+// .leftArrow, .rightArrow {
+//   width: 0;
+//   height: 0;
+//   display: hidden;
+// }
 
 .experiencesOuter {
   overflow: hidden;
+
+  // margin-bottom: 3rem;
 
   // overflow-x: scroll;
   // scroll-snap-type: x mandatory;
@@ -71,11 +74,10 @@
 }
 
 .experiencesInner {
+  padding: 1rem 0 3rem;
+
   white-space: nowrap;
   transition: transform 0.9s;
-
-
-
 }
 
 /* Experience item */
@@ -113,7 +115,10 @@
   transition: ease all 0.3s;
 }
 .experience:hover {
-  box-shadow: $baseGold 0px 50px 100px -20px, $baseGold 0px 30px 60px -30px, $baseGold 0px -2px 6px 0px inset;
+  box-shadow: 
+    $baseGold 0px 20px 40px -20px, 
+    $baseGold 0px 30px 60px -30px, 
+    $baseGold 0px -2px 6px 0px inset;
 }
 
 /* Individual pieces of an experience */
@@ -201,9 +206,17 @@
   // gap: 4rem;
 }
 
-.cardNavigation .leftArrow, .cardNavigation .rightArrow, .cardNavigation .rewindArrow, .cardNavigation .fastForwardArrow {
-  width: 2rem;
-  height: 2rem;
+.cardNavigation .leftArrow, .cardNavigation .rightArrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+
+  cursor: pointer;
+}
+
+.cardNavigation .rewindArrow, .cardNavigation .fastForwardArrow {
+  width: 1rem;
+  height: 1rem;
   display: block;
 
   cursor: pointer;
@@ -218,7 +231,7 @@
 }
 
 .cardNavigation .leftArrow, .cardNavigation .rightArrow {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 .cardNavigation .dots {
@@ -303,5 +316,13 @@
 
   .experience {
     min-width: 20rem;
+  }
+
+  .cardNavigation .leftArrow, .cardNavigation .rightArrow, .cardNavigation .rewindArrow, .cardNavigation .fastForwardArrow {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+
+    cursor: pointer;
   }
 }

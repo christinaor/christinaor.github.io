@@ -143,6 +143,43 @@ export default function Experiences() {
           onScroll={handleScroll}
         >
           {carouselCards}
+          {/* {experiencesData?.map(experience => {
+            return (
+              <div key={`${experience.title}-carousel-card`} className={styles.experienceContainer}>
+                <div className={styles.experience}>
+                  <div className={styles.titleAndLinks}>
+                    {experience?.articleLink 
+
+                    ? <a href={experience?.articleLink ? experience.articleLink : ''}>
+                        <h3>{experience.title}</h3>
+                    </a>
+
+                    : <h3>{experience.title}</h3>
+                    }
+
+                    <div className={styles.links} >
+                      <a href={experience?.githubLink}>
+                        <img src={githubLinkLogo} alt={experience.githubLinkImageAlt} />
+                      </a>
+                      {experience?.websiteLink && <a href={experience.websiteLink}>
+                        <img src={websiteIcon} alt={experience.websiteLinkImageAlt} />
+                      </a>}
+                    </div>
+                  </div>
+
+                  <img className={styles.experienceImage} src={experience.image} alt={experience.imageAlt} />
+
+                  <p>{experience.description}</p>
+
+                  <ul className={styles.technologies}>
+                    {experience?.technologies?.map(technology => (
+                      <li key={`${technology}-name`} className={styles.technology}>{technology}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )
+          })} */}
         </div>
       </div>
 
