@@ -8,8 +8,10 @@ export default function Contact() {
     <section id="contact-me" className={`${styles.contactMe}`}>
       <h2 className={`${styles.header}`}>
         <span className='section-number'>4. </span>
-        <span>Get in Touch</span></h2>      
+        <span>Get in Touch</span>
+      </h2>      
       <motion.div 
+        className={styles.motionDiv}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3 }}

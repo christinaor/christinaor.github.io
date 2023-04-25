@@ -7,12 +7,12 @@
   justify-content: center;
   align-items: center;
 
-  padding: 4rem 3rem 4rem;
+  padding: 4rem 0 4rem;
 
   // min-height: 100vh;
   color: $mainHeaderColor;
   // background-color: $darkSkyBlue;
-  background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
+  // background: linear-gradient(217deg, $pink, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, $green, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, $purple, rgba(0,0,255,0) 70.71%);
 
   // border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $mainGold, $skyPurple);
   // border-image-slice: 1;
@@ -22,10 +22,19 @@
   // margin: 2rem;
 }
 
+.motionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contactBlurb {
-  margin-bottom: 1.5rem;
+  margin: inherit clamp(2rem, 3vw, 4rem);
+  max-width: 20rem;
 
   text-align: center;
+  word-wrap: break-word;
 }
 
 @media only screen and (min-width: $mobile-max) {
@@ -34,7 +43,8 @@
   }
 
   .contactBlurb {
-    margin: inherit clamp(2rem, 3vw, 4rem);
+    max-width: 30rem;
+
     font-size: 1.2rem;
   }
 }

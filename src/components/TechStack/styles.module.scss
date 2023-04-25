@@ -12,7 +12,7 @@
 
   // min-height: 100vh;
 
-  background-color: $skyPurple;
+  // background-color: $skyPurple;
 
   /* Scrollbar for Firefox
   scrollbar-width: thin;
@@ -24,7 +24,7 @@
   }
 
   .techList::-webkit-scrollbar-track {
-    background: $darkSkyBlue;
+    background: $lightCardBackground;
   }
 
   .techList::-webkit-scrollbar-thumb {
@@ -52,18 +52,20 @@
   );
 
   // background-image: linear-gradient(to bottom, $subGold, 10%, $cloudPurple, $skyPurple);
-  background-image: radial-gradient($purple, $skyPurple);
+  // background-image: radial-gradient($purple, $skyPurple);
 
   margin-bottom: -2rem;
 }
 
-.techSection h2 {
-  padding-bottom: 14px;
+// .techSection h2 {
 
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $neutralGray, $subGold, $skyPurple);
-  border-image-slice: 1;
-}
+//   // padding: 0 4rem 0 1.5rem;
+//   // padding-bottom: 14px;
+
+//   // border-bottom: 2px solid transparent;
+//   // border-image: linear-gradient(0.25turn, $skyPurple, $darkSkyBlue, $neutralGray, $subGold, $skyPurple);
+//   // border-image-slice: 1;
+// }
 
 .buttonsAndTechList {
   display: flex;
@@ -96,13 +98,13 @@
   // width: 5rem;
   // height: 3rem;
 
-  color: $mainTextColorBlack;
-  background-color: $mainTextColorWhite;
+  color: $mainTextColorWhite;
+  background-color: $lightCardBackground;
 
   border: 1px solid $mainTextColorWhite;
   border-radius: 40px;
-  box-shadow: 4px 4px 0 0 $cloudPurple;
-  opacity: 0.6;
+  // box-shadow: 4px 4px 0 0 $neutralGray;
+  opacity: 0.4;
 
   font-weight: 700;
 
@@ -114,7 +116,8 @@
   border: 1px solid $darkSkyBlue;
 
   color: $mainTextColorWhite;
-  background-color: $darkSkyBlue;
+  background-color: $textVibrantPurple;
+  // background-color: $cardBackground;
 
   opacity: 1;
 }
@@ -122,9 +125,10 @@
 @media (hover: hover) {
   .filterButtonsWrapper button:hover, button:hover, button.active:hover {
     color: $mainTextColorBlack;
-    background-color: $mainGold;
-    border: 1px solid $mainGold;
-    box-shadow: 2px 2px 10px 0 $cloudPurple;
+    background-color: $textVibrantPurple;
+    border: 1px solid $textVibrantPurple;
+    // box-shadow: 2px 2px 10px 0 $cloudPurple;
+    opacity: 0.5;
   }
 }
 
@@ -144,8 +148,9 @@
   overflow-y: auto;
 
   border-radius: 40px;
-  box-shadow: 4px 4px 10px 0 $mainTextColorBlack;
-  background-color: $darkSkyBlue;
+  // box-shadow: 4px 4px 10px 0 $mainTextColorBlack;
+  // background-color: $cardBackground;
+  background-color: $darkCardBackground;
 }
 
 .techItem {
@@ -172,6 +177,7 @@
   
   font-size: 0.8rem;
   background-color: $cloudPurple;
+  background-color: $lightCardBackground;
   border-radius: 20px;
 }
 

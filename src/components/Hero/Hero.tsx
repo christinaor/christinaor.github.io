@@ -1,4 +1,4 @@
-import downloadResumeIcon from '../../assets/download-resume.svg';
+import downloadResumeIcon from '../../assets/download-resume-arrow.svg';
 
 import styles from './styles.module.scss'
 
@@ -14,8 +14,8 @@ export default function Hero() {
       <p className={styles.heroBlurb}>I'm a full-stack software engineer who loves solving complex issues with code and building products to increase productivity.</p>
 
       <button>
-        <img src={downloadResumeIcon} alt="download resume icon" />
         <a className="resume-button" href="https://drive.google.com/file/d/1SA0kACwemgMkuZib9PY484WxvG1t9HzJ/view" target="_blank">Peek my resume!</a>
+        <img src={downloadResumeIcon} alt="download resume icon" />
       </button>
     </section>
   )

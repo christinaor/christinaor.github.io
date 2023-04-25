@@ -18,7 +18,7 @@
   // transition: 0.25s;
   // transform: translateY(0);
 
-  background-image: linear-gradient(to bottom, $cloudPurple, 10%, $darkSkyBlue);
+  background-image: linear-gradient(to bottom, $darkCardBackground, 10%, $darkSkyPurple);
 
   // padding: 2rem 2.5rem;
 
@@ -38,15 +38,18 @@
 }
 
 .about h2 {
-  padding-bottom: 14px;
+  // padding-bottom: 14px;
+  // margin: 0 1.5rem;
+  margin-left: 1.5rem;
 
-  border-bottom: 2px solid transparent;
+  // border-bottom: 2px solid transparent;
   border-image: linear-gradient(0.25turn, $mainTextColorWhite, $skyPurple, $cloudPurple);
   border-image-slice: 1;
 }
 
 .description .summary {
   margin-bottom: 6rem;
+  margin: 0 1.5rem 6rem 1.5rem;
 }
 
 .description ul {
@@ -88,20 +91,20 @@
   height: 3rem;
 
   border-radius: 50px;
-  // background-color: $pink;
+  background-color: $textVibrantPurple;
 }
-.description ul :first-child img {
-  background-color: $purple;
-}
-.description ul :nth-child(2) img {
-  background-color: $green;
-}
-.description ul :nth-child(3) img {
-  background-color: $pink;
-}
-.description ul :nth-child(4) img {
-  background-color: $subGold;
-}
+// .description ul :first-child img {
+//   background-color: $purple;
+// }
+// .description ul :nth-child(2) img {
+//   background-color: $green;
+// }
+// .description ul :nth-child(3) img {
+//   background-color: $pink;
+// }
+// .description ul :nth-child(4) img {
+//   background-color: $subGold;
+// }
 
 li a.blurbLink {
   font-weight: 500;
