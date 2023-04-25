@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useCallback, useState } from 'react';
 
 import technologies from '../../../data/technologies';
@@ -75,21 +76,27 @@ export default function TechStack() {
     <div id="tech-stack" className={styles.techSection}>
       <h2 className={styles.techHeader}>
         <span className='section-number'>2. </span>
-        Tech I've Worked With
+        <span>Tech I've Worked With</span>
       </h2>
-      <div className={styles.buttonsAndTechList}>
-        <div className={styles.filterButtonsWrapper}>
-          {technologyFilters?.map(filter => {
-            return (
-              <button key={`tech-filter-${filter.name}`} className={isActiveFilter(filters, filter.name)} value={filter.name} onClick={handleFilterClick}>{filter.title}</button>
-            )
-          })}
-        </div>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
+        <div className={styles.buttonsAndTechList}>
+          <div className={styles.filterButtonsWrapper}>
+            {technologyFilters?.map(filter => {
+              return (
+                <button key={`tech-filter-${filter.name}`} className={isActiveFilter(filters, filter.name)} value={filter.name} onClick={handleFilterClick}>{filter.title}</button>
+              )
+            })}
+          </div>
 
-        <ul className={styles.techList}>
-          {displayedTech}
-        </ul>
-      </div>
+          <ul className={styles.techList}>
+            {displayedTech}
+          </ul>
+        </div>
+      </motion.div>
     </div>
   )
 };
