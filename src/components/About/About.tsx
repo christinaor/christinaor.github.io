@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import analyticsAutomationIcon from '../../assets/about/analytics-automation.svg';
 import gearsIcon from '../../assets/about/gears.svg';
 import volunteerIcon from '../../assets/about/volunteer.svg';
@@ -8,9 +10,15 @@ import styles from './styles.module.scss';
 export default function About() {
   return (
     <section id="about" className={styles.about}>
-        <h2 className={`${styles.header}`}>
-          <span className='section-number'>1. </span>
-          About Me</h2>
+      <h2 className={`${styles.header}`}>
+        <span className='section-number'>1. </span>
+        <span>About Me</span>
+      </h2>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
         <div className={styles.description}>
           <div className={styles.summary}>
             <p>My earliest memories of coding started with a Neopets page and recreating Meerca Chase with .NET. My next foray stemmed from the desire to heighten productivity in Excel. This snowballed into a journey of self-taught Python and finding my love of solving challenging puzzles and constant learning.</p>
@@ -35,6 +43,7 @@ export default function About() {
             </li>
           </ul>  
         </div>
+      </motion.div>
     </section>
   )
 };
