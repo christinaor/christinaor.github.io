@@ -16,7 +16,7 @@ export default function Footer() {
     <footer id="footer" className={styles.footer}>
       <div className={styles.links}>
         <div>
-          <h3 className={styles.footerTitle}>Reach out to me</h3>
+          <h3 className={styles.footerTitle}>Reach out to me!</h3>
           <ul className={`${styles.contactLinks}`}>
             <li>
               <a className="linkedin" href="https://www.linkedin.com/in/christina-or">
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4>Jump To</h4>
+          <h4>Jump To:</h4>
           <ul className={styles.jumpToLinks}>
             <li>
               <a href="#home">
@@ -81,7 +81,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className={styles.footerText}>Built && Crafted: Christina Or.</div>
+      <div className={styles.footerText}>Built && Crafted by Christina Or</div>
     </footer>
   )
 };

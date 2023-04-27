@@ -1,6 +1,6 @@
 import reactimeGif from '../src/assets/experience-images/reactime.gif';
 import rebalanceImg from '../src/assets/experience-images/rebalance.png';
-import portfolioImg from '../src/assets/experience-images/portfolio-site.png';
+import portfolioImg from '../src/assets/experience-images/portfolio-site-v3.png';
 
 const experiences = [
   {
