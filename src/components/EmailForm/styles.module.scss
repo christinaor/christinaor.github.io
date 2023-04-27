@@ -27,6 +27,7 @@
 
 .emailForm input, .emailForm textarea {
   width: 15rem;
+  max-width: 605px;
 
   border: 3px solid transparent;
   border-radius: 8px;
@@ -83,7 +84,7 @@
 @media only screen and (min-width: $mobile-max) and (max-width: $desktop-min) {
   .emailForm input, .emailForm textarea {
     width: clamp(20rem, 50vw, 40rem);
-    max-width: 605px;
+    // max-width: 605px;
   }
 }
 
@@ -94,7 +95,7 @@
 
   .emailForm input, .emailForm textarea {
     width: clamp(20rem, 60vw, 40rem);
-    max-width: 605px;
+    // max-width: 605px;
   }
 }
 
@@ -105,5 +106,6 @@
 
   .emailForm input, .emailForm textarea {
     width: clamp(40rem, 60vw, 70rem);
+    // max-width: 605px;
   }
 }
