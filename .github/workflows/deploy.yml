@@ -28,7 +28,7 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
         env:
-            BACKEND_HOST: https://ec2-44-202-109-139.compute-1.amazonaws.com
+            BACKEND_HOST: https://backend.christinaor.com
         steps:
             - name: Checkout
               uses: actions/checkout@v3
