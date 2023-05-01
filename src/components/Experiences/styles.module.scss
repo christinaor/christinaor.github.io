@@ -116,9 +116,9 @@
 }
 .experience:hover {
   box-shadow: 
-    $baseGold 0px 20px 40px -20px, 
-    $baseGold 0px 30px 60px -30px, 
-    $baseGold 0px -2px 6px 0px inset;
+    rgba(254, 6, 125, 0.4) 0px 20px 40px -20px, 
+    rgba(254, 6, 125, 0.4) 0px 30px 60px -30px, 
+    rgba(254, 6, 125, 0.4) 0px -2px 6px 0px inset;
 }
 
 /* Individual pieces of an experience */
