@@ -127,7 +127,7 @@ export default function Experiences() {
     <section id="experiences" className={`${styles.experienceSection}`}>
       <h2 className={`${styles.header}`}>
         <span className='section-number'>3. </span>
-        Experience
+        <span>Experience</span>
       </h2>
 
       <div 
