@@ -1,6 +1,8 @@
+import foodTruckMapperImg from '../src/assets/experience-images/food-truck-mapper.png';
 import reactimeGif from '../src/assets/experience-images/reactime.gif';
 import rebalanceImg from '../src/assets/experience-images/rebalance.png';
 import portfolioImg from '../src/assets/experience-images/portfolio-site-v3.png';
+
 
 const experiences = [
   {
@@ -34,7 +36,18 @@ const experiences = [
     githubLink: "https://github.com/christinaor/rebalance",
     githubLinkImageAlt: "GitHub logo linking to Reactime repository",
     technologies: ["JavaScript", "React", "PostgreSQL", "SCSS"],
-  }
+  },
+  {
+    title: "Food Truck Mapper",
+    description: "An application for the food truck connoisseurs in San Francisco, mapping food trucks in a specified location.",
+    image: foodTruckMapperImg,
+    imageAlt: "picture of Food Truck Mapper application",
+    githubLink: "https://github.com/christinaor/food-truck-mapper/",
+    githubLinkImageAlt: "GitHub logo linking to food-truck-mapper repository",
+    websiteLink: "https://christinaor.com/food-truck-mapper",
+    websiteLinkImageAlt: "website icon linking to the site Food Truck Mapper is hosted on",
+    technologies: ["TypeScript", "React", "HTML", "Sass/SCSS"],
+  },
 ]
 
 export default experiences;
