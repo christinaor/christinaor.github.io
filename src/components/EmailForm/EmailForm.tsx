@@ -47,7 +47,7 @@ export default function EmailForm() {
     <form className={styles.emailForm} onSubmit={handleSubmit}>
       <div>
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input type="email" inputMode='email' id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
       </div>
 
       <div>
@@ -57,7 +57,7 @@ export default function EmailForm() {
 
       <div>
         <label htmlFor="message">Message:</label>
-        <textarea id="email" value={message} onChange={(e) => setMessage(e.target.value)} required />
+        <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
       </div>
       
       {!submitClicked && <button type="submit">Send Email</button>}
