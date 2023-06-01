@@ -34,8 +34,17 @@ const experiences = [
     image: rebalanceImg,
     imageAlt: "picture of RE:Balance",
     githubLink: "https://github.com/christinaor/rebalance",
-    githubLinkImageAlt: "GitHub logo linking to Reactime repository",
+    githubLinkImageAlt: "GitHub logo linking to Rebalance repository",
     technologies: ["JavaScript", "React", "PostgreSQL", "SCSS"],
+  },
+  {
+    title: "Stock Watch",
+    description: "A financial web application where users can check their assets portfolios over time.",
+    image: rebalanceImg,
+    imageAlt: "picture of Stock Watch",
+    githubLink: "https://github.com/christinaor/stock-watch",
+    githubLinkImageAlt: "GitHub logo linking to Stock Watch repository",
+    technologies: ["JavaScript", "React", "Django", "Vite"],
   },
   {
     title: "Food Truck Mapper",
