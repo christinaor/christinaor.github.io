@@ -1,3 +1,4 @@
+import creditPerksImg from '../src/assets/experience-images/credit-perks.png';
 import foodTruckMapperImg from '../src/assets/experience-images/food-truck-mapper.png';
 import reactimeGif from '../src/assets/experience-images/reactime.gif';
 import rebalanceImg from '../src/assets/experience-images/rebalance.png';
@@ -37,14 +38,23 @@ const experiences = [
     githubLinkImageAlt: "GitHub logo linking to Rebalance repository",
     technologies: ["JavaScript", "React", "PostgreSQL", "SCSS"],
   },
+  // {
+  //   title: "Stock Watch",
+  //   description: "A financial web application where users can check their assets portfolios over time.",
+  //   image: rebalanceImg,
+  //   imageAlt: "picture of Stock Watch",
+  //   githubLink: "https://github.com/christinaor/stock-watch",
+  //   githubLinkImageAlt: "GitHub logo linking to Stock Watch repository",
+  //   technologies: ["JavaScript", "React", "Django", "Vite"],
+  // },
   {
-    title: "Stock Watch",
-    description: "A financial web application where users can check their assets portfolios over time.",
-    image: rebalanceImg,
-    imageAlt: "picture of Stock Watch",
-    githubLink: "https://github.com/christinaor/stock-watch",
-    githubLinkImageAlt: "GitHub logo linking to Stock Watch repository",
-    technologies: ["JavaScript", "React", "Django", "Vite"],
+    title: "CreditPerks",
+    description: "A digital wallet where users can keep track of your credit cards and their benefits.",
+    image: creditPerksImg,
+    imageAlt: "picture of CreditPerks",
+    githubLink: "https://github.com/christinaor/cc-rewards-checker",
+    githubLinkImageAlt: "GitHub logo linking to CreditPerks repository",
+    technologies: ["JavaScript", "React", "Microsoft Azure", "Flask"],
   },
   {
     title: "Food Truck Mapper",
