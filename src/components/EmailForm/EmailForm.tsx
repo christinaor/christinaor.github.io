@@ -24,13 +24,15 @@ export default function EmailForm() {
         })
       })
       const response = await isEmailSent.json();
-      if (response) {
+      if (response.ok) {
         console.log('response: ', response)
         console.log(`Email was sent!`)
         setEmail('');
         setSubject('');
         setMessage('');
         setSubmitClicked(true);
+      } else {
+        console.log(`Error sending email!`)
       }
     } catch (error) {
       console.log(`Could not send email:\n ${error}`)
